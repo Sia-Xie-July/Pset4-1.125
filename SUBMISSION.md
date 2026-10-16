@@ -4,7 +4,7 @@ Course instructions: [README.md](README.md). Required contracts: [ARCHITECTURE.m
 
 **Student:** Sia
 
-**GitHub repository:https://github.com/Sia-Xie-July/Pset4-1.125/edit/main/SUBMISSION.md
+**GitHub repository:https://github.com/Sia-Xie-July/Pset4-1.125
 
 ## Quick links
 
