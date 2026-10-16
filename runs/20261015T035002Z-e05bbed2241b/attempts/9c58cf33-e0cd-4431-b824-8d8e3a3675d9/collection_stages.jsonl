@@ -1,0 +1,10 @@
+{"stage":"fetch_feeds","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/candidates/feeds.jsonl"}
+{"stage":"fetch_youtube","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/candidates/youtube.jsonl"}
+{"stage":"fetch_podcasts","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/candidates/podcasts.jsonl"}
+{"stage":"merge_reader","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/candidates.jsonl"}
+{"stage":"merge_validate","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/candidates.jsonl"}
+{"stage":"extract_content","exit_code":1,"output_path":"runs/20261015T035002Z-e05bbed2241b/items.jsonl"}
+{"stage":"store.upsert","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/changes.jsonl"}
+{"stage":"store.list","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/corpus.jsonl"}
+{"stage":"corpus_writer","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/corpus.jsonl"}
+{"stage":"filter_items","exit_code":0,"output_path":"runs/20261015T035002Z-e05bbed2241b/eligible.jsonl"}

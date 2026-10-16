@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage describes a practical workflow for using AI coding agents to generate and verify code, with specific metrics such as 60,000 lines of code produced by 112 agents. This directly addresses the central question about whether recent developments in AI coding agents justify changes in delivery practices. The content is relevant to task specification, testing, and delivery outcomes, and provides a concrete example of how a small team might evaluate and expand agent autonomy. The material is newly reported and demonstrates a real-world application of AI coding agents, which is useful for informing decisions about workflow changes and autonomy expansion.",
+  "piece_ids": ["01", "02", "03"]
+}

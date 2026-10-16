@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "exit_code": 2,
+  "human_review_required": true,
+  "resume_method": "Explicit standalone component commands; prior validated selection reused",
+  "failed_stage": "editorial/create_briefs.sh"
+}

@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses coding agents, their role in reading repositories, editing files, and running tests, which directly informs piece 01 (What changed in coding-agent workflows) and piece 03 (What should a small team evaluate before expanding autonomy). It provides a concrete description of coding agents' functions and their relevance to small teams. The material is newly reported and relevant to task scoping, permissions, and delivery quality. The most material limitation is the lack of specific metrics or measurements on the impact of these agents on team workflows.",
+  "piece_ids": ["01", "03"]
+}

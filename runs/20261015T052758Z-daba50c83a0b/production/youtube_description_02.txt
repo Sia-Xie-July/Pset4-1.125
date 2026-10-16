@@ -1,0 +1,16 @@
+Before the Merge, Episode 2: The Review Bottleneck: Which Productivity Claims Survive Scrutiny?
+
+For technical leads of 3–10-person software teams deciding how much work to delegate to coding agents.
+
+Read the article (sources, exact versions and full references): [SUBSTACK ARTICLE URL]
+
+Evidence as of 2026-10-15 (UTC). Sources cited in this video:
+- AI Basics For Developers (podcast, 2026-10-13), 0:00–0:47: https://www.htmlallthethings.com/podcast/ai-basics-for-developers
+- How to Go from AI Power User to AI Leader (podcast, 2026-10-12), 22:02–22:40: https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Go-from-AI-Power-User-to-AI-Leader-e3qcev2
+- The coding factory: canonical specs and sequential agents | Jake Cukjati | AIMUG Oct 2026 (youtube, 2026-10-09), 6:16–6:54: https://www.youtube.com/watch?v=-65TrkDP1jY&t=376
+
+Statements in this video are labelled as source claims or as our interpretation. A sponsor advertisement or vendor announcement is a claim, not a verified result. Any evaluation plan described is a proposal, not an experiment we ran.
+
+AI disclosure: the presenter and voice are AI-generated (Google Vids). The script was drafted with AI assistance from the cited sources and reviewed by the author.
+
+Series: Episode 1 [URL] · Episode 2 [URL] · Episode 3 [URL]

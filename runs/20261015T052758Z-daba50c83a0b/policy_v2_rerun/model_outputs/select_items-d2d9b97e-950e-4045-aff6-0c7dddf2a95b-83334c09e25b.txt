@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses the importance of default hard budget caps for pay-by-usage services and APIs, which is relevant to the editorial question about changes in coding-agent workflows and their impact on cost and permissions. It provides a new perspective on managing costs and setting limits, which is directly related to the task-level costs and permissions scope. The passage supports piece 01 by highlighting what changed in workflows and piece 03 by informing evaluation criteria for expanding autonomy.",
+  "piece_ids": ["01", "03"]
+}

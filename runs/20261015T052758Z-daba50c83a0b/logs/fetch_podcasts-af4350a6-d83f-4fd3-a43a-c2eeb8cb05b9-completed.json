@@ -1,0 +1,32 @@
+{
+  "errors": [],
+  "input_count": 1,
+  "limited": true,
+  "output_count": 1,
+  "sources": [
+    {
+      "discovery_limit": 1,
+      "episode_ids": [
+        "htmlallthethings.podbean.com/e93be725-65ed-3105-b527-e3a0b3828407"
+      ],
+      "output_count": 1,
+      "source_id": "html-all-the-things-coding-workflows",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "af4350a6-d83f-4fd3-a43a-c2eeb8cb05b9",
+  "parent_invocation_id": "e5301e5f-643c-438f-90d1-6d67cb2d888a",
+  "stage": "fetch_podcasts",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T05:28:06Z",
+  "finished_at": "2026-10-15T05:28:07Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

@@ -1,0 +1,262 @@
+I believe by now we are all convinced
+that frontier Large Language Models are
+extremely powerful for programming. You
+can do things that weren't possible
+before in a very short time, and so on.
+Eh, so it's not just a matter of saving
+time, but sometimes, eh, to do certain
+things you would have needed many
+programmers for a duration that, eh,
+wasn't reasonable compared to the
+project's actual purpose. Especially in
+the startup world, it's not like you
+had 100 people or even three people to
+throw at it for a year. Now, if you can
+do it in a week, the proportions of the
+whole field have completely changed, eh
+, so a lot of things can be done. LLMs
+are very powerful and okay, we’ve
+fully realized that, but I believe at
+the same time all programmers have
+noticed that while the toil of
+programming—which in some cases is
+immense—has been reduced, the fun and
+beauty of programming have also
+diminished. Eh, I mention the toil
+because sometimes it has happened to me
+; for example, I remember with Discw,
+ehm, I spent a month unable to compile
+the program because pieces were missing
+, and I kept writing them without being
+able to test if things worked, writing
+a lot of code while keeping the entire
+state of what I was doing in my head:
+one of the most complicated
+implementations I have ever written in
+my life. And well, these are tough
+moments, just like the bugs, when you
+don't eh, you don't know why a bug
+appears, or it appears very rarely, eh,
+because otherwise it's easy. For many
+years, I had as my tagline on X, "
+reproducible bugs are candies," meaning
+reproducible bugs are treats because
+you gradually gather information on the
+state and, well, you understand what
+the problem is and make the fix.
+Instead, those bugs that are sometimes
+there, sometimes not, under conditions
+you don't understand, maybe only
+happening to the client where you can't
+observe them. That is a source of great
+frustration in programming, which is
+why many, to tell you the truth, have
+now breathed a sigh of relief. I know
+many who tell me, "Honestly, I was
+burning out, I couldn't take it anymore
+." Now the work has become more, m,
+well, bearable. At the same time,
+though, the fun, because there are
+phases of programming of incredible joy
+and amusement for what you've done
+while doing it: being in the flow,
+making those changes, seeing the
+effects. Anyway, we’ve all been there
+: since we were young, since we were
+kids writing our first programs. That
+spark has gone by the wayside, and in
+recent months I’ve wondered a lot
+about what was lost and how to get it
+back. Yesterday, for example, I was
+modifying this emulator I’d written
+for the Spectrum, where I also
+implemented C64 emulation with an
+RP2040. At one point, I connected it to
+a Raspberry Pi with a large screen I
+had at home, overclocking the SPI
+interface for the fastest possible
+communication with the display, which
+unfortunately isn't parallel. You
+should know that these displays usually
+have a serial interface, so they’re a
+bit slow. Instead, there are versions
+with a parallel interface that let you
+transfer 8 bits at a time; they’re
+obviously much faster, but you need way
+more pins on the MCU you're using, like
+a Raspberry Pico, for example. So, I
+was basically saying, "Look, let's
+implement partial updates, do a CRC of
+every scanline, and if it matches,
+don't update it." Yeah, but there could
+be collisions. Collisions, what
+collisions? It can't happen in practice
+, it doesn't matter. Eh, it could
+happen once every, I don't know, a year
+. Assuming that at some point a line
+isn't updated, you wouldn't even notice
+at 30 or 50 frames per second: that's
+the refresh rate you can get even with
+this large display, at least 30 frames
+per second, and 50 with other devices.
+I mean, this part here, even if you
+move up to the level of a designer,
+architect, whatever the hell we want to
+call it—I’ve always hated that name
+, but at this point, there’s not much
+you can do. It’s not an architect in
+the architectural sense—I mean, the
+idea of a software architect who
+sometimes didn't really know what the
+hell they were talking about or how
+things were implemented because that
+also happens in practice—I didn't
+like that. But this job can be done
+well. One could say that, I don't know,
+Linus is the architect of the kernel.
+That fits. Let’s just say I’m more
+open-minded now about using this
+terminology in computer science given
+how things have turned out. Either way,
+you’re the designer, the product
+person, the man or woman with the ideas
+. And this, I'll tell you the truth,
+really involves me because, I don't
+know, I made the software keyboard, but
+I specified exactly how I wanted it.
+And it's not...these aren't things, at
+this moment, that Large Language Models
+can do autonomously. And there's plenty
+of room to say: "I want it transparent,
+this interaction has to be there, first
+these two buttons, it pops up, it
+remembers where I was last time, go if
+you press the menu, let's put the
+option there to switch between one
+joystick and the other." A lot of
+things that have to do with your own
+sensibility for user experience, user
+interface, and technology regarding
+what can be done, because for these
+displays I'm talking about—what
+absolute beasts, damn it—these
+displays I'm talking about, I've
+written several drivers, I've read
+through the datasets multiple times in
+recent years, and there were those last
+two years when I wasn't working at
+Redis. When I had really dived deep
+into the world of embeddings. So this
+thing here is just as beautiful as
+programming, perhaps in a different way
+, but the flow is there. What is the
+problem? The pauses, the problem is the
+pauses. The pauses that occur between
+when you write to the LLM, to the agent
+, that you want to achieve a certain
+result. Yes, sure, you check for a
+moment that maybe that thing works the
+way you had, let's say, designed and
+how you expressed it in the prompt, but
+in fact then, I don't know, it has to
+churn for a few minutes and what do you
+do in the meantime? I had told you in a
+video long before this one, that the
+way I defend myself against these
+pauses is by doing another activity
+that requires flow in the meantime, for
+example, writing. Lately I've been
+writing little, so this hasn't really
+been happening much. Luckily, I agreed
+to write the preface for a friend's
+book, so now I'm writing this preface
+and I was using these moments to write
+it. Since there are fairly long pauses
+and you're doing something completely
+different, the context switching
+doesn't weigh on me. But, anyway, the
+point is that, as models become much
+faster, almost instantaneous, well,
+obviously there's also the fact that
+they have to replicate these effects on
+the code. But often, unless you're
+crazy enough to use Rust (just kidding
+guys, forgive me for being a bit of a
+jerk, it takes 64 years to compile, eh)
+, otherwise, I mean, the compilation
+cycle of both C and interpreted
+languages—if you program at a high
+level, though less and less, it seems
+to me, and so on, even Go—this cycle
+is very fast, so you see the effects
+very quickly; you can iterate this way.
+Yes, you get into the flow, even if you
+don't write a line of code, you're in
+the flow, but the pauses kill this
+whole thing. Sometimes, obviously, I
+don't know, for example with this
+embedding thing it has to refresh the
+device, but it doesn't really take that
+long to do it. Eh, but yes, when the
+models get faster, this will change.
+There's another issue. Since I use Opus
+3.5. As they say in English, it's anal
+retentive, meaning you practically have
+to pull words out of it with pliers,
+otherwise it won't tell you anything
+until the very end. And in my sessions
+now, I just tell it, "Every time you
+take a significant step, announce it."
+Yes, I consume more tokens, I don't
+give a damn. I need to see, as it moves
+forward, what it's doing, because
+understanding the steps as they happen
+also helps you get into the flow. Not
+only that: it also lets you know if the
+direction taken is wrong and, if so,
+you reprompt it and tell it: "Hey, see,
+this isn't what I wanted, what I was
+interested in, what I was looking for."
+Do this, or rather, do that instead. Eh
+, but also sometimes, for example, in
+this embedding thing, I give it a lot
+of visual feedback. If I know what it's
+doing, I look at what's happening on
+the display and say: "Look, I see
+flickering here, etcetera, etcetera,
+maybe you should try, it could be that,
+I don't know, at a certain MHz the
+protocol loses some information, even
+if it usually works, sometimes it goes
+out of sync, etcetera, etcetera." Ehm,
+obviously besides writing, a very
+interesting activity you can do during
+the pauses while waiting for things to
+run is watching porn, no, just kidding,
+maybe if you want, but it's writing
+code by hand. I was saying that, in my
+opinion, writing code by hand, even if
+it's no longer useful, remains
+beautiful and interesting, and one can
+undertake writing meaningful code
+either to learn more about programming
+or simply to write code that is
+particularly beautiful or interesting,
+so that's how it can be done. I know, I
+know what many of you are thinking,
+that the possibility actually exists to
+carry forward different projects in
+different sessions. This can be done,
+and at that point, you break the flow
+because flow is, by definition, doing
+that thing continuously within the same
+project. If you context switch, you
+lose the flow, but you optimize; you no
+longer have any downtime. In my opinion
+, it's also a bit enough to drive you
+crazy. So, automation should also allow
+us to take a bit of a breather. If we
+then get ourselves into a more
+stressful situation than before, I
+don't know how wise that might be. It's
+something to think about. What?

@@ -1,0 +1,613 @@
+{
+  "cost_is_estimate": true,
+  "cost_usd": 0.0,
+  "duration_seconds": 432.9904875420034,
+  "errors": [],
+  "input_count": 28,
+  "model_calls": [
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-efe07b7d973c",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 31.347991375019774,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19509,
+      "input_tokens": 3549,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 137,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-e1e61ddb7212",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 17.290174375055358,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 21685,
+      "input_tokens": 3999,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 150,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-89a93533d0d3",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 16.953059957828373,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19982,
+      "input_tokens": 3645,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 177,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-691d1b67e8ca",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.549724417040125,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20411,
+      "input_tokens": 3715,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 78,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-92a05f310db2",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 15.25323404185474,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19345,
+      "input_tokens": 3605,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 152,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-ea9d7bf218bc",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 15.537660290952772,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19519,
+      "input_tokens": 3609,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 147,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-5cc5d3b1dfa8",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 15.515051333000883,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20438,
+      "input_tokens": 3772,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 133,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-43b1cfcaf0cc",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.222992791095749,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19168,
+      "input_tokens": 3503,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 124,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-a59172758f2d",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.543425624957308,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 21018,
+      "input_tokens": 3839,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 100,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-9ac6ec3578ce",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.027591832913458,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20460,
+      "input_tokens": 3711,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 106,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-502034346b7e",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 14.998399707954377,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 21287,
+      "input_tokens": 3918,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 123,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-09e98c78bfe8",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 16.333895249990746,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 21732,
+      "input_tokens": 4010,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 137,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-37e977494633",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 14.303970416076481,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19611,
+      "input_tokens": 3694,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 131,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-83334c09e25b",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.488002833910286,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19740,
+      "input_tokens": 3667,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 122,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-9331b995e4d2",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.617057292023674,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19246,
+      "input_tokens": 3617,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 128,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-ec243f8ac800",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 14.274707541102543,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19827,
+      "input_tokens": 3697,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 133,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-6eeea11dd632",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 12.246229375014082,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19255,
+      "input_tokens": 3591,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 107,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-a06373ff98c0",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.41013591713272,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19271,
+      "input_tokens": 3625,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 124,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-00460d10b138",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 17.87340124999173,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20558,
+      "input_tokens": 4005,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 161,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-c2d6f8e4a373",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 18.849833707790822,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20650,
+      "input_tokens": 4058,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 175,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-10fa1cea9bd3",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 14.23266337485984,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20686,
+      "input_tokens": 4028,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 96,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-f73c89e43b40",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 17.926205292111263,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20639,
+      "input_tokens": 3998,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 163,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-ad04c68d8517",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 15.061203958000988,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 20666,
+      "input_tokens": 3955,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 119,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-e1ad1283e314",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 15.500119083095342,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 18854,
+      "input_tokens": 3538,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 165,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-de3c85cfecb0",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.719808875117451,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 18486,
+      "input_tokens": 3429,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 148,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-8d632a647c29",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 10.95857962500304,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 18401,
+      "input_tokens": 3392,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 101,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-e2ba549cebaa",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 14.10841004201211,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19258,
+      "input_tokens": 3625,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 126,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b-461b054f30f6",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 13.275422250153497,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 18396,
+      "input_tokens": 3395,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 136,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 429.41895183105953,
+  "models": [
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    }
+  ],
+  "output_count": 28,
+  "invocation_id": "d2d9b97e-950e-4045-aff6-0c7dddf2a95b",
+  "parent_invocation_id": null,
+  "stage": "select_items",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T19:00:50Z",
+  "finished_at": "2026-10-15T19:08:03Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "errors": [],
+  "input_count": 0,
+  "items": [],
+  "limited_count": 0,
+  "models": [],
+  "output_count": 0,
+  "reconciliations": [],
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2",
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "yt-dlp",
+      "version": "2026.8.19"
+    },
+    {
+      "name": "trafilatura",
+      "version": "2.3.1"
+    }
+  ],
+  "invocation_id": "c49b4e5d-d981-49ae-b247-9fbef9059254",
+  "parent_invocation_id": "66b7bbc6-df95-4a49-b57d-4a584d84c387",
+  "stage": "extract_content",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T03:34:11Z",
+  "finished_at": "2026-10-15T03:34:11Z",
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

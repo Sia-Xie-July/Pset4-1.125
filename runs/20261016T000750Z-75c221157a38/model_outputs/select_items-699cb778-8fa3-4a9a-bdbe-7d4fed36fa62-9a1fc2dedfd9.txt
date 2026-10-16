@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage describes specific updates to HydraFusion and HydraFusion Max, including tailored reasoning effort for different stages of tasks and the use of advanced models for demanding tasks. This directly addresses the central question about changes in coding-agent workflows and what matters to a small team. It provides evidence of new capabilities and operational adjustments that could influence delivery practices, particularly in terms of task specification, reasoning effort, and token efficiency. The material is relevant to the scope of task-level time and token costs, testing and review effort, and scoped permissions.",
+  "piece_ids": ["01", "02", "03"]
+}

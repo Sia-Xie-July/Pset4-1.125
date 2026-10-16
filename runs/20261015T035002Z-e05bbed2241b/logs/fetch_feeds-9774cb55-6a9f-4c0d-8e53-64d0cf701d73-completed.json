@@ -1,0 +1,47 @@
+{
+  "errors": [],
+  "input_count": 4,
+  "limited": true,
+  "output_count": 18,
+  "sources": [
+    {
+      "discovery_limit": 6,
+      "output_count": 6,
+      "source_id": "simon-willison-original-entries",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 3,
+      "output_count": 3,
+      "source_id": "github-copilot-changelog",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 3,
+      "output_count": 3,
+      "source_id": "cloudflare-ai-blog",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 6,
+      "output_count": 6,
+      "source_id": "metr-original-research",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "9774cb55-6a9f-4c0d-8e53-64d0cf701d73",
+  "parent_invocation_id": "e0f2b883-ebcf-4eb2-b2cb-6931372a88ae",
+  "stage": "fetch_feeds",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T03:50:02Z",
+  "finished_at": "2026-10-15T03:50:04Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

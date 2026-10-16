@@ -1,0 +1,276 @@
+1
+00:00:00,600 --> 00:00:04,744
+This is a technical demonstration of Before the Merge, a pipeline
+
+2
+00:00:04,744 --> 00:00:09,271
+that collects recent sources, uses an AI model for editorial decisions,
+
+3
+00:00:09,271 --> 00:00:13,160
+and produces a three part series for technical leads of small
+
+4
+00:00:13,160 --> 00:00:17,432
+software teams deciding how much work to delegate to coding agents.
+
+5
+00:00:19,282 --> 00:00:22,476
+The topic, the sources, the editorial policy and the
+
+6
+00:00:22,476 --> 00:00:26,407
+four model prompts live in their prescribed configuration files.
+
+7
+00:00:26,757 --> 00:00:31,139
+The sources cover RSS feeds, YouTube videos and podcasts, from
+
+8
+00:00:31,139 --> 00:00:35,521
+independent publishers, and every run takes a snapshot of this
+
+9
+00:00:35,521 --> 00:00:39,621
+configuration so later edits never rewrite an earlier run.
+
+10
+00:00:41,471 --> 00:00:45,487
+The entry point is run_local.sh, which sets up
+
+11
+00:00:45,487 --> 00:00:48,980
+the local Ollama model and calls run.sh.
+
+12
+00:00:49,330 --> 00:00:51,485
+Run dot S H only coordinates.
+
+13
+00:00:51,835 --> 00:00:56,579
+It calls the collection workflow, which runs the three collectors, extraction, the
+
+14
+00:00:56,579 --> 00:01:00,686
+evidence store and the thirty day filter, and then the series workflow,
+
+15
+00:01:00,686 --> 00:01:05,083
+which runs selection, briefs, articles, video scripts and the content check.
+
+16
+00:01:05,433 --> 00:01:09,951
+Each of the sixteen required scripts owns one job, reads and writes
+
+17
+00:01:09,951 --> 00:01:13,796
+JSON Lines, and writes a receipt to the run's log folder.
+
+18
+00:01:14,146 --> 00:01:18,007
+Only store.sh opens the SQLite evidence index.
+
+19
+00:01:18,357 --> 00:01:22,472
+The pipeline stops at awaiting review, and packaging happens only
+
+20
+00:01:22,472 --> 00:01:26,144
+after a human approval that matches the current review_id.
+
+21
+00:01:27,993 --> 00:01:32,642
+The first live run, on the fifteenth of October, found twenty eight eligible
+
+22
+00:01:32,642 --> 00:01:37,658
+items, eighteen written, five podcast and five YouTube, from ten publisher groups.
+
+23
+00:01:38,007 --> 00:01:41,755
+The model accepted twenty five, rejected two and deferred one,
+
+24
+00:01:41,755 --> 00:01:45,261
+then wrote three briefs, three articles and three scripts.
+
+25
+00:01:45,611 --> 00:01:48,113
+The content check passed, I reviewed the drafts,
+
+26
+00:01:48,113 --> 00:01:50,667
+wrote the approval, and the package was produced.
+
+27
+00:01:52,517 --> 00:01:55,461
+Here is one published claim traced back to its evidence.
+
+28
+00:01:55,811 --> 00:02:01,123
+Article one quotes Jake Cukjati saying the agents test everything and implement it.
+
+29
+00:02:01,473 --> 00:02:07,029
+The brief records that as claim 01-c1, a source claim, pointing
+
+30
+00:02:07,029 --> 00:02:12,673
+to the YouTube item, an exact version hash and segment s-000096.
+
+31
+00:02:13,023 --> 00:02:17,119
+The decisions file shows the item was accepted for pieces one and two.
+
+32
+00:02:17,469 --> 00:02:20,874
+The stored version shows the original publication date, the
+
+33
+00:02:20,874 --> 00:02:23,933
+ninth of October, separately from the retrieval date.
+
+34
+00:02:24,283 --> 00:02:26,691
+And the retained transcript gives the exact
+
+35
+00:02:26,691 --> 00:02:28,763
+words at six minutes and ten seconds.
+
+36
+00:02:30,613 --> 00:02:32,735
+The second live run used the next
+
+37
+00:02:32,735 --> 00:02:35,114
+UTC date and the same evidence store.
+
+38
+00:02:35,464 --> 00:02:38,651
+Twenty items were recognised as unchanged and were not
+
+39
+00:02:38,651 --> 00:02:41,779
+processed again, and there were no duplicate records.
+
+40
+00:02:42,129 --> 00:02:47,101
+Three items published on the fifteenth were detected as new: two GitHub changelog
+
+41
+00:02:47,101 --> 00:02:51,644
+posts, which the model accepted, and a Cloudflare post, which it deferred.
+
+42
+00:02:51,994 --> 00:02:55,248
+The thirty day window moved by one day, but the oldest
+
+43
+00:02:55,248 --> 00:02:59,226
+item is from the nineteenth of September, so nothing was excluded.
+
+44
+00:03:01,076 --> 00:03:04,532
+The system also reports failures instead of hiding them.
+
+45
+00:03:04,882 --> 00:03:10,386
+In an earlier collection attempt, the GitHub feed contained XML the parser rejected.
+
+46
+00:03:10,736 --> 00:03:13,478
+The feed collector exited with an error, the run
+
+47
+00:03:13,478 --> 00:03:17,136
+was marked incomplete, and the other collectors still completed.
+
+48
+00:03:17,486 --> 00:03:20,437
+After the parser was fixed, the retry was recorded
+
+49
+00:03:20,437 --> 00:03:23,566
+separately and the original failure receipt was kept.
+
+50
+00:03:23,916 --> 00:03:27,682
+A labelled replay of the saved inputs produced no new and no
+
+51
+00:03:27,682 --> 00:03:32,641
+changed items, which shows the store handles repeated input without duplicates.
+
+52
+00:03:34,491 --> 00:03:37,834
+I reviewed three accepted and three rejected or deferred
+
+53
+00:03:37,834 --> 00:03:41,595
+decisions against the source passages, and disagreed with four.
+
+54
+00:03:41,945 --> 00:03:47,496
+One correction mattered most: a brief presented a sponsor advertisement for Blitzy,
+
+55
+00:03:47,496 --> 00:03:52,846
+claiming 80% of software epics are delivered autonomously, as a podcast finding.
+
+56
+00:03:53,196 --> 00:03:55,522
+I relabelled it as an advertisement.
+
+57
+00:03:55,872 --> 00:04:00,096
+I then revised the policy and reran selection on the same items.
+
+58
+00:04:00,446 --> 00:04:04,853
+The policy changed the counts, but it did not reliably fix the reviewed
+
+59
+00:04:04,853 --> 00:04:08,702
+cases, and run two even repeated a vendor claim I had removed.
+
+60
+00:04:09,052 --> 00:04:10,801
+So run two was not published.
+
+61
+00:04:11,151 --> 00:04:16,207
+The real bottleneck is excerpt retrieval, and human review remains a required step.
+
+62
+00:04:18,057 --> 00:04:21,318
+The main architectural tradeoff is immutable, content
+
+63
+00:04:21,318 --> 00:04:24,457
+addressed evidence behind a single store interface.
+
+64
+00:04:24,807 --> 00:04:28,316
+It costs extra storage and validation, and conservative
+
+65
+00:04:28,316 --> 00:04:31,762
+identity matching leaves some copies for human review.
+
+66
+00:04:32,112 --> 00:04:36,123
+In return, every published claim can be traced to the exact passage
+
+67
+00:04:36,123 --> 00:04:40,794
+that supported it, and running the pipeline again does not duplicate anything.
+
+68
+00:04:41,144 --> 00:04:45,027
+The three articles and their videos are published and linked to each other.
+
+69
+00:04:45,377 --> 00:04:46,721
+Thank you for watching.
+

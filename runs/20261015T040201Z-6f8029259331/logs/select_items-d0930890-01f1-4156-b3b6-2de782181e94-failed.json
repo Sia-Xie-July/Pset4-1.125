@@ -1,0 +1,44 @@
+{
+  "cost_is_estimate": false,
+  "cost_usd": null,
+  "duration_seconds": 4.612258875044063,
+  "errors": [
+    "Model request failed (network, access or provider error)"
+  ],
+  "input_count": 27,
+  "model_calls": [
+    {
+      "duration_seconds": 1.3807357089826837,
+      "estimated_cost_usd": null,
+      "input_tokens": null,
+      "input_usd_per_million": 0.75,
+      "model": "gpt-5.4-mini",
+      "output_tokens": null,
+      "output_usd_per_million": 4.5,
+      "provider": "openai_compatible",
+      "request_attempted": true,
+      "status": "failed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 1.3807357089826837,
+  "models": [
+    {
+      "name": "gpt-5.4-mini",
+      "provider": "openai_compatible"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "d0930890-01f1-4156-b3b6-2de782181e94",
+  "parent_invocation_id": "b76ca0b9-9e80-442f-bc9f-b1ef21a5d023",
+  "stage": "select_items",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T04:16:16Z",
+  "finished_at": "2026-10-15T04:16:21Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

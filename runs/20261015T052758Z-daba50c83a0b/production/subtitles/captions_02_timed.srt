@@ -1,0 +1,467 @@
+1
+00:00:00,000 --> 00:00:02,320
+Welcome to Before the Merge. This
+
+2
+00:00:02,320 --> 00:00:04,279
+is episode two, The Review
+
+3
+00:00:04,279 --> 00:00:06,359
+Bottleneck. For small software
+
+4
+00:00:06,359 --> 00:00:08,440
+teams, which claims about coding
+
+5
+00:00:08,440 --> 00:00:11,080
+agent productivity survive scrutiny.
+
+6
+00:00:11,080 --> 00:00:12,519
+Our evidence is current as of
+
+7
+00:00:12,519 --> 00:00:15,240
+October 15th, 2026. This
+
+8
+00:00:15,240 --> 00:00:17,439
+presentation uses an AI generated
+
+9
+00:00:17,439 --> 00:00:18,708
+presenter and voice.
+
+10
+00:00:18,708 --> 00:00:20,748
+In episode one, we examined
+
+11
+00:00:20,748 --> 00:00:23,027
+structured workflows. Now we turn
+
+12
+00:00:23,027 --> 00:00:24,828
+to a different question. What kind
+
+13
+00:00:24,828 --> 00:00:26,948
+of evidence would justify believing
+
+14
+00:00:26,948 --> 00:00:29,148
+that those workflows save effort?
+
+15
+00:00:29,148 --> 00:00:31,227
+Our argument is that three things
+
+16
+00:00:31,227 --> 00:00:33,347
+must stay separate. A description
+
+17
+00:00:33,347 --> 00:00:35,308
+of what a tool does, a commercial
+
+18
+00:00:35,308 --> 00:00:37,308
+performance claim and a measured
+
+19
+00:00:37,308 --> 00:00:39,428
+outcome for a team. Treating them
+
+20
+00:00:39,428 --> 00:00:41,227
+as interchangeable makes adoption
+
+21
+00:00:41,227 --> 00:00:42,988
+decisions harder to defend.
+
+22
+00:00:43,188 --> 00:00:45,709
+Start with the podcast HTML All
+
+23
+00:00:45,709 --> 00:00:47,869
+The Things and its episode AI
+
+24
+00:00:47,869 --> 00:00:49,748
+Basics For Developers. In the
+
+25
+00:00:49,748 --> 00:00:52,588
+opening 47 seconds, the hosts
+
+26
+00:00:52,588 --> 00:00:54,668
+describe a rapidly changing tool
+
+27
+00:00:54,668 --> 00:00:56,548
+landscape, then turn to working
+
+28
+00:00:56,548 --> 00:00:58,029
+with those tools without giving up
+
+29
+00:00:58,029 --> 00:00:59,989
+control of the code base. This is
+
+30
+00:00:59,989 --> 00:01:02,268
+useful practitioner framing. It
+
+31
+00:01:02,268 --> 00:01:04,108
+identifies the integration problem
+
+32
+00:01:04,108 --> 00:01:06,348
+facing developers. It is not a
+
+33
+00:01:06,348 --> 00:01:08,348
+controlled productivity study and
+
+34
+00:01:08,348 --> 00:01:10,069
+we should not cite it as one.
+
+35
+00:01:10,070 --> 00:01:12,390
+The second source is The AI Daily
+
+36
+00:01:12,390 --> 00:01:14,630
+Brief episode How to Go from AI
+
+37
+00:01:14,630 --> 00:01:17,030
+Power User to AI Leader. Around
+
+38
+00:01:17,030 --> 00:01:18,830
+22 minutes and 2 seconds through
+
+39
+00:01:18,830 --> 00:01:20,990
+22 minutes and 40 seconds, the
+
+40
+00:01:20,990 --> 00:01:22,669
+retained transcript contains
+
+41
+00:01:22,669 --> 00:01:25,110
+promotional language about Blitzy.
+
+42
+00:01:25,110 --> 00:01:26,790
+The passage describes codebase
+
+43
+00:01:26,790 --> 00:01:28,349
+understanding and claims that the
+
+44
+00:01:28,349 --> 00:01:30,589
+product delivers more than 80% of
+
+45
+00:01:30,589 --> 00:01:32,950
+software epics autonomously. That
+
+46
+00:01:32,950 --> 00:01:34,349
+number is a claim in the source,
+
+47
+00:01:34,349 --> 00:01:36,070
+not a result verified by this
+
+48
+00:01:36,070 --> 00:01:36,950
+project.
+
+49
+00:01:36,951 --> 00:01:38,871
+Before using that percentage in a
+
+50
+00:01:38,871 --> 00:01:41,230
+decision, ask what the denominator
+
+51
+00:01:41,230 --> 00:01:44,191
+includes. How are epics selected?
+
+52
+00:01:44,191 --> 00:01:46,351
+What counted as completion? How
+
+53
+00:01:46,351 --> 00:01:48,550
+much human planning, review and
+
+54
+00:01:48,550 --> 00:01:50,710
+correction remained? Were failed
+
+55
+00:01:50,710 --> 00:01:52,271
+attempts included?
+
+56
+00:01:52,271 --> 00:01:53,911
+The retained passage does not
+
+57
+00:01:53,911 --> 00:01:55,751
+answer these questions, that does
+
+58
+00:01:55,751 --> 00:01:57,990
+not prove the product cannot help.
+
+59
+00:01:57,990 --> 00:01:59,551
+It means this excerpt cannot
+
+60
+00:01:59,551 --> 00:02:01,310
+establish the size of the benefit
+
+61
+00:02:01,310 --> 00:02:02,751
+for our audience.
+
+62
+00:02:02,912 --> 00:02:04,191
+The third source is Jake
+
+63
+00:02:04,191 --> 00:02:07,272
+Cukjati's AIMUG presentation, The
+
+64
+00:02:07,272 --> 00:02:08,832
+Coding Factory.
+
+65
+00:02:08,832 --> 00:02:11,072
+Around 6 minutes and 17 seconds
+
+66
+00:02:11,072 --> 00:02:13,511
+through 6 minutes and 54 seconds,
+
+67
+00:02:13,511 --> 00:02:15,072
+he describes working with one
+
+68
+00:02:15,072 --> 00:02:17,152
+agent at a time and using a test
+
+69
+00:02:17,152 --> 00:02:19,392
+harness including integration and
+
+70
+00:02:19,392 --> 00:02:20,912
+end-to-end checks.
+
+71
+00:02:20,912 --> 00:02:22,472
+This is more concrete about
+
+72
+00:02:22,472 --> 00:02:24,392
+process than a broad promise of
+
+73
+00:02:24,392 --> 00:02:26,351
+autonomy, but a description of
+
+74
+00:02:26,351 --> 00:02:28,152
+testing still does not measure
+
+75
+00:02:28,152 --> 00:02:30,072
+review burden or defects after
+
+76
+00:02:30,072 --> 00:02:31,032
+deployment.
+
+77
+00:02:31,033 --> 00:02:32,992
+The sources are not three
+
+78
+00:02:32,992 --> 00:02:34,712
+independent confirmations of one
+
+79
+00:02:34,712 --> 00:02:37,073
+productivity result. They contribute
+
+80
+00:02:37,073 --> 00:02:39,233
+different evidence. A practitioner
+
+81
+00:02:39,233 --> 00:02:40,953
+concern about control, a
+
+82
+00:02:40,953 --> 00:02:43,313
+promotional performance claim and a
+
+83
+00:02:43,313 --> 00:02:46,073
+workflow description. Our synthesis
+
+84
+00:02:46,073 --> 00:02:47,633
+is that a team should ask where
+
+85
+00:02:47,633 --> 00:02:49,913
+verification work goes, not just
+
+86
+00:02:49,913 --> 00:02:51,392
+whether an agent performs a
+
+87
+00:02:51,392 --> 00:02:53,913
+verification step. Work can move
+
+88
+00:02:53,913 --> 00:02:56,193
+from writing code to specifying
+
+89
+00:02:56,193 --> 00:02:58,552
+tasks, interpreting tests or
+
+90
+00:02:58,552 --> 00:03:00,353
+correcting plausible mistakes.
+
+91
+00:03:00,634 --> 00:03:02,154
+A practical scorecard would
+
+92
+00:03:02,154 --> 00:03:04,194
+therefore include human time across
+
+93
+00:03:04,194 --> 00:03:06,713
+the whole task, accepted changes,
+
+94
+00:03:06,713 --> 00:03:09,354
+rework and defects found later.
+
+95
+00:03:09,354 --> 00:03:11,514
+Keep the task boundary clear and
+
+96
+00:03:11,514 --> 00:03:13,674
+compare with a reasonable baseline.
+
+97
+00:03:13,674 --> 00:03:15,834
+These are evaluation suggestions,
+
+98
+00:03:15,834 --> 00:03:16,994
+not measurements made in this
+
+99
+00:03:16,994 --> 00:03:17,714
+series.
+
+100
+00:03:22,681 --> 00:03:25,161
+The limitation is equally important.
+
+101
+00:03:25,161 --> 00:03:27,241
+We reviewed selected passages, not
+
+102
+00:03:27,241 --> 00:03:29,321
+a complete empirical survey.
+
+103
+00:03:29,321 --> 00:03:30,801
+Missing measurements here do not
+
+104
+00:03:30,801 --> 00:03:32,481
+show that all coding agents are
+
+105
+00:03:32,481 --> 00:03:34,681
+ineffective and a small team's
+
+106
+00:03:34,681 --> 00:03:36,280
+pilot will not settle the question
+
+107
+00:03:36,280 --> 00:03:38,200
+for every organization. The
+
+108
+00:03:38,200 --> 00:03:40,441
+defensible conclusion is narrower.
+
+109
+00:03:40,441 --> 00:03:42,161
+These excerpts explain practices
+
+110
+00:03:42,161 --> 00:03:43,641
+and promises, but do not
+
+111
+00:03:43,641 --> 00:03:45,561
+independently quantify a delivery
+
+112
+00:03:45,561 --> 00:03:46,601
+improvement.
+
+113
+00:03:46,602 --> 00:03:49,281
+Before expanding autonomy, ask who
+
+114
+00:03:49,281 --> 00:03:50,881
+checks the result and what counts
+
+115
+00:03:50,881 --> 00:03:53,521
+as success. In episode 3, we turn
+
+116
+00:03:53,521 --> 00:03:55,002
+those questions into a small
+
+117
+00:03:55,002 --> 00:03:57,242
+reversible evaluation plan.

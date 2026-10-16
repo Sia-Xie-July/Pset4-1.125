@@ -1,0 +1,17 @@
+Welcome to Before the Merge, a series for small software teams evaluating coding agents. This is episode one: More Agent Output, Better Delivery? Our evidence is current as of October fifteenth, twenty twenty-six. This presentation uses an AI-generated voice.
+
+The central question is not whether an agent can produce code. It is what a team should change when agents can participate in planning, implementation, and verification. The important development in these sources is a more structured way of organizing agent work. A workflow demonstration, however, is not a measured improvement in software delivery.
+
+Our first source is Jake Cukjati's AIMUG presentation, The Coding Factory. Around five minutes and forty-two seconds, he describes taking a specification into implementation planning. By roughly six minutes and eleven seconds, he says the agents test and implement the work. That is a practitioner's description of a process. It does not establish that his team spends less time reviewing, or that fewer defects reach users. Those are separate outcomes requiring separate evidence.
+
+The practical distinction is important. A specification can make the intended result visible. A test can check some of that result. Neither guarantees that the specification is complete or that the test asks the right question. A team still needs someone responsible for deciding what acceptable behavior means, including failure cases and the consequences of a mistake.
+
+Our second source is Salvatore Sanfilippo's video about his approach to automatic programming. Around three minutes and three seconds, the retained translated captions lead into a discussion of interacting with an agent through design, code, verification, and small changes. The contrast is with treating success as a matter of writing one perfect prompt. This is an iterative process, not a single handoff. Because our evidence uses translated captions, wording and interpretation remain a limitation.
+
+Our third source is The Modern SDE's discussion of agent categories. Around thirty-seven seconds, the speaker groups agents according to what they do. We use that distinction narrowly: before evaluating an agent, define its job. An assistant that suggests a change and a system that executes a task should not automatically receive the same permissions or be evaluated by the same standard. That comparison is our interpretation, not a measured result from the video.
+
+Putting these sources together gives us a useful framework: define the task, make the intended behavior explicit, and preserve opportunities to inspect the work. The contribution is the connection between task definition, specifications, and iteration. It is not proof that a particular tool improves quality.
+
+For example, a team might try one bounded maintenance task. Before starting, describe expected behavior and who will review the change. During the work, keep the proposed code and test results visible. Afterwards, record review time, corrections, and unresolved risks. This is a proposed evaluation, not an experiment we conducted.
+
+There is a counterargument: adding checkpoints can itself consume time. That is why the next decision should be reversible and measured, rather than a blanket expansion of autonomy. More generated code is not the same as better delivery. These three sources help frame a workflow to evaluate; they do not settle whether it pays off. In episode two, we examine the difference between a productivity claim and evidence that supports it.

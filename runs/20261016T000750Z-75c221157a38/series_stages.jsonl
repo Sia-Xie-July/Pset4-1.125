@@ -1,0 +1,5 @@
+{"stage":"editorial/select_items","exit_code":0,"output_path":"runs/20261016T000750Z-75c221157a38/decisions.jsonl"}
+{"stage":"editorial/create_briefs","exit_code":0,"output_path":"runs/20261016T000750Z-75c221157a38/briefs.jsonl"}
+{"stage":"content/write_articles","exit_code":0,"output_path":"runs/20261016T000750Z-75c221157a38/articles.jsonl"}
+{"stage":"content/write_video_scripts","exit_code":0,"output_path":"runs/20261016T000750Z-75c221157a38/video_scripts.jsonl"}
+{"stage":"review/check_content","exit_code":0,"output_path":"review.json"}

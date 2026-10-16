@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The candidate provides relevant excerpts about coding agents reading repositories, editing code, and the nature of code as text, which are directly tied to the central question about changes in coding-agent workflows and their impact on small teams. These excerpts support the piece ID 01, which focuses on what changed in coding-agent workflows and what matters to a small team. The content is newly reported and relevant to task specification and agent context, but lacks detailed measurement or outcome data.",
+  "piece_ids": ["01"]
+}

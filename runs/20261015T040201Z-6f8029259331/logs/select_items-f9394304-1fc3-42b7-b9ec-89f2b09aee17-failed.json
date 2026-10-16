@@ -1,0 +1,44 @@
+{
+  "cost_is_estimate": false,
+  "cost_usd": null,
+  "duration_seconds": 4.183299750089645,
+  "errors": [
+    "Model request failed (HTTP 400): Input tokens exceed the configured limit of 272000 tokens. Your messages resulted in 278385 tokens. Please reduce the length of the messages."
+  ],
+  "input_count": 27,
+  "model_calls": [
+    {
+      "duration_seconds": 0.9252493749372661,
+      "estimated_cost_usd": null,
+      "input_tokens": null,
+      "input_usd_per_million": 0.75,
+      "model": "gpt-5.4-mini",
+      "output_tokens": null,
+      "output_usd_per_million": 4.5,
+      "provider": "openai_compatible",
+      "request_attempted": true,
+      "status": "failed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 0.9252493749372661,
+  "models": [
+    {
+      "name": "gpt-5.4-mini",
+      "provider": "openai_compatible"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "f9394304-1fc3-42b7-b9ec-89f2b09aee17",
+  "parent_invocation_id": "8f54183a-88da-4219-bd0c-55fd528179c6",
+  "stage": "select_items",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T04:17:46Z",
+  "finished_at": "2026-10-15T04:17:50Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

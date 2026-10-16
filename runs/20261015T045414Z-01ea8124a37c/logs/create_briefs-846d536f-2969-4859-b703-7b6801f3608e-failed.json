@@ -1,0 +1,45 @@
+{
+  "cost_is_estimate": false,
+  "cost_usd": null,
+  "duration_seconds": 50.350124999997206,
+  "errors": [
+    "Coverage claim conflicts with the same claim ID"
+  ],
+  "input_count": 28,
+  "model_calls": [
+    {
+      "duration_seconds": 46.815288666985,
+      "estimated_cost_usd": null,
+      "input_tokens": 232824,
+      "input_usd_per_million": null,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "output_tokens": 9135,
+      "output_usd_per_million": null,
+      "provider": "openai_compatible",
+      "request_attempted": true,
+      "requested_model": "gpt-5.4-mini",
+      "status": "completed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 46.815288666985,
+  "models": [
+    {
+      "name": "gpt-5.4-mini-2026-03-17",
+      "provider": "openai_compatible"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "846d536f-2969-4859-b703-7b6801f3608e",
+  "parent_invocation_id": null,
+  "stage": "create_briefs",
+  "status": "failed",
+  "exit_code": 2,
+  "started_at": "2026-10-15T04:56:41Z",
+  "finished_at": "2026-10-15T04:57:32Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

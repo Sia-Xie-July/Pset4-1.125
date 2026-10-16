@@ -1,0 +1,47 @@
+{
+  "errors": [],
+  "input_count": 4,
+  "limited": true,
+  "output_count": 4,
+  "sources": [
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "amp-thorsten-workflow-october-2026",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "antirez-flow-experience-october-2026",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "antirez-automated-programming-october-2026",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "aimug-coding-factory-october-2026",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "b633012f-1ae7-49c9-912f-3aad0e4342b6",
+  "parent_invocation_id": "2a059860-0e36-41a6-9df7-86db43ee7c26",
+  "stage": "fetch_youtube",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T05:26:49Z",
+  "finished_at": "2026-10-15T05:26:55Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

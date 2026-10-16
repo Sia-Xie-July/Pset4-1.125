@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage provides specific guidance on what evidence is required to assess the reliability of claims about AI coding agents' impact on delivery workflows. It addresses the central question by emphasizing the need for measurable inputs and outputs, precise timeframes, and breakdowns by team or domain. This directly informs piece 01 (what changed in workflows) and piece 02 (which claims survive scrutiny). The material is relevant to small teams as it outlines practical evaluation criteria for adopting AI agents.",
+  "piece_ids": ["01", "02"]
+}

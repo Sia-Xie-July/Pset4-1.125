@@ -1,0 +1,5 @@
+{
+  "decision": "reject",
+  "reason": "The candidate provides no new, relevant, or measurable evidence about coding-agent workflows, efficiency, quality, or autonomy claims. It discusses consumer agents and Gemini 4 Argon but lacks task-level outcomes, testing effort, or team-specific implications. The content is speculative and does not meet the criteria for relevance or credibility under the editorial policy. No passage addresses the central question about changes in delivery practices or evidence required for autonomy expansion.",
+  "piece_ids": []
+}

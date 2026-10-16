@@ -1,0 +1,16 @@
+Before the Merge, Episode 1: More Agent Output, Better Delivery? What Changed This Month
+
+For technical leads of 3–10-person software teams deciding how much work to delegate to coding agents.
+
+Read the article (sources, exact versions and full references): [SUBSTACK ARTICLE URL]
+
+Evidence as of 2026-10-15 (UTC). Sources cited in this video:
+- The coding factory: canonical specs and sequential agents | Jake Cukjati | AIMUG Oct 2026 (youtube, 2026-10-09), 5:41–6:15: https://www.youtube.com/watch?v=-65TrkDP1jY&t=341
+- Il mio approccio alla programmazione automatica (youtube, 2026-10-07), 3:03–3:27: https://www.youtube.com/watch?v=9h-Way-APlM&t=183
+- Types of AI Agents in 2026 and Choosing a Model | Building Applications with AI Agents L2 (youtube, 2026-10-13), 0:37–0:56: https://www.youtube.com/watch?v=zEl-wKCBrmQ&t=37
+
+Statements in this video are labelled as source claims or as our interpretation. A sponsor advertisement or vendor announcement is a claim, not a verified result. Any evaluation plan described is a proposal, not an experiment we ran.
+
+AI disclosure: the presenter and voice are AI-generated (Google Vids). The script was drafted with AI assistance from the cited sources and reviewed by the author.
+
+Series: Episode 1 [URL] · Episode 2 [URL] · Episode 3 [URL]

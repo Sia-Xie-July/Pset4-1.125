@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses the practical use of coding agents in a design and verification process, highlighting the need for a structured approach beyond simple prompts. It provides insight into how coding agents can be integrated into workflows, which is relevant to the central question about changes in delivery practices. The content supports piece 01 by showing what changed in workflows and piece 02 by addressing efficiency and autonomy claims. The most material limitation is the lack of quantitative evidence on productivity or cost savings.",
+  "piece_ids": ["01", "02"]
+}

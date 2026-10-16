@@ -1,0 +1,7 @@
+{
+  "decision": "accept",
+  "reason": "The podcast excerpt provides a first-person account of how AI is being used in coding workflows, highlighting the balance between speed and quality. It directly addresses the central question of whether recent changes in AI coding agents justify altering a small team's delivery practices. The content is relevant to the audience's focus on task specification, testing, and delivery outcomes, and it introduces a practical perspective on the trade-offs between autonomy and verification effort. The excerpt lacks a detailed measurement of outcomes, but it offers a concrete example of how AI is being integrated into workflows, which is useful for the 'What changed in coding-agent workflows' piece.",
+  "piece_ids": [
+    "01"
+  ]
+}

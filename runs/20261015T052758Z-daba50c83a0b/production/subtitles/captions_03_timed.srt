@@ -1,0 +1,503 @@
+1
+00:00:00,320 --> 00:00:02,480
+Welcome to Before the Merge. This is
+
+2
+00:00:02,480 --> 00:00:04,680
+episode three, Before You Expand
+
+3
+00:00:04,680 --> 00:00:05,360
+Autonomy.
+
+4
+00:00:05,840 --> 00:00:08,040
+What should a small software team test
+
+5
+00:00:08,040 --> 00:00:08,680
+next?
+
+6
+00:00:09,080 --> 00:00:11,040
+Our evidence is current as of October
+
+7
+00:00:11,040 --> 00:00:12,880
+15th, 2026.
+
+8
+00:00:13,280 --> 00:00:15,520
+This presentation uses an AI generated
+
+9
+00:00:15,520 --> 00:00:16,840
+presenter and voice.
+
+10
+00:00:16,970 --> 00:00:19,369
+The first episode separated workflow
+
+11
+00:00:19,369 --> 00:00:21,050
+demonstrations from delivery
+
+12
+00:00:21,050 --> 00:00:23,249
+outcomes. The second separated
+
+13
+00:00:23,249 --> 00:00:24,729
+commercial claims from measured
+
+14
+00:00:24,729 --> 00:00:25,890
+evidence.
+
+15
+00:00:25,890 --> 00:00:28,170
+Our final argument is practical.
+
+16
+00:00:28,170 --> 00:00:30,649
+New tools create options, but a
+
+17
+00:00:30,649 --> 00:00:32,930
+decision to grant more autonomy
+
+18
+00:00:32,930 --> 00:00:34,249
+should depend on a bounded
+
+19
+00:00:34,249 --> 00:00:36,810
+evaluation of the team's own work.
+
+20
+00:00:36,810 --> 00:00:38,530
+The evaluation plan in this video
+
+21
+00:00:38,530 --> 00:00:40,810
+is our proposal, not an experiment
+
+22
+00:00:40,810 --> 00:00:42,530
+we have already conducted.
+
+23
+00:00:42,851 --> 00:00:44,651
+Three written sources frame that
+
+24
+00:00:44,651 --> 00:00:47,211
+proposal. First, GitHub's October
+
+25
+00:00:47,211 --> 00:00:50,011
+13th announcement, Gemini 4 Argon
+
+26
+00:00:50,011 --> 00:00:52,090
+in GitHub Copilot, states that the
+
+27
+00:00:52,090 --> 00:00:53,851
+model is available to specified
+
+28
+00:00:53,851 --> 00:00:55,771
+Copilot plans and can be selected
+
+29
+00:00:55,771 --> 00:00:57,410
+in the model picker. That is
+
+30
+00:00:57,410 --> 00:00:59,730
+evidence of an available option.
+
+31
+00:00:59,730 --> 00:01:01,650
+Availability does not by itself
+
+32
+00:01:01,650 --> 00:01:03,730
+demonstrate faster delivery, fewer
+
+33
+00:01:03,730 --> 00:01:06,371
+defects or less human review. We
+
+34
+00:01:06,371 --> 00:01:07,730
+do not treat the announcement as
+
+35
+00:01:07,730 --> 00:01:09,210
+an independent measurement of those
+
+36
+00:01:09,210 --> 00:01:10,051
+outcomes.
+
+37
+00:01:10,251 --> 00:01:12,612
+Second, Cloudflare's Birthday Week
+
+38
+00:01:12,612 --> 00:01:15,811
+2026 Roundup reports that automated
+
+39
+00:01:15,811 --> 00:01:18,452
+traffic surpassed human activity
+
+40
+00:01:18,452 --> 00:01:20,092
+and describes the influence of
+
+41
+00:01:20,092 --> 00:01:22,332
+agent driven recommendations.
+
+42
+00:01:22,332 --> 00:01:23,851
+This is a vendor's account of a
+
+43
+00:01:23,851 --> 00:01:26,532
+broader agent ecosystem. It helps
+
+44
+00:01:26,532 --> 00:01:28,572
+explain why teams face more agent
+
+45
+00:01:28,572 --> 00:01:30,732
+related choices, but the passage
+
+46
+00:01:30,732 --> 00:01:32,372
+retained for this piece does not
+
+47
+00:01:32,372 --> 00:01:34,532
+measure coding productivity.
+
+48
+00:01:34,532 --> 00:01:35,772
+We should not turn a statement
+
+49
+00:01:35,772 --> 00:01:37,532
+about internet activity into a
+
+50
+00:01:37,532 --> 00:01:38,892
+claim about a software team's
+
+51
+00:01:38,892 --> 00:01:39,972
+performance.
+
+52
+00:01:39,973 --> 00:01:43,892
+Third, METR's October 14th article,
+
+53
+00:01:43,892 --> 00:01:45,653
+Our Approach to Working with AI
+
+54
+00:01:45,653 --> 00:01:47,892
+Companies, describes its goal of
+
+55
+00:01:47,892 --> 00:01:49,933
+producing accurate, timely,
+
+56
+00:01:49,933 --> 00:01:51,893
+independent evidence about loss of
+
+57
+00:01:51,893 --> 00:01:54,173
+control risk. It emphasizes
+
+58
+00:01:54,173 --> 00:01:56,453
+collecting concrete evidence and
+
+59
+00:01:56,453 --> 00:01:58,573
+publishing findings while noting
+
+60
+00:01:58,573 --> 00:02:01,012
+that some questions remain open.
+
+61
+00:02:01,012 --> 00:02:03,133
+Its subject is risk assessment,
+
+62
+00:02:03,133 --> 00:02:04,613
+not a direct evaluation of our
+
+63
+00:02:04,613 --> 00:02:06,533
+development team. We borrow the
+
+64
+00:02:06,533 --> 00:02:08,652
+principle of explicit evidence
+
+65
+00:02:08,652 --> 00:02:10,012
+while keeping that difference in
+
+66
+00:02:10,012 --> 00:02:11,253
+scope visible.
+
+67
+00:02:11,534 --> 00:02:13,014
+Together, the three sources
+
+68
+00:02:13,014 --> 00:02:15,334
+distinguish an available capability,
+
+69
+00:02:15,334 --> 00:02:17,494
+an ecosystem narrative and an
+
+70
+00:02:17,494 --> 00:02:19,294
+evaluation principle.
+
+71
+00:02:19,294 --> 00:02:21,174
+Our contribution is to translate
+
+72
+00:02:21,174 --> 00:02:22,454
+those distinctions into a
+
+73
+00:02:22,454 --> 00:02:24,694
+reversible decision process. The
+
+74
+00:02:24,694 --> 00:02:26,053
+right question is not simply
+
+75
+00:02:26,053 --> 00:02:28,134
+whether a new model is impressive.
+
+76
+00:02:28,134 --> 00:02:29,894
+It is whether a particular use
+
+77
+00:02:29,894 --> 00:02:32,293
+improves an outcome we care about
+
+78
+00:02:32,293 --> 00:02:34,094
+at an acceptable cost and level
+
+79
+00:02:34,094 --> 00:02:34,974
+of risk.
+
+80
+00:02:39,535 --> 00:02:42,735
+Step one is to choose a bounded task with
+
+81
+00:02:42,735 --> 00:02:44,895
+observable acceptance criteria.
+
+82
+00:02:45,375 --> 00:02:47,015
+Avoid starting with a change whose
+
+83
+00:02:47,015 --> 00:02:49,015
+failure would be difficult to detect or
+
+84
+00:02:49,015 --> 00:02:49,655
+reverse.
+
+85
+00:02:50,095 --> 00:02:52,455
+State what the agent may do, what it may
+
+86
+00:02:52,455 --> 00:02:53,215
+not do,
+
+87
+00:02:53,615 --> 00:02:55,775
+and who remains responsible for approval.
+
+88
+00:02:55,824 --> 00:02:58,344
+Step two is to define a comparison
+
+89
+00:02:58,344 --> 00:03:00,304
+before seeing the result. Use
+
+90
+00:03:00,304 --> 00:03:02,103
+similar work where possible and
+
+91
+00:03:02,103 --> 00:03:03,504
+record differences that make the
+
+92
+00:03:03,504 --> 00:03:05,944
+comparison imperfect. Count time
+
+93
+00:03:05,944 --> 00:03:08,463
+spent specifying, reviewing, testing
+
+94
+00:03:08,463 --> 00:03:10,304
+and correcting, not just time
+
+95
+00:03:10,304 --> 00:03:12,384
+until the first code appears. Keep
+
+96
+00:03:12,384 --> 00:03:13,863
+tool use and cost visible as
+
+97
+00:03:13,863 --> 00:03:14,384
+well.
+
+98
+00:03:18,391 --> 00:03:21,030
+Step three is to inspect outcomes.
+
+99
+00:03:21,030 --> 00:03:22,391
+Did the change satisfy the
+
+100
+00:03:22,391 --> 00:03:25,111
+intended behavior? What defects or
+
+101
+00:03:25,111 --> 00:03:27,151
+rework appeared? Did reviewers
+
+102
+00:03:27,151 --> 00:03:28,511
+understand the change well enough
+
+103
+00:03:28,511 --> 00:03:30,591
+to maintain it? A fast first
+
+104
+00:03:30,591 --> 00:03:32,071
+draft that creates substantial
+
+105
+00:03:32,071 --> 00:03:33,790
+later work may not be a delivery
+
+106
+00:03:33,790 --> 00:03:34,711
+improvement.
+
+107
+00:03:42,271 --> 00:03:44,432
+Finally, decide in advance what
+
+108
+00:03:44,432 --> 00:03:46,871
+would justify expanding, repeating
+
+109
+00:03:46,871 --> 00:03:49,232
+or stopping the pilot. A positive
+
+110
+00:03:49,232 --> 00:03:50,832
+result on one task supports
+
+111
+00:03:50,832 --> 00:03:52,952
+another bounded test, not
+
+112
+00:03:52,952 --> 00:03:55,272
+unrestricted autonomy. A negative
+
+113
+00:03:55,272 --> 00:03:57,152
+result can reveal a poor task
+
+114
+00:03:57,152 --> 00:03:59,191
+fit, rather than prove every agent
+
+115
+00:03:59,191 --> 00:04:00,312
+is ineffective.
+
+116
+00:04:06,313 --> 00:04:08,152
+Our evidence cannot supply a
+
+117
+00:04:08,152 --> 00:04:10,312
+universal threshold or guarantee a
+
+118
+00:04:10,312 --> 00:04:12,713
+benefit. Small samples, task
+
+119
+00:04:12,713 --> 00:04:14,953
+differences and evaluator judgment
+
+120
+00:04:14,953 --> 00:04:16,752
+remain limitations.
+
+121
+00:04:16,752 --> 00:04:18,592
+But a transparent pilot makes the
+
+122
+00:04:18,592 --> 00:04:21,233
+next decision inspectable. That is
+
+123
+00:04:21,233 --> 00:04:23,073
+the series takeaway. Define the
+
+124
+00:04:23,073 --> 00:04:25,713
+job, examine the claim and measure
+
+125
+00:04:25,713 --> 00:04:27,393
+the outcome before expanding
+
+126
+00:04:27,393 --> 00:04:28,353
+autonomy.

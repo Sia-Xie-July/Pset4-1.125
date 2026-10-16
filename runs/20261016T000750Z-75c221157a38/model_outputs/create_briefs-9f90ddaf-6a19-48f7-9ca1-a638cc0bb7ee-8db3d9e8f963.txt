@@ -1,0 +1,26 @@
+{
+  "title": "Before You Expand Autonomy: A Small-Team Evaluation Plan",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "The recent emergence of agent harnesses that enforce permissions and verification processes, combined with the growing complexity of agent ecosystems, suggests that small teams should evaluate specific tasks for agent autonomy based on measurable outcomes and structured checkpoints.",
+  "synthesis": "The podcast 'AI Basics For Developers' highlights the need for developers to understand how to work with AI tools without losing control of their codebase, while the article 'What Gemini 4 Argon Is Actually Good For' discusses the importance of fitting new models into existing workflows. Meanwhile, the YouTube video 'The coding factory: canonical specs and sequential agents' demonstrates how agents can be integrated into a structured testing and verification process, emphasizing the need for clear acceptance criteria and human oversight.",
+  "limitations": "The evidence is excerpt-based and limited to specific publishers, which may not capture the full scope of agent capabilities or team-specific workflows. Additionally, the commercial and translation limitations of some sources may affect the reliability of the information.",
+  "source_1_claim": {
+    "statement": "AI coding tools are getting faster, better, and just coming out every single day.",
+    "type": "source_claim",
+    "passage_id": "s1p1"
+  },
+  "source_2_claim": {
+    "statement": "The right question about any new frontier model has shifted to where it fits rather than how good it is.",
+    "type": "source_claim",
+    "passage_id": "s2p3"
+  },
+  "source_3_claim": {
+    "statement": "Testing is only, like, concerning. With, unit testing here. The key part is like one agent at a time.",
+    "type": "source_claim",
+    "passage_id": "s3p2"
+  },
+  "cross_source_inference": {
+    "statement": "The integration of agent harnesses that enforce permissions and verification processes, combined with the growing complexity of agent ecosystems, suggests that small teams should evaluate specific tasks for agent autonomy based on measurable outcomes and structured checkpoints.",
+    "passage_ids": ["s1p1", "s2p3", "s3p2"]
+  }
+}

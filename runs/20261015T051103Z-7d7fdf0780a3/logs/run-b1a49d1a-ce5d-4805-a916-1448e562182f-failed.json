@@ -1,0 +1,22 @@
+{
+  "input_count": null,
+  "output_count": null,
+  "errors": [
+    "Series workflow needs repair; inspect receipts"
+  ],
+  "invocation_id": "b1a49d1a-ce5d-4805-a916-1448e562182f",
+  "parent_invocation_id": null,
+  "stage": "run",
+  "status": "failed",
+  "exit_code": 2,
+  "started_at": "2026-10-15T05:11:03Z",
+  "finished_at": "2026-10-15T05:13:24Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

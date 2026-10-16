@@ -1,0 +1,463 @@
+In the last two videos I made for this
+channel, which by the way received an
+insignificant fraction of the views of
+other videos—but this is something
+that’s been happening for about a
+week now. As you have seen, as you will
+have noticed, YouTube's algorithms have
+changed a lot. I get suggestions on my
+homepage for all kinds of things I
+couldn't care less about. Old videos;
+it has become very difficult lately to
+find the content I usually watch. I
+have to go look for them; I don't
+notice when they come out, or at the
+very least, I see them mixed in with a
+series of contents that are far from my
+interests, or are very old, and so on.
+Now, as I was saying, beyond the fact
+that these videos might spark less
+interest (though I don't believe that),
+they are pushed less, for starters
+because they are shorter, very short;
+but some people watched them, and
+someone told me: "It would be nice to
+see, let's say, how you manage in two
+two hours in one afternoon, two hours
+in the next, to pull out a CAD design,"
+and that makes sense. And then, on the
+other hand, there are the simpler
+comments saying: "It would be
+interesting to see the prompting
+process." A thing like that is not
+really a matter of prompts. We have
+been They’ve attempted, let’s say,
+an involuntary marketing campaign,
+because these people who then tell you:
+"the reasoning model,""the the prompt,"
+"the the MCP," all this, these
+accessories, let's say, and so on, it's
+not really a campaign, they aren't
+actually pushed that much by the same
+companies that produce the AIs, because
+those companies are interested in us
+finding those tools useful. The exact
+method with which we use them only
+matters to a certain extent; they're
+just tokens after all. But the whole
+circus of pseudo-experts surrounding it
+, since it has to condense a
+complicated, multifactorial technology
+—where what really counts, so far, is
+still knowing and having an idea of
+what you want to do, and maybe even a
+bit of how—Now we will get to the CAD
+, but they have to drive traffic to
+their channels, their X accounts, and
+so on, so they have to brutally
+simplify the message, saying: "the
+prompt, you have to write the right
+prompt." Clearly, you can't do these
+things with just a prompt; you use a
+coding agent and engage with it in a
+process of design, code writing,
+verification, making micro-changes, and
+so on. Those 2 or 3 hours in the
+afternoon were short, but they were
+very intense, otherwise I would have
+said, "It took me 5 minutes." If I had
+just written a prompt. Anyway, a
+shout-out to the mother and grandmother
+of this truck driver who just passed by
+. If I had, let's say, written a prompt
+and then the thing just started. If it
+had started, and it produced the final
+result, if it had gone that way, I
+would have said it took me 5 minutes,
+because I don't count the time the
+machine is churning on its own as part
+of my work time. My work time on the
+CAD, the time I spent in the session
+where I was, let's say, "fully in the
+flow,""do this, let's do this, change
+that," and also thinking
+about the feature as I want it, the
+adjacency of the faces, how the
+vertices are selected, and...yeah,
+that's the real work. So, how do we
+move this work forward? Well, to start
+with, as happens to me very often, I
+didn't start with the coding agent. I
+started with a Fable 5.1 session, where
+I wrote to it: "Listen, if I use SDF,"
+which is this method of representing 3D
+solids. Because, to start with, I told
+it: "Listen, I'd like to verify a few
+things." Even though Tinkercad is
+software whose user interface is based
+heavily on the idea of unions,
+intersections, and boolean operations
+between solids, it seems to me that its
+internal representation isn't the SDF
+one you might expect in a CAD like this
+. But I see the generators creating
+geometries where the meshes are evident
+and so on, so I think it might use
+either the Fusion engine, but in a
+simplified way, or one they wrote
+specifically. But what sense does it
+make for Tinkercad not to use that type
+of technology instead? And Fable did
+the research and told me, yes, it seems
+from the information I'm getting online
+—well, I was already sure of it
+because you can tell just by using the
+CAD itself—that it was like that. He
+told me, "Yes, it actually seems like
+SDF isn't really used for representing
+solids." Fine. So I started writing to
+him, "But if I use SDF, okay, all the
+Boolean operations are very simple, how
+do we handle it? One, with real-time
+visualization while the user is editing
+?""How do we handle the fact that I
+absolutely want the possibility to
+extrude faces, to make holes on the
+face contour?""There are effective
+algorithms we can implement." In this
+case, he checked and told me, "Yes, we
+can use this, we can use that." I told
+him, "What if we use a representation
+where we superimpose a topology, which
+we extract whenever there's a change,
+onto the mathematical SDF
+representation of the solids, to see,
+let's say, the feasibility of what I
+wanted to do?""Because usually I don't
+really do CAD, but I have, let's say,
+some idea of how these things go, how
+they work." After this chat with Fable,
+I was convinced that that type of
+representation was indeed promising.
+There, it could produce an interesting
+CAD. Then inside me I was already
+thinking, "You know what I'll do?""I'll
+make it so that the extrusions and
+holes are transformed, even if the
+geometric extraction uses other
+algorithms at that moment, I'll then
+transform them into other solids that
+are subtracted or added as a group." So
+I had also had this intuition, and so
+on. Then the intuition came to me for
+the control that lets you see the
+fundamental components that you can
+move each on its own. So I had already
+formed an idea. At that point, I start
+with Fable 5.1. I told him, "Look, we
+need to start with a...""...MVP, so a
+minimum viable product that has 90
+s-style graphics like Autodesk Animator
+.""Go download a screenshot.""I want to
+use a graphics library." At first I
+thought of SDF, but then no. "Uh,
+So-call, which by the way is by the
+same author of the Tiny Emulators that
+I use as a base for my Spectrum Color
+64 projects and the like." Um, and then
+as a graphics library, uh, the one for
+the widgets...I don't remember what
+it's called right now. A minimal
+single-header library that is often
+used with...with So-call for these
+texts here, these keys here: it's the
+minimum I needed, uh, like Autodesk
+Animator, since I would spend more time
+on the UX and the UI anyway. Because I
+would like it to be more like Autodesk
+Animator than it currently is, so more
+colorful buttons, more super instantly
+clickable elements. Because when I was
+a kid, I had Autodesk Animator copied
+for me because it cost a lot; imagine,
+it seemed like I pirated it, I don't
+remember who gave it to me, but the
+crime is statute-barred anyway, eh. And
+that software really fascinated me, I
+said wow. While 2D CADs, yeah, sure
+they're nice, but who cares, I mean
+they weren't something that sparked
+much interest in me, 3D and with ray
+tracing with POV and other shareware
+tools that were circulating back then,
+you bastard red ant, eh, as well as um
+Autodesk Animator and other tools like
+Deluxe Paint before it. Eh, those were
+pieces of software that really
+stimulated my imagination and I
+appreciated a certain design philosophy
+in the user experience of getting
+straight to the point of things that
+were easy to understand, laid out there
+, slapped onto the interface, eh, which
+is something where, for example, Fusion
+fails quite a bit, as well as many
+other, eh, CADs, just as Blender fails
+at this, but also FreeCAD. Let's say
+that CADs have a lot of bad luck from a
+user perspective; there are some good,
+smaller commercial ones I've used in
+the past, but on average, well, it's
+not exactly the best. Having identified
+these libraries, I'll tell you one
+thing, it is very important that the
+software is written in C. LLMs write
+better C. I told it you must not use
+any dependencies, download all the
+papers on SDFs, on vertex and edge
+recognition, eh on fast rendering of
+the SDF objects you find. We need to
+create a small knowledge archive on
+this stuff here. I had it download the
+papers, I said alright, we can start
+with the implementation; the initial
+implementation must have very little.
+The fundamental shapes, we must have a
+plane with a grid which it then did all
+half-assed, then with n iterations I
+got it the way I wanted. Eh, and we
+need to have the concept of figures
+that are empty and others full. And
+then we do the grouping. The grouping,
+remember, as a tree. Because there can
+be operations later that we perform
+only at a certain level, like I don't
+know, a fillet, then we add other
+things; so you must already have a
+representation that is future-proof for
+this. But let's start with the basic
+shapes etc., and I had this minimally
+functional mini-CAD that could perform
+unions, intersections, and so on. Then,
+still in the same way, I tried to
+implement face recognition, then
+extrusions, um, and twisting, because
+if you know how SDF works, you know
+it's easy to apply a 2D rotation on one
+of the planes to create a twist. A
+twist that thins out or expands—I
+didn't show you this in the video, and
+that was a mistake, because that CAD
+does more than it appears to. Uh,
+that's why the result is remarkable,
+also because it does many advanced
+things that basic CAD software doesn't,
+and it was easy to extract them. So I
+continued with all these things, then I
+changed the graphical interface, and
+then I had that idea, exactly, to
+separate the fundamental components,
+select them individually, and move them
+. Then I made sure that the grid and
+the arrows would move the solids based
+on the user's point of view. So if I
+press right and I'm facing the Z plane,
+practically the ZY plane, I obviously
+want the solid to move along the X-axis
+when I press right, and so on. Then I
+did a massive amount—in fact, I spent
+23 hours one afternoon and 23 more the
+next, because I was there steering,
+thinking about the limitations, seeing
+that complex objects were very slow to
+move. I told it, "Listen, let's do this
+: let's use caching, cache a mesh so
+you can let me move it immediately,"
+and so on. Then I told it, "Let's also
+make a mode where, when I'm moving,
+it's at a low resolution, and as soon
+as I finish, after 500 milliseconds,
+you give me a fast GPU render," and so
+on, and so on, and so on. I told it how
+to perform the tests. When I did the
+fillets, I told it, "You have to do one
+thing: create random solids, try to
+fillet them from different perspectives
+, take screenshots, and they must be
+consistent." This CAD has primitives
+that allow it to easily output
+screenshots and move things—it's
+designed the way a CAD should be
+designed if it's developed by a Large
+Language Model. So you understand the
+process for doing these things, but you
+can't imagine that right now...Oh, but
+it will come! But it’s no longer*your
+*CAD: you reach the point where you say
+"make me a really cool CAD" and it
+makes you a cool one, but it's just one
+out of all the possible cool CADs.
+There’s no choice involved; it’s a
+different operation. what we do today
+is you act as a project manager, a
+project manager with very skilled
+developers who understand that stuff,
+and you decide you want this, you want
+that, you want to do it one way or the
+other. Regarding this, someone rightly
+raises a question, like, nowadays are
+we moving more and more towards not
+designing objects by hand, not using
+CAD software? This is absolutely true.
+If you look for example at Carlo
+Bloomer's channel Ex Power 3D, who has
+now started his own channel, he shows
+you that with Astra—though he reports
+that for this use case, Cloud works
+even better—he cleans up objects,
+reconstructs missing parts, and so on.
+Then, last time he reproduced a part,
+tweaked it a bit, and 3D printed it for
+his father's lamp, which had a broken
+base. It’s very interesting. I
+recommend you go check it out and
+subscribe to Carlo’s channel. If you
+watch Carlo, who is an expert in this
+stuff, and see that he doesn't design
+these things by hand, you start to
+think, "What do you even need CAD for
+today?" Well, the issue is more nuanced
+than it might appear at first glance,
+because in my opinion, it is more
+nuanced. While I park, do you have the
+patience to park with me? Let’s see
+if the people behind me have the
+patience too. Yes, thanks for stopping,
+minivan. Oh, by the way, this is the "
+new" car I went to pick up at Audi.
+They did a software update, and it’s
+the same damn car, just updated. Here
+we are. Quiet, quiet. Damn you. As I
+was saying, let’s look at each other
+face to face. One might say, "But what
+do I do with CAD?" Since CAD basically
+does itself with AI now. "This is true
+when you have to perform those types of
+operations, but if I’m a designer and
+I want to create an object, I’m much
+faster using a handy CAD tool to give
+shape to the object I have in mind, the
+one I'm imagining. One of the things I
+don't imagine LLMs will conquer anytime
+soon is the incredible ability of the
+various Compasso d'Oro winners we've
+had in Italy to invent beautiful
+objects that go completely against the
+grain of common sense. I don't know,
+let me tell you something very simple.
+You know that citrus juicer—I can't
+remember which designer it's by? The
+one with the three legs that looks like
+an alien, where you squeeze the orange
+and it drips into the container: AI
+hasn't come up with an idea like that
+yet. I am not one of those people who
+delude themselves, who believe or
+console themselves by saying," No,
+that's something AI will never do,
+screw that. "There are cognitive
+processes, just as AI has been able to
+simulate certain cognitive processes
+that we have, or rather, it's not that
+it simulates them. Since it is a
+machine similar to the machine we have
+in our heads, it does similar things if
+you train it in a certain way. If you
+train it in the way you learn to
+understand what is beautiful, what
+beauty is, what different beauty is,
+and so on, then these kinds of objects
+will come out. Anyway, it may be that
+the human criterion will only be
+choosing what feels better to use and
+so on, because in any case, AI will
+never use the citrus juicer. Right, but
+for now, because I repeat, throwing
+your heart over the fence every 5
+minutes thinking about what's coming is
+useful from certain points of view if
+one has to make social reforms and so
+on. However, for now, if you are a
+person who writes software or a
+designer, what should you do? Well, for
+now, there is this tool: it's the same
+as if all mathematicians retired
+because they say" oh well,
+asymptotically math will be done by AI.
+"No, for now they use it as a tool,
+then we'll see. For now, it's like this
+. When you want to invent a new object,
+if you are a designer, whether you
+studied architecture or did nothing at
+all, but you like designing cool
+objects, you need a CAD. You don't just
+write to an LLM how you thought of it,
+because if you lose the process of how
+you think of it and have to describe it
+verbally, no, you just take it and do
+it. it's better. Therefore CADs are
+still needed. But even if CADs were
+needed less and less, a CAD that is
+developed from the start with a large
+model and has, from the beginning, an
+API (not MCP, but a well-documented API
+) that is approachable by the large
+language model, which attaches to the
+socket at a low level with very simple
+commands, unmediated. by MCP the
+possibility to do what it wants and
+perhaps design the CAD from the start
+so that it is AI-first or at least
+AI-also. Eh, so it is designed for dual
+use, manual and, let's say, automatic.
+It can, there are many ways in which an
+object like this can give AI an
+advantage: such as extracting
+screenshots, which are depth
+representations with colored shading,
+different wireframe versions so that it
+can better understand the dimensions,
+making it easier for the AI to measure
+things, and so on. One can think about
+it, but yes, we are definitely moving
+toward a world where there is a
+thinning out of CAD usage. This seems
+even more true to me in areas where
+actual designing doesn't exist because
+you are operating in the
+two-dimensional domain, or in organic
+three-dimensional modeling. If I have
+to make Sonic with Blender, for example
+, well, by now I’ll be skipping
+organic modeling entirely, if not very
+soon, even now. From an artist's
+perspective: the work becomes making a
+pencil sketch, or using a computer, or
+an image generation program where I'm
+happy with a character and I say" fix
+this, refine it. "Once I have the
+two-dimensional character, I pass it to
+the AI and say" Perfect, do you see
+this thing I sketched like this? I want
+you to turn it into a 3D object, a
+posable model with joints and so on and
+so forth. "In my opinion, that part
+there there will be very little left of
+solid modeling for functional objects
+that are not technical parts where you
+have 2D and need to get to 3D (there's
+no contest there), but rather those
+that combine a function with a form and
+an appearance, an aesthetic intuition.
+deeply human, revolutionary. CAD is
+still needed there.

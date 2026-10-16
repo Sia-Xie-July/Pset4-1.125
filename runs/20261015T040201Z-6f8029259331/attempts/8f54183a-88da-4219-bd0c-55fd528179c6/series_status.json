@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "exit_code": 1,
+  "failed_stage": "editorial/select_items.sh",
+  "human_review_required": true
+}

@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage provides relevant insight into METR's approach to risk assessment and evidence collection for AI agents, which directly addresses the central question about whether recent changes in coding agents justify altering delivery practices. It highlights the importance of independent evidence, transparency, and the role of public understanding in AI development, which are critical for small teams evaluating autonomy expansion. The content is newly reported and supports the discussion on task-level risks, verification effort, and the need for measurable outcomes.",
+  "piece_ids": ["01", "02", "03"]
+}

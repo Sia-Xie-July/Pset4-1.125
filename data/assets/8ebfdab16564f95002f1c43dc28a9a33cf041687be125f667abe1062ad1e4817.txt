@@ -1,0 +1,375 @@
+Two weeks after being announced, Google's new Gemini 4 Argon model is here available for testing
+and the questions abound. Will it live up to its high benchmarks? Can Google finally compete when
+it comes to agente coding? If not agente coding, are there other use cases where Google might now be
+in the lead? Today we're looking at the newest frontier model we have access to Gemini 4 Argon and
+where it fits. The AI Daily Brief is a daily podcast and video about the most important news and
+discussions in AI. Alright friends, quick announcements before we dive in. First of all, thank you
+to today's sponsors KPMG, Section, Robots and Pencils and Blitzy. To get an ad-free version of
+the show, go to patreon.com slash aideally brief or you can subscribe and Apple podcasts.
+To learn more about sponsoring the show, send us a note at sponsors.adideally brief.ai.
+And to find out about everything happening in the broader aideb ecosystem, go check out the website.
+You can find access to our past episodes, each of which is divided into a million small
+sharing nuggets to make it easy for you to share with friends and colleagues. You can also get access
+to our free training programs, or if you want to go deeper, you can check out the paid training
+programs that are offered via super intelligent, like the new AI Champions program that we just
+announced. Last note today, it's not completely essential but there are some benefits to consuming
+this one as a video given that a lot of the demos of Gemini 4 Argon are video, the episode will be
+in video on both YouTube and Spotify and video will be coming to Apple soon as well.
+We kick off today with some palace intrigue. On Tuesday afternoon, the OpenAI Newsroom account
+posted, we discovered a sophisticated recording device that was hidden inside one of our offices.
+We used our models to understand the device and where it had come from,
+identifying that a specific employee had planted it a few days earlier.
+We referred the matter to the FBI and were grateful to the agents and prosecutors who moved
+quickly to make an arrest. TLDR, an OpenAI employee has been arrested and charged after a listening
+device was discovered in an executive conference room. According to a DOJ complaint, around two
+weeks ago, OpenAI discovered an audio recording device, disguised in toilet paper, and plugged
+into the back of a TV in a conference room at their San Francisco offices. As you might imagine,
+meetings in that room routinely involved discussion of highly confidential technical,
+commercial, and strategic information. As would come out later, security footage showed employee,
+Abdul Rahman Al-Fozen, near the conference room on multiple occasions prior to the discovery of
+the device. Abdul Rahman had no authority to access the room or participate in the meetings held
+there. AlphaZon had been employed by OpenAI for around a year as an engineering lead working on
+agentic products. He had previously worked for Meta for five years. According to the complaint,
+AlphaZon used a productivity tool to make inquiries about OpenAI's meeting room layout, executive
+locations, and details of meetings with external partners. A chatbot owned by AlphaZon's spouse was
+also used for queries related to building a continuous audio recorder, customizing Wi-Fi
+connectivity, improving audio and live listening, and encrypting the SD card among other things.
+The account was also used for queries about the specific device that was found, identified by its
+customer header and unique MAC address. These queries all took place in the week prior to the
+device being found. Finally on October 5th, AlphaZon entered the conference room and checked behind
+the TV, a moment that was captured on camera. The same day upon searching an unattended bag,
+OpenAI Security personnel found AlphaZon's wallet and ID as well as a second recording device
+of a similar MAC. AlphaZon has been charged with attempting to use an electronic device to intercept
+oral communications and the FBI is conducting further investigations. If this were just corporate
+espionage, there would be plenty to keep all of us in the panic gallery interested. What takes this
+case to the next level, however, is AlphaZon's status as a Saudi national. This is suspicion being that
+this is not only corporate espionage, but straight up international espionage. The DOJ announcement was
+overt in calling this a potential national security incident. FBI director Cash Patel said,
+According to the complaint unsealed today, Abdul Rahman AlphaZon allegedly concealed a covert
+recording device inside his employer's executive conference room to secretly capture sensitive
+communications about the company's super intelligence technology. Protecting American SI innovation is
+essential to safeguarding our nation's economic strength in national security, and the FBI views that
+mission as one of our highest counterintelligence priorities. Patel noted that national intelligence
+director J Clayton has been working closely on the case. Clayton, of course, also being the newly
+appointed head of the administration's AI task force. US Attorney Craig H. Miskeian added,
+the Bay Area and Silicon Valley lead the world in developing tomorrow's technology,
+and our office will continue to stand at the forefront of protecting that American innovation.
+For us, it is a matter of national security. The Bay Area in general and the AI industry in
+specific have long been a target of international espionage. What makes this somewhat different is
+Saudi Arabia, not only a US ally being implicated. Journalist Sonek Scott to work unpacking the back
+story. Scott Stedman from Newsground said that, according to his sources, AlphaZon was the only Saudi
+employee at OpenAI. Adding another piece of red string to the court board, Stedman noted that AlphaZon
+is also a venture partner at RAED Ventures, where he works alongside Prince Khalid bin Bader al-Saud.
+Stedman identified Prince Khalid's father as a member of Saudi intelligence, but officially he's
+currently the ambassador to the UK. Holding aside the specifics, essentially the point here is that
+AlphaZon has ampletized at the House of Saud and the Saudi government to ground suspicion.
+As far as implications go, OpenAI claims their operations are secure. They wrote that,
+at this time, we have no indications of this individual inappropriately accessing or exfiltrating
+model weights, source code, or customer data. Still, Chris McGuire from the Council on Foreign Relations
+believes this is an extremely bad look for Saudi Arabia, and if the Saudi government is indeed involved,
+this should have significant implications for the US-Saudi AI relationship. McGuire presented a
+lengthy analysis that's actually worth reading in full if you are interested, but to hit the high
+points, McGuire believes that AI labs will need to harden their security and presume they are
+already the target of less ham-handed, his words, espionage attempts. For Saudi US relations, he
+believes this is a very bad sign. The investigation is being handled by the DOJ's counterintelligence
+division, not the criminal division who would handle regular commercial espionage cases.
+McGuire wrote, If Al-Fazan was acting in coordination with the Saudi government,
+I do not see how any company could possibly host a frontier AI model in Saudi Arabia after this
+incident. Sadly, it is way beyond the scope of this particular show, but there is a lot going on
+right now in the US-Saudi relationship, and while there are plenty of explanations for this that
+don't implicate the Saudi government, it is an incident that could have some fairly significant
+implications for global AI politics. Moving over to the much more banal reality of our new
+agenteic era, JP Morgan plans to block third-party agents from accessing customer accounts.
+During Tuesday's earnings call, agenteic risk was top of mind for JP Morgan executives.
+CEO Jamie Diamond said, We're not going to allow just any outside agent to come inside the company,
+because it's just too risky for clients and for JP Morgan. You don't want rogue agents and
+it could be thousands of them. While Diamond seemed to be conflating the scary headlines around
+hugging face, with consumer agents like Muse and Instinct, the bank is still changing its policy.
+CFO Jeremy Barnum said, To the extent that we're able to block those, we are blocking them to
+protect customers and to protect ourselves. After the call the spokesperson told CNBC,
+protecting our customers is our top priority. Because it is not safe, we do not permit third parties
+to access accounts by obtaining customers' banking credentials and logging in on their behalf.
+We support secure customer authorized data sharing through open banking providers
+and are committed to enabling agenteic connections securely. This means that agents will likely at some
+point be able to access account information for basic read-only tasks like making a budget or
+finding old subscriptions to cancel, but JP Morgan customers are unlikely to be able to get their
+agents to pay bills or settle invoices. Diamond said frankly that customers don't understand the risks
+they're running, commenting, If people are using them, they should understand the risk. They should
+understand that there's a liability transfer. Essentially, the bank won't indemnify faulty agents in
+the same way they do for fraud. Now, agenteic banking has been a touchy subject since the introduction of
+Mews brought personal agents to the mainstream. Late last month, the Palao chief economist
+Torsten Slok warned that agents seeking a higher yield on savings account for their users could trigger
+a bank run. If one puts much credence in that scenario, JP Morgan would be ground zero with an
+average savings account rate of 0.01%. JP Morgan doesn't seem concerned about that particular
+outcome, but rather the potential liability of personal agents spending without proper authorization.
+Basically, with this policy change, they've made it clear that they won't be refunding customers
+if Mews goes on a spending spree. AI for finance founder Bob Sue thinks that while this was
+completely inevitable, it's also not the right approach to a real problem. Bob wrote,
+Banks blocking AI agents is THE most predictable move of 2026. They're right about the risk,
+wrong about the fix. Users don't need agents locked out. They need agents locked down,
+scoped permissions, hard limits, a kill switch. Meanwhile, on the other end of the spectrum,
+Shopify has thrown open their doors to agents of all stripes. Last month, Shopify partnered with
+Mews to allow agents to browse and shop across their platform, and the key technical detail was
+that Shopify would provide API access directly to their back end. This was a mutually beneficial
+arrangement. It allowed Mews to produce better results while allowing API access meant Shopify
+wasn't paying web hosting costs associated with agents scraping their front end. Now, Shopify has
+extended this arrangement to agents from any provider. Users can now connect their agent via
+the Shopify app for a fully supported agent-acchopping interface, regardless of whether they're using Mews,
+Town, Hermes, Instinct, Dots, or any of the other dozens of personal agents on offer.
+The move is part of a broader trend that's seen two diverging approaches to servicing agents.
+Some, like Amazon and eBay, and JP Morgan, as we just heard, are locking their platforms down
+and forcing customers to use their proprietary agents. That approach maintains control of the
+customer relationship and associated data, but it risks striving agentic customers to other platforms.
+The other option is to facilitate agentic interactions directly by offering a headless interface
+for agents as Shopify has done. The same strategic divergence is playing out in SaaS, where platforms
+like Salesforce have leaned into headless product by opening their APIs to third-party agents. SAP,
+on the other hand, has Titan controls on APIs, securing their mode at the cost of customer choice.
+This schism between open and closed platforms is one of the key battlegrounds as the
+agent adoption grows, and it's still very unclear which strategy will win out.
+Lastly, today, Character AI has filed for bankruptcy marking the end of the road for a once-popular
+consumer AI product. Back in 2024, the olden days, Character AI was the first breakout hit
+beyond chat GPT, ranking at third place in a 16z list of top consumer AI apps,
+and allowed customers to create their own character-based roleplay using chatbots.
+Many assumed that when Google acquired most of the company's top talent in a multi-billion-dollar
+aqua-hired deal, that character would be living on borrowed time, but for a while, the company maintained
+a dedicated following. The bankruptcy tells two stories. First, there's the incredible legal liability
+from playing fast and loose with technology and business decisions. Beyond lawsuits over
+customer self-harm and chatbots mimicking doctors, Character AI ran a foul of Disney in 2025
+after adding support for unlicensed characters. The bankruptcy filing states that Character AI has
+between 50 and 100 million in liabilities that they're seeking to discharge. Disney has emerged
+as the stocking horse bitter to salvage assets from the bankruptcy. They've agreed to pay $20 million
+for certain intellectual property and recently hired Character AI CEO to facilitate the technology
+transfer. Beyond that, there's a broader question about whether a consumer-focused business model
+can function in 2026. 404 Media, who it should be known, is pretty wildly antagonistic to AI
+and tech in general, made the bold claim that the economics of AI don't work based on the bankruptcy
+filings. According to an affidavit from CEO Colin Adams, Character AI was spending $10 million per
+month on compute with peak monthly subscription revenue of $2.8 million. Other months saw less revenue
+even dipping below a million dollars a month at times. While 404 presented this as a condemnation
+of the AI business model as a whole, I think the more interesting questions, which don't need to
+apply to absolutely everything to be interesting, are about what consumers are going to be willing to
+pay for and how much they're going to be willing to pay and how that does or doesn't line up
+with products on offer. Discovering that people aren't willing to pay enough for a specific
+implementation of roleplay chatbots doesn't mean that there's no business model in consumer AI.
+It means that people didn't want to spend enough to justify that particular set of roleplaying
+chatbots. Pliometric summed it up, a strange company, they got addicted to free user analytics
+numbers, dragged their feed on moderation for adult content, and got stuck in this will they won't
+they loop. Half measures all around, they missed the boat one too many times.
+Wrote computer scientist John Kentman, this is the pets.com of AI. People genuinely do not
+understand the AI industry. I can't believe people genuinely think that Character AI filing for
+bankruptcy means anthropic is next. Still an interesting moment as the early phases of AI see
+to something different. For now, however, that is going to do it for today's headlines.
+Next up, the main episode.
+If you're leading AI inside an enterprise, you already know that the gap right now isn't
+capability but execution. That's why KPMG's you can with AI is back with a new season featuring
+conversations with leaders like Serojit Chatterjee of Emma, Mayha B. of Writer, McKesson CIO,
+Ellery Fisher, and others focused on practical execution. What's working, what's not, and what it
+actually takes to move from pilots to real scaled impact across strategy, data readiness, governance,
+workforce, and value. And of course, it's co-hosted by me Nathaniel Wittemore.
+Go listen and subscribe at www.kpmg.us slash AI podcasts. That's www.kpmg.us slash AI podcasts.
+Here's a harsh truth. Your company is probably spending thousands or millions of dollars on AI
+tools that are being massively underutilized. Half of companies have AI tools, but only 12% use
+them for business value. Most employees are still using AI to summarize meeting notes. If you're
+the one responsible for AI adoption at your company, you need section. Section is a platform that helps
+you manage AI transformation across your entire organization. It coaches employees on real use cases,
+tracks who's using AI for business impact, and shows you exactly where AI is and isn't creating
+value. The result? You go from rolling out tools to driving measurable AI value. Your employees
+move from meeting summaries to solving actual business problems, and you can prove the ROI.
+Stop guessing if your AI investment is working. Check out section at section AI.com. That's SEC T-I-O-N-A-I.com.
+The best teams don't have a single star carrying everyone else. They know their own strengths
+than each other's weaknesses and play to both. That's the team robots and pencils has built on
+purpose. Nobody there is grinding through busy work to pat a head count number. People come for
+the hard problems and they stay because everyone around them is leveling up at the same time.
+In a market full of companies that are just trying to hire fast, that's worth a look.
+Check out robotsandpensals.com slash careers.
+Here's why most legacy modernization projects fail. The AI doing the work can't understand code
+bases at scale. It sees a small slice of context, examines syntax, and misses years of decisions
+distributed across the global application ecosystem. Blitzie solves this the way it solves everything.
+Grounded in your code before any migration begins, Blitzie's agents reverse engineer the entire
+legacy system into a persistent knowledge graph. Every dependency, every constraint, every piece of
+tribal knowledge that used to live in one engineer's head. From that understanding, Blitzie autonomously
+executes language migrations, framework upgrades, and monolith to microservices transformations,
+all validated end to end. One Blitzie customer modernized a $10 million monolithic insurance stack
+in 16 weeks against a 137 week baseline with coding agents. That's 9X compression.
+Retire technical debt while accelerating your roadmap. See how at Blitzie.com. That's B-L-I-T-Z-Y.com.
+Welcome back to the AI Daily Brief. Today, for the second day in a row, we are looking at a big
+new model release. And what's interesting is that just like yesterday, this is a model release from
+a company that has for at least the last phase of AI been considered a little bit behind the
+eight ball. I'm talking of course about Google's new Gemini 4 argon. And while the perception of
+Google has been nowhere near as bad as it was for, for example, meta earlier this year, it's been a
+bit of a roller coaster where Google was far behind. Only to then launch themselves right back into
+contention, spending most of 2025 right on par more or less with OpenAI and Anthropic, only to almost
+completely miss the 2026 wave of agents in agent coding. Gemini 4 argon was announced a couple
+of weeks ago at the end of September, but it wasn't available yet, which many took as not such a good
+sign. Still for the very many of us who were quite willing to give Google the benefit of the doubt,
+and not at all comfortable with writing them off, it was really always just a waiting game to see
+what the model could actually do when we could get our hands on it. As we dig in, it's important to
+note that I believe that the right question about any new frontier model has shifted. Whereas it
+might have been before, how good is it with the implication being should I switch? The question is now
+much more, where does it fit? In other words, what things does this particular model do well or
+different that should make me consider integrating it into my overall model stack? So that's what we're
+going to explore today. To recap the basics from a couple of weeks ago, this is a brand new model built
+on a brand new pre-trained after Google scuttled the Gemini 3.5 Pro release earlier this year. It's
+then clear exactly how large the model is, but Google is presenting it as an ultra-large model in
+the same class as Astra and Fable. To recap the benchmarks that we got a preview of, at least by
+the benchmarks, Argon appears to be broadly a match for frontier models from the rival labs.
+For knowledge work, Argon is state of the art on the vows index, automation bench, vows finance agent,
+and harvies legal agent benchmark. And other than the core vows index, each of these benchmarks have a
+wide gap above competitors. On harvies legal benchmark, for example, Argon is 13 points ahead of
+its closest competitor, Fable 5.1. On coding, the results are more mixed. Argon is state of the art
+on deep sweet, scoring a few points above up is 55, but on frontier sweet, Argon is behind the three
+major rivals. And about 10 points off of the leader, Astra's score. Similarly, on terminal bench 4.0,
+Argon is 9 points behind up is 55, who has the leading score. Although to be fair, that presentation
+is probably a little misleading. The spread of coding scores has widened with recent updates to the
+benchmark. And although they are behind, Argon is firmly in the frontier range, just not at the
+head of the pack. Google highlighted a variety of other benchmarks across agentic science, cybersecurity
+and multimodal, with Argon state of the art across each category based on the benchmarks selected by Google.
+One other benchmark worth highlighting given that a lot of the questions are going to be about agents
+is Argon score on OS world, which is the standard computer use benchmark. Argon scored 69.2%,
+which is just shy of Astra 72.6%, which when announced was considered a paradigm shift in AI
+computer use. Independent benchmarking from artificial analysis, similarly placed Argon squarely
+at the frontier. It scored 53 overall, putting it tied for fourth place with Fable 51 and GPT-6 Astra.
+Muse wonder full and Sonnet 5.5 are tied for second with 56 points, while Opus 5.5 is in the lead with
+58 points. Realistically, and so we don't get too hung up on the exact numbers, there is now a group
+of between 6 and 8 models across four US labs with a legitimate claim to be incompedent about the
+frontier, depending of course how you feel about GPT-6 1-Soul and GROC 4.7. But of course, we no longer
+live in just a world of performance, we live in the world of efficient performance, and cost is a
+little more difficult to dissect due to the way that Google has rolled this model out. On the API,
+Argon is available with a 50% cost reduction until November 30, that allowed the model to complete
+the AA benchmark run at 199 per task, very similar to the cost of GLM 5.3 and significantly cheaper
+than all frontier rivals other than 6.1.1. Once the subsidy goes away, Argon will be more expensive
+than Astra, but still around two thirds the price of the Anthropic models. Trying to sum it up,
+going purely from the numbers, Argon looks like a frontier AI at a discount, which presumably would
+put Google back in the game. And yet, for many, the biggest question to be answered by the release of Argon
+is, can it code? Coding has been Google's Achilles heel over the past year, and there's been speculation
+that poor coding performance led Gemini 3.5 Pro to be shelved over the summer. Pavil Hurren ran Argon
+through his bug hunting task and found it to be inadequate. It performed about as well as Mu
+Spark 1.3 and significantly behind Astra Fabel and Opus. Hurren still gave Google credit for making
+progress writing, a way better model than Gemini 38 Flash looks like Google is back. No one
+had done again from Railway was less impressed posting. This model is useless when it comes to
+real world code. I'm not mad just disappointed. This however actually kind of makes sense for Google.
+I think they have given up the programming model race and are instead aiming for knowledge workers.
+Others found similarly not so great results. Developer content creator and entrepreneur Theo wrote,
+just ran Argon on my code based analysis bench, not looking good, only model with a greater than
+50% false claim rate. Dan Shipper from every writes, Gemini 4 Argon really struggles on our senior
+engineer benchmark test. Comes in at 21%, far below soul 6 and even Muse. Analyst Max Weinbach
+did respond to Dan saying, it really depends on the harness you're using. I didn't love it in
+anti-gravity but found it was really good in Clawed Code and Open Code. However as some pointed out,
+using the model and other harnesses is technically a violation of the terms of service.
+Summing it up, developer Rishi writes, a few billion tokens later on data, code and analysis,
+here's what I can say. Gemini 4 roughly equals Opus 4.8.
+Now going back to anti-gravity, one of the quirks of this release that could be causing the
+difference in experience is that Google decided to differentiate between pro and ultra-subscribers
+on coding. Pro subscribers only have access to Argon in the Gemini harness. You still have access to
+the Gemini CLI but that's not the same as Google's anti-gravity coding harness which is their equivalent
+of CodeX or Clawed Code. To use Argon in anti-gravity users need to upgrade to the ultra-tier.
+Pavel Hurrin again noted a huge difference in performance between the two setups.
+Running his bug hunt test again he wrote, testing Gemini 4 Argon on real work with anti-gravity CLI
+not Gemini CLI, changed the score dramatically. Argon went from good to a frontier model,
+landing very close to Opus 5.5 max. I ran the benchmark three times to confirm the results.
+It hadn't worked for me before and I didn't expect the harness to matter so much.
+Marcelo Pilema summed up the frustration,
+why does Google make it so hard to try out their new model? I have a workspace account.
+I can't pay $100 to get AI Ultra add-on because that's only available to individuals.
+In order to get AI Ultra access I have to talk to sales. This is crazy. Make it frictionless
+for people to try your product. Your models have all this intelligence. Certainly you can ask Argon
+to vibe code a sales page that'll let me buy this add-on. Now regular listeners of this show will
+not be surprised that there is a big difference depending on the harness and frankly for Google it
+would be great news if model performance was a setup issue not underlying model capability
+given how important that agent to coding use case remains. Still one area that Google's models
+have always shined is on the multimodal. And given how much every model now has to compete in
+the arena of social media where videos and 3D renders capture all the attention, you would think
+this would be an area for strength for Google. Certainly the company released some breathtakingly
+impressive examples alongside the model. Demis Isabes showcased a modern version of
+Battle Chess as an example with the results looking like AAA game graphics and way beyond in
+many cases what we've seen from rivals. Cheta Slua was blown away by one of the demos from Google
+which depicted a massive pagoda and temple complex from multiple angles including a full walkthrough.
+Others noted that this wasn't a one shot but a massive multi agent run that would have been
+quite expensive but still the output is impressive. Professor Ethan Mollek was able to produce a
+version of his imminence game that he's been using to test different models with similarly
+impressive visual results. But others have found much more lackluster results. Max Techno writes
+guys I'm genuinely confused about Gemini 4 Argon. Just ran Argon high through my old vibe check
+prompt and I really don't know how to evaluate it. Now Max's test is a 3D render of a vehicle that
+you can look at from different angles. Max continued. It did a really good job with the car's shape
+looks much more like the reference than Opus 5.5's but the colors look completely washed out. The
+textures are literally floating. The garage scene is still way too basic and the UI is still stuck in
+2024. It was fast but be real. Would you actually choose this over an Opus output with all of these
+cons? Max actually even later wondered whether they trained the model on hyped public tests. He said
+it's not close to Opus 5.5 or Astra and honestly Solans on it sometimes look way better. It's good
+at rockets, pelicans and voxel hype tests but the second it needs to do anything actually creative
+it serves junk. So what are we supposed to make of all this? One of the things that I said about
+Astra when it came out is that it felt like a model that was really asking you to push yourself
+farther. Not to simply do the same stuff a little bit better but to really try and do totally
+different things. And given some of the multi-modal and 3D capabilities of Argon maybe that's a
+similar way that we should be looking at this model. Certainly the people who are most impressed
+tended to be exploring these types of dynamic multi-modal advanced or scientific use cases.
+Fawfare iRights. Argon has this amazing natural understanding of the world that can do so many
+things from first principles. Beyond X shared a futuristic 3D battle helicopter made purely in 3JS
+saying everything you see was procedurally generated from scratch. This is a result of a multi-round
+self-iteration loop of Argon and Nano-Banana. Venture investor Justine Moore wrote,
+asked Gemini for Argon for an interactive museum of Apple computers and didn't provide any images
+or data. It scraped archival Mac photos, wrote a tool to clean the images, pulled 50 years of
+specs and built a 3D cover flow with UI that morphs to match the decade you're in. In other words
+it is a wildly impressive execution of what she was looking for. Web sims area argued that this
+is really what the model is about writing. Gemini for Argon is the first model where it felt like an
+image, video and language model all at once. And if that's the case, it's not surprising that some
+of the early tests feel like they're just scratching the surface. The bug's dev route, I feel like
+we haven't seen enough of what Gemini for Argon can actually do. I gave it one image of a Gothic
+Victorian carriage and asked it to build this whole thing as an interactive 3D experience.
+Just one image and this is what you get. A 174,000-face model from scratch, complete with opening doors,
+hinged windows, working wheel physics, suspension, flickering lanterns, and even custom sculpted skulls.
+All of this generated through code, no blender. What's clear is that whatever it's for, Gemini for
+is different. Ethan Mollock writes, using Gemini for makes you realize how many other models
+must be distilling Claude or GPT or using a similar training pipeline. It feels quite different
+than other models. Theo agrees that it's different but doesn't necessarily love that writing.
+It's a huge jump for Gemini and pretty good value for the price, but it's still a Gemini model,
+though. Does weird stuff regularly and I don't feel like I can trust it at all.
+Kavish Krishnikumar tested it extensively with a genetic coating and wrote,
+I've been coding with Gemini for argon today and I actually completely forgot about the character
+traits Gemini models have when coding. They just love to structure code in a certain way and add
+comments. Not too long either. Mostly neat one liner comments which is a good thing if anything.
+I kind of like it. I'm not even certain if the code works yet, which is the classic Gemini trait,
+but it's just nice to look at code if that makes sense. When you compare to the other models,
+their habits are wildly different. It's kind of refreshing to talk to a model that feels unique to
+its own model lineage. Expanding out, Google DeepMind's director of AGI Economics Alex Emas wrote,
+One thing that's been under emphasized is the importance of having true diversity of output
+at the frontier. Using a single model there are unmistakable signatures of each and everything
+from writing to taste and code and this is most obvious in design. I, EG, the color palette chosen
+as background. I've been using Gemini for some time now and I can say it is completely unique.
+This is obvious from the visualizations everyone is sharing now, but also in the way that it writes
+and communicates back and forth. For an economist, the benefits of diversity and independence are
+baked into nearly all of our models. Correlated signals, information, and priors is how you get
+fragility, learning traps, and AI slop. So I'm very glad to see our big boy out there for people to
+use. And bringing it all together, Dan Shipper from every even found at least one place, where it
+doesn't take some wild imagination to consider switching to Gemini for a core use case. He wrote,
+My4 is out and it's surprisingly good. I admit I was ready to trash this model when I saw the
+benchmarks, but six of us at every spent the past week testing it across coding, writing, design,
+and knowledge work, and were pleasantly surprised. It's a breakthrough if your company lives in
+Google's ecosystem and a strong option for frontier hoppers as a secondary model for certain tasks.
+Some of the things that Dan found was that Gemini 4 was in his words shaky at refactors but fast
+on greenfield apps, basically that it could build new stuff pretty quickly and efficiently and well,
+but that it in his words cut corners on self verification and existing code bases. He also noted
+the problems with the harness, calling it a 2026 model trapped in a 2025 harness. And I think it's
+worth noting that in addition to missing eight months of coding model development, Google is also
+more or less missed eight months of harness UX iteration. Dan put it bluntly saying,
+anti-gravity, Google's desktop agent app feels six months to a year behind cloud code in codex,
+lacking cloud environments, SSH, a built-in browser, and smart permission checks,
+leaving you clicking constant popups or using unrestricted turbo mode.
+But then it comes to writing, where Dan called it his new favorite writing partner. He wrote,
+deep-mind hired professional writers with red pens to stamp out AI Slop and it worked.
+I use it to untangle structure and sharpen metaphors. It's got a natural feel for structure and
+detailed explanations that Astra and Opus lack. The net result he said,
+I keep chat GPT in cloud open day to day and switch to Gemini 4 when I need a
+editorial partner to structure a tough essay, sharpen a metaphor, or close read a book.
+Reach for it for live writing collaboration, fast-low effort prototypes, or steerable UI and
+dashboard design. Ideally via cursor or the API to skip anti-gravity. When a model is good enough
+to force you to use a bad harness, it tells you something. Given how bad all the other models continue
+to be on writing, if Dan's results really stick, that alone would be enough for me to spend some
+time with this model. So when we come back to the question of where Argon fits, the answer seems
+to be so far, we're not quite sure yet. That writing use cases enough to give it a test,
+but it does feel like, as that one exposer said, that we may be just scratching the surface of this.
+And once again, we might want to push ourselves to think about harder, stranger, more unexpected
+things that we can do with it to really see its full potential. Or alternatively, wait till others
+do that so I can talk about them on this show and you can just do the stuff that actually works.
+Either way, I'm excited that we are sitting here on Wednesday in the middle of October,
+with both Google and Meta meaningfully back in the model race, but for now that's going to do it
+for today's AIDLY brief. I appreciate you listening or watching, as always, and until next time, peace!

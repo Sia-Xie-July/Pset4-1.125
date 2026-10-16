@@ -1,6 +1,11 @@
 {
-  "publication_name": "",
-  "topic": "",
-  "audience": "",
-  "central_question": ""
+  "publication_name": "Before the Merge",
+  "topic": "Evidence-based adoption of AI coding agents by small software teams: delivery speed, verification effort, quality, permissions, and cost.",
+  "audience": "Technical leads of 3–10-person software teams shipping web applications and internal tools. Readers understand Git, pull requests, tests, and CI, but lack a dedicated AI evaluation or security team.",
+  "central_question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "language": "English",
+  "editorial_voice": "Practical, skeptical without being dismissive, explicit about uncertainty, and focused on decisions a small team can test.",
+  "scope": ["Task specification and agent context", "Testing and review effort", "Observable delivery outcomes", "Scoped permissions and rollback", "Task-level time and token costs"],
+  "exclusions": ["General AI investment and employment predictions", "Model rankings without task-level evidence", "Unrelated consumer AI news", "Claims of productivity measured only by generated lines or commits", "Unverified demonstrations and copied announcements counted as independent confirmation"],
+  "reader_return_reason": "Each edition distinguishes newly reported capabilities from measured outcomes, revisits earlier claims as evidence changes, and proposes a small, reversible evaluation for the reader's own workflow."
 }

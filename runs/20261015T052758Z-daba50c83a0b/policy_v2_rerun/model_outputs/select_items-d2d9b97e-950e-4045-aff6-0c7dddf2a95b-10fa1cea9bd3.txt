@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The passage lacks specific evidence about changes in coding-agent workflows, efficiency claims, or evaluation criteria relevant to small teams. It discusses AI champions and their roles but does not provide new, measurable data on coding agents' impact on delivery practices, testing, or costs. A detailed analysis of the podcast's content on AI coding agents and their practical implications for small teams is needed.",
+  "piece_ids": []
+}

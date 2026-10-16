@@ -1,0 +1,16 @@
+Before the Merge, Episode 3: Before You Expand Autonomy: A Small-Team Evaluation Plan
+
+For technical leads of 3–10-person software teams deciding how much work to delegate to coding agents.
+
+Read the article (sources, exact versions and full references): https://user986935.substack.com/p/before-you-expand-autonomy-a-small
+
+Evidence as of 2026-10-15 (UTC). Sources cited in this video:
+- Gemini 4 Argon in GitHub Copilot (2026-10-13): https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot
+- Everything we launched during Birthday Week 2026 (2026-10-05): https://blog.cloudflare.com/birthday-week-2026-wrap-up/
+- Our approach to working with AI companies (2026-10-14): https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/
+
+Statements in this video are labelled as source claims or as our interpretation. A sponsor advertisement or vendor announcement is a claim, not a verified result. Any evaluation plan described is a proposal, not an experiment we ran.
+
+AI disclosure: the presenter and voice are AI-generated (Google Vids). The script was drafted with AI assistance from the cited sources and reviewed by the author.
+
+Series: Episode 1 https://youtu.be/2mOpLgQUm2Y · Episode 2 https://youtu.be/nKaQr6ya9cY · Episode 3 https://youtu.be/cexb5hJ__Ss

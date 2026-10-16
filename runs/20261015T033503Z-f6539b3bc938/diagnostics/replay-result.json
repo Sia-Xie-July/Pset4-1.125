@@ -1,0 +1,9 @@
+{
+  "label": "Explicit replay of saved real input; no new collection or second-day run",
+  "source_run": "runs/20261015T033503Z-f6539b3bc938",
+  "input_count": 22,
+  "new": 0,
+  "changed": 0,
+  "unchanged": 22,
+  "latest_item_version_pairs_unchanged": true
+}

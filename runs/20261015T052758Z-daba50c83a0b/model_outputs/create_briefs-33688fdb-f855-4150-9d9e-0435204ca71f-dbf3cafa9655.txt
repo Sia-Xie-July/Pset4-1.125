@@ -1,0 +1,26 @@
+{
+  "title": "Before You Expand Autonomy: A Small-Team Evaluation Plan",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "Recent advancements in AI coding agents have introduced more structured workflows that integrate testing and verification directly into the development process. This shift is evident in the use of agents that not only generate code but also test it against specifications, reducing the need for manual intervention. For instance, Jake Cukjati describes a workflow where agents take a specification, plan the implementation, and then test everything, which significantly streamlines the delivery process. Additionally, the use of plugins like Rigor for test harnesses further enhances the reliability of the generated code. These changes suggest that the increased output from agents is not just about generating more code but about improving the overall delivery quality and reducing the burden on human reviewers.",
+  "synthesis": "The integration of testing and verification into the development process, as described by Jake Cukjati, and the use of plugins like Rigor for test harnesses, as mentioned in the prior arguments, indicate a shift toward more structured workflows. This is further supported by the release of Gemini 4 Argon, which thoroughly checks its work and solves more tasks than previous models. These developments suggest that agents are not only generating code but also improving delivery quality through built-in testing. However, the evidence is still limited to specific examples and lacks broader validation.",
+  "limitations": "The evidence is primarily based on specific examples and vendor announcements, which may not reflect real-world outcomes. There is a lack of independent verification and measurable outcomes from small teams. Additionally, the commercial interests of the publishers may influence the reported capabilities, and translation or caption uncertainties may affect the accuracy of the claims.",
+  "source_1_claim": {
+    "statement": "Agents take a specification, plan the implementation, and then test everything, which significantly streamlines the delivery process.",
+    "type": "source_claim",
+    "passage_id": "s1p1"
+  },
+  "source_2_claim": {
+    "statement": "The use of plugins like Rigor for test harnesses further enhances the reliability of the generated code.",
+    "type": "source_claim",
+    "passage_id": "s2p1"
+  },
+  "source_3_claim": {
+    "statement": "Gemini 4 Argon thoroughly checks its work, testing edge cases before it finishes.",
+    "type": "source_claim",
+    "passage_id": "s3p1"
+  },
+  "cross_source_inference": {
+    "statement": "The integration of testing and verification into the development process, as described by Jake Cukjati, and the use of plugins like Rigor for test harnesses, as mentioned in the prior arguments, indicate a shift toward more structured workflows. This is further supported by the release of Gemini 4 Argon, which thoroughly checks its work and solves more tasks than previous models. These developments suggest that agents are not only generating code but also improving delivery quality through built-in testing.",
+    "passage_ids": ["s1p1", "s2p1", "s3p1"]
+  }
+}

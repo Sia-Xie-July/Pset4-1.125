@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses METR's approach to gathering and publishing evidence about AI loss-of-control risks, which is relevant to the central question about what evidence small teams should require before expanding agent autonomy. It provides insight into the importance of transparency, independent evaluation, and the role of public evidence in decision-making, which directly supports piece 03 (what a small team should evaluate before expanding autonomy). The material is new and relevant to the editorial scope, focusing on risk assessment and evidence-based practices.",
+  "piece_ids": ["03"]
+}

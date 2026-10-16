@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses the importance of default hard budget caps for pay-by-usage services and APIs, which is directly relevant to the central question about changes in coding-agent workflows and their impact on cost management for small teams. It provides a new perspective on how budget constraints can be enforced in coding-agent environments, which informs decisions about task scoping, permissions, and cost control. The passage is specific to the topic of budget management in software delivery and aligns with the editorial scope of evaluating evidence for adopting AI coding agents.",
+  "piece_ids": ["01", "02", "03"]
+}

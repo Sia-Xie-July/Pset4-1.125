@@ -1,0 +1,95 @@
+--- docs/policy/editorial_policy_v1.md	2026-10-15 16:35:53.695477283 +0000
++++ config/editorial_policy.md	2026-10-15 16:47:31.768269040 +0000
+@@ -1,4 +1,7 @@
+-# Before the Merge — Editorial policy v1
++# Before the Merge — Editorial policy v2
++
++Revised 2026-10-15 after human review of run 20261015T052758Z-daba50c83a0b
++(see EDITORIAL_REVIEW.md). v1 is preserved at docs/policy/editorial_policy_v1.md.
+ 
+ Write in English for technical leads of 3–10-person software teams shipping web
+ applications and internal tools. The recurring question is whether recent changes
+@@ -15,6 +18,14 @@
+ relevant item when a specific missing passage, date, method, or disclosure can be
+ obtained. Relevance and credibility are separate judgments.
+ 
++Relevance must be shown by a specific passage, not asserted. An accept reason must
++name the passage and the decision it informs (for example: review time, default
++permissions, per-task cost). Programming-language or runtime releases, general model
++launches, and frontier-lab governance or safety-policy proposals are rejected unless a
++passage connects them to how a small team uses, checks, permits, or pays for a coding
++agent. A credible publisher does not make an off-topic post relevant. A reason that
++says the item "does not directly address AI coding agents" cannot end in accept.
++
+ ## Freshness and original identity
+ 
+ Only use the eligible evidence supplied by the run. Its inclusive UTC window is
+@@ -47,6 +58,18 @@
+ or an impressive single demonstration. Assess testing and review time alongside
+ generation time; causal language requires an appropriate comparison.
+ 
++Classify capability adjectives without a stated task, baseline, or number ("solves more
++tasks on every benchmark", "thoroughly checks its work") as unverified vendor claims.
++When a vendor post also states operational facts — availability, billing, default
++enablement, admin controls — prefer those as the decision-relevant content, and look
++for practitioner reports that confirm or contradict the capability claim.
++
++Sponsor reads and advertisements inside a podcast or video are never evidence of
++outcomes; they may only be cited as an example of a marketing claim and labelled as
++an advertisement. When a host relays other people's posts or benchmarks, attribute
++each statement to the named original speaker, treat it as self-reported and
++unverified, and do not count relayed speakers as independent corroboration.
++
+ ## Perspective and independence
+ 
+ Seek vendor capability evidence, practitioner experience, and critical empirical
+@@ -68,6 +91,18 @@
+ personal experiment to meet a quota. If the series lacks enough accepted evidence,
+ say so and stop rather than lowering standards silently.
+ 
++Selection sees bounded excerpts, not whole sources. Judge the excerpts you were
++given, and do not describe a source as incoherent, speculative, or irrelevant as a
++whole on the basis of excerpts alone. If the title, description, or kind indicates
++coding-agent content but the excerpts do not show it, choose defer and state which
++topic or time range should be inspected. Reject only when the excerpts and metadata
++together show the item is outside scope.
++
++Assign only the pieces whose editorial question the passage actually serves, and say
++why for each. Do not assign all three pieces by default: piece 01 needs evidence of
++what changed, piece 02 needs claims and counter-evidence to test, and piece 03 needs
++material that informs an evaluation or permission decision.
++
+ ## Synthesis, uncertainty, and references
+ 
+ Each piece advances a distinct argument, uses at least three originating publishers,
+@@ -82,6 +117,8 @@
+ For non-English primary media, an English paraphrase must be identified as a
+ paraphrase; retain the original segment text and locator. A translation is not an
+ exact English quotation. Flag translation and auto-caption uncertainty for human review.
++Automatic YouTube captions of non-English speech are machine translations even when
++the transcript metadata reports English; use them only for paraphrase.
+ An inference must explain its reasoning in synthesis and must not outrun its
+ premises. Attribute observations and separate proposed practices from measured
+ results. Do not present a proposed team pilot as an experiment we conducted.
+@@ -102,5 +139,19 @@
+ at least three accepted and three rejected/deferred items, compare the model's
+ reasons with their own judgment, record factual corrections with evidence, and
+ approve only the actual reviewed fingerprint. Revise this policy after that real
+-inspection, preserve both versions and outputs, and explain the effect. This v1
+-is an initial policy, not a completed policy-revision demonstration.
++inspection, preserve both versions and outputs, and explain the effect.
++
++## Changes from v1 (2026-10-15)
++
++Each change answers a specific finding in EDITORIAL_REVIEW.md:
++
++- Relevance must be shown by a named passage; off-topic posts from credible publishers
++  are rejected (review item A1 Python 3.15).
++- Vendor capability adjectives are classified as unverified claims; operational facts
++  such as default enablement are preferred (A3 Gemini 4 Argon changelog).
++- Sponsor reads are never outcome evidence; relayed third-party posts are attributed
++  and self-reported (R1, and brief 02's Blitzy advertisement).
++- Excerpt-limited judgments default to defer with a named range rather than reject,
++  and reasons may not call a source incoherent from excerpts alone (R1, R2, D1).
++- Piece assignment must be justified per piece (A2, A3 were assigned to all three).
++- Automatic captions of non-English speech are paraphrase-only (D1).

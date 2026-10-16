@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The passage discusses alignment assessment methods for AI models but does not directly address AI coding agents, task scoping, testing, review, permissions, rollback, delivery quality, or cost. It lacks specific evidence about changes in coding-agent workflows or what a small team should evaluate before expanding autonomy. The content is relevant to AI alignment but not to the specific editorial question about coding agents in small software teams.",
+  "piece_ids": []
+}

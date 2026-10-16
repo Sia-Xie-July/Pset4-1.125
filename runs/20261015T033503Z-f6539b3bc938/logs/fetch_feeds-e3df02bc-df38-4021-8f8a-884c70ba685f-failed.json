@@ -1,0 +1,49 @@
+{
+  "errors": [
+    "Source github-copilot-changelog: Feed contains unsupported XML declarations"
+  ],
+  "input_count": 4,
+  "limited": true,
+  "output_count": 15,
+  "sources": [
+    {
+      "discovery_limit": 6,
+      "output_count": 6,
+      "source_id": "simon-willison-original-entries",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 3,
+      "output_count": 0,
+      "source_id": "github-copilot-changelog",
+      "status": "failed"
+    },
+    {
+      "discovery_limit": 3,
+      "output_count": 3,
+      "source_id": "cloudflare-ai-blog",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 6,
+      "output_count": 6,
+      "source_id": "metr-original-research",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "e3df02bc-df38-4021-8f8a-884c70ba685f",
+  "parent_invocation_id": "005290c6-ceb9-4442-8a49-7f0fa65667d9",
+  "stage": "fetch_feeds",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T03:35:03Z",
+  "finished_at": "2026-10-15T03:35:06Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

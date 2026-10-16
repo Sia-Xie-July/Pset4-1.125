@@ -1,0 +1,21 @@
+Welcome to Before the Merge. This is episode three: Before You Expand Autonomy. What should a small software team test next? Our evidence is current as of October fifteenth, twenty twenty-six. This presentation uses an AI-generated voice.
+
+The first episode separated workflow demonstrations from delivery outcomes. The second separated commercial claims from measured evidence. Our final argument is practical: new tools create options, but a decision to grant more autonomy should depend on a bounded evaluation of the team's own work. The evaluation plan in this video is our proposal, not an experiment we have already conducted.
+
+Three written sources frame that proposal. First, GitHub's October thirteenth announcement, Gemini 4 Argon in GitHub Copilot, states that the model is available to specified Copilot plans and can be selected in the model picker. That is evidence of an available option. Availability does not by itself demonstrate faster delivery, fewer defects, or less human review. We do not treat the announcement as an independent measurement of those outcomes.
+
+Second, Cloudflare's Birthday Week twenty twenty-six roundup describes growing automated activity and the influence of agent-driven recommendations. This is a vendor's account of a broader agent ecosystem. It helps explain why teams face more agent-related choices, but the passage retained for this piece does not measure coding productivity. We should not turn a statement about Internet activity into a claim about a software team's performance.
+
+Third, METR's October fourteenth article, Our Approach to Working with AI Companies, describes its goal of producing accurate, timely, independent evidence about loss-of-control risk. It emphasizes collecting concrete evidence and publishing findings, while noting that some questions remain open. Its subject is risk assessment, not a direct evaluation of our development team. We borrow the principle of explicit evidence while keeping that difference in scope visible.
+
+Together, the three sources distinguish an available capability, an ecosystem narrative, and an evaluation principle. Our contribution is to translate those distinctions into a reversible decision process. The right question is not simply whether a new model is impressive. It is whether a particular use improves an outcome we care about, at an acceptable cost and level of risk.
+
+Step one is to choose a bounded task with observable acceptance criteria. Avoid starting with a change whose failure would be difficult to detect or reverse. State what the agent may do, what it may not do, and who remains responsible for approval.
+
+Step two is to define a comparison before seeing the result. Use similar work where possible, and record differences that make the comparison imperfect. Count time spent specifying, reviewing, testing, and correcting, not just time until the first code appears. Keep tool use and cost visible as well.
+
+Step three is to inspect outcomes. Did the change satisfy the intended behavior? What defects or rework appeared? Did reviewers understand the change well enough to maintain it? A fast first draft that creates substantial later work may not be a delivery improvement.
+
+Finally, decide in advance what would justify expanding, repeating, or stopping the pilot. A positive result on one task supports another bounded test, not unrestricted autonomy. A negative result can reveal a poor task fit rather than prove every agent is ineffective.
+
+Our evidence cannot supply a universal threshold or guarantee a benefit. Small samples, task differences, and evaluator judgment remain limitations. But a transparent pilot makes the next decision inspectable. That is the series takeaway: define the job, examine the claim, and measure the outcome before expanding autonomy.

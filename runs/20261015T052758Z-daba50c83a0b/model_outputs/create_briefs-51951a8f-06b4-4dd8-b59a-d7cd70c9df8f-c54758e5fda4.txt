@@ -1,0 +1,26 @@
+{
+  "title": "The Review Bottleneck: Which Productivity Claims Survive Scrutiny?",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "The recent advancements in AI coding agents, such as the improved task-solving performance and self-checking mechanisms in Gemini 4 Argon, suggest potential for workflow changes. However, the evidence must be scrutinized to determine if these capabilities translate into measurable improvements in delivery quality or speed. The claims about productivity gains must be supported by concrete examples of reduced review effort or increased delivery speed, rather than just generated code volume.",
+  "synthesis": "The synthesis of evidence from multiple sources indicates that while there are claims of improved agent capabilities, the actual impact on delivery workflows remains uncertain. For instance, the YouTube video by Jake Cukjati highlights the need for alignment between agents and coding workflows, while Thorsten Ball's video discusses the speed at which models change and the need for iterative evaluation. Cloudflare's blog post mentions the integration of agents into their pipeline, suggesting a practical application, but without clear metrics on productivity gains.",
+  "limitations": "The evidence is largely based on claims and demonstrations rather than measured outcomes. There is a lack of concrete data on how these changes affect delivery speed, quality, or review effort. Additionally, the commercial and translation limitations of the sources mean that some claims may not be fully verifiable.",
+  "source_1_claim": {
+    "statement": "The agents figure out how it should work, just because it's like, oh.",
+    "type": "source_claim",
+    "passage_id": "s1p3"
+  },
+  "source_2_claim": {
+    "statement": "If not, should I add something to AGENTS.md and then iterate and eval what",
+    "type": "source_claim",
+    "passage_id": "s2p3"
+  },
+  "source_3_claim": {
+    "statement": "Detect and send production issues straight to your agent",
+    "type": "source_claim",
+    "passage_id": "s3p3"
+  },
+  "cross_source_inference": {
+    "statement": "The integration of agents into development workflows, as seen in Cloudflare's CLI and pipeline, suggests a practical application, but without clear metrics on productivity gains, it remains uncertain whether these changes justify altering a small team's delivery workflow.",
+    "passage_ids": ["s1p3", "s2p3", "s3p3"]
+  }
+}

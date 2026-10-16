@@ -1,0 +1,5 @@
+{
+  "decision": "reject",
+  "reason": "The candidate contains fragmented and incoherent passages that do not provide relevant, new, or measurable evidence about AI coding agents, their impact on delivery workflows, or practical considerations for small teams. The content lacks clarity, coherence, and direct relevance to the editorial scope, making it unsuitable for inclusion in the series. The text appears to be a mix of unrelated segments without meaningful context or actionable insights for the target audience of technical leads managing small software teams.",
+  "piece_ids": []
+}

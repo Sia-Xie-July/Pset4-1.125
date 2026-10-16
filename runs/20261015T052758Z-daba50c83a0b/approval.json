@@ -1,0 +1,7 @@
+{
+  "review_id": "93d84d1aa05b77b7a12e1263964205d35d48e80a11150e5cfd5be29a92a189fc",
+  "decision": "approve",
+  "reviewer": "Sia",
+  "reviewed_at": "2026-10-15T19:36:52Z",
+  "notes": "Approved after human review of the three briefs, articles and video scripts against the retained source passages (EDITORIAL_REVIEW.md; 3 accepted + 3 rejected/deferred decisions compared with the AI's reasons). Corrections made before approval and logged per claim in human_edits/CORRECTIONS.md: brief 01 no longer claims a measurable improvement from experience-based sources; brief 01 claims c1/c3 narrowed to what the passages say; brief 02 c2 relabelled as a Blitzy sponsor advertisement, not a podcast finding; brief 03 evidence re-mapped (c1 GitHub, c2 Cloudflare, c3 METR) and statements narrowed; per-piece questions; article 02 lengthened to ~754 words without new claims; scripts aligned with the produced narration and AI-presenter disclosure. Policy revised v1 -> v2 and the selection stage rerun (policy_v2_rerun/). Remaining limitations: excerpt-based model selection, translated captions for Italian sources (paraphrase only), and vendor/practitioner claims that are not controlled measurements."
+}

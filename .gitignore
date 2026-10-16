@@ -1,0 +1,43 @@
+# --- Secrets: never commit credentials -------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+cookies*.txt
+
+# --- Python / tooling caches (regenerated automatically) -------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- Large original media (retrievable: item records keep URL + SHA-256) ---
+# Retained text, timed transcripts (data/assets/) and the SQLite evidence
+# index (data/evidence/) ARE committed so graders can trace every claim.
+data/media/
+
+# --- Rendered audience videos (published on YouTube; links in SUBMISSION.md)
+# QA contact sheets (videos/*.contact.png) are kept as production evidence.
+videos/*.mp4
+videos/*.mov
+# The technical demonstration (demo/*.mp4, ~11 MB) IS committed so graders can play it.
+demo/source/build/
+
+# --- Temporary / partial files written during runs -------------------------
+*.tmp
+*.part
+*.crdownload
+runs/*/.summary-*.tmp
+runs/*/.review-*.tmp
+
+# --- OS / editor files -----------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,89 @@
+{
+  "cost_is_estimate": true,
+  "cost_usd": 0.0,
+  "duration_seconds": 162.4464256670326,
+  "errors": [],
+  "input_count": 3,
+  "model_calls": [
+    {
+      "call_id": "b8ab2d68-d325-4c6d-b290-b843f37b242a-d5274ad8ef7f",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 44.40801245800685,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19015,
+      "input_tokens": 3220,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 613,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "b8ab2d68-d325-4c6d-b290-b843f37b242a-844b998b94cc",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 55.0606288749259,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 21280,
+      "input_tokens": 3693,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 758,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "b8ab2d68-d325-4c6d-b290-b843f37b242a-dd63e77a6cc4",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 59.18077845801599,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 18906,
+      "input_tokens": 3139,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 868,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 158.64941979094874,
+  "models": [
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    }
+  ],
+  "output_count": 3,
+  "warnings": [],
+  "invocation_id": "b8ab2d68-d325-4c6d-b290-b843f37b242a",
+  "parent_invocation_id": "82861e22-5b5e-41fb-9a49-1e436138d208",
+  "stage": "write_video_scripts",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T05:47:21Z",
+  "finished_at": "2026-10-15T05:50:04Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

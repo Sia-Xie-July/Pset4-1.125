@@ -1,0 +1,672 @@
+All right, so this is how I use Amp, or agents in general, in 2026,
+in October of 2026. I gave this talk last week on-site at a customer visit, big
+bank. They really enjoyed it, so I thought, before this gets outdated,
+let me share it with the world. So here we are.
+I cannot talk about how I use Amp without explaining how I see the world.
+I do think that's important.
+So before we get into the nitty-gritty and the examples,
+let me explain to you how I see the world and what's going on right now.
+With agents and these models,
+some constants and some fundamental equations have changed.
+That means software is now much cheaper to produce, faster to build,
+it's faster to debug, it's faster to iterate,
+it's easier to build different things now,
+things that you never would have done before.
+So I do think that the last 30 or 50 years of software development should be
+rethought. As I said, the time to fix bugs has changed, the time to make a change,
+the number of prototypes you can share—all of this, I think,
+has to be considered when you think about how you develop software.
+An example: feature flags.
+I've done feature flags in many companies and teams over my career,
+and they've always been a pain in the ass.
+So, I always hated using them, and even though it's just booleans,
+there was also this chance that I get them wrong.
+And with agents, it's completely changed.
+Grafana charts: I use a lot of Grafana charts because you no longer have
+to define them yourself. So, things have changed.
+We need to take this into account.
+I also think that the rate of change is important to keep in mind.
+I don't think you can say, 'Well, it's October 2026, agents can do this,
+models can do this, that's why we do Y.'
+You need to take into account the progress.
+You need to take into account how stuff is changing.
+And the example here is imagine it's 1999, you're working on a AAA game,
+and somebody says, 'Well, the CPUs,
+by the time this game is finished and you're done with all the artwork
+and the tech, you know, the level building, all of this,
+by the time you're finished, CPUs will be twice as fast.'
+I think you have to take this into account,
+and I think you also have to take into account right now the falling cost
+of tokens, the speed at which these models change,
+the rate at which these models are released.
+We had, at the start of the year,
+I think a new frontier model came out every two months.
+Now people say it's every two weeks. You need to take this into account.
+Some say we are in a deflationary period where it's possible that maybe in six
+months from now it's cheaper and faster to build something than it is right now.
+So, as engineers, I do think we have to take this into account.
+I also think that this, the accumulating slop theory, is no longer true.
+Paraphrasing: if you just let these agents loose, don't review every line of code,
+it will add slop and you end up with an unmaintainable mess of a codebase.
+I don't think so anymore. I think that these models are now so good that, yes,
+you might get slop, but you also now have incredible models that help you fight it.
+So it's not just that you're helpless.
+Last year's models, they would get confused a lot, but an Opus 5.5,
+you could throw this at some really gnarly code and it can help you fix.
+This is a big change recently. I mentioned Opus 5.5.
+I think prompting is now 'what' and not 'how.'
+So the prompt engineering stuff from last year, you know,
+put the files at the top and then the most important thing at the bottom,
+so blah blah blah, I don't think that's no longer necessary. You can see this in Amp.
+In the web, macOS, and iOS applications we no longer have @ mentioning.
+I don't think that's necessary anymore. You're now at a much higher level.
+These are some examples from my threads:
+'I want you to make the bytecode compiler and VM twice as fast.'
+This is just a high-level goal.
+Obviously, this is a toy example because it's my Monkey interpreter, but it did it.
+And then, 'Could you build me a project like this?'
+It built a browser router for me where I just put some screenshots in and said,
+'Build me a project like this.' And it did it.
+I didn't specify how any of this should work.
+And then the last one, this is live in Amp:
+'Can we not have a mini chat in this online thing, the sidebar, super tiny,
+super dense, but enough to say what's up?'
+I think I dictated this on my phone, and Amp just knocked it out.
+We now have a live chat in your workspace.
+So mentioning files and 'write this class like this,' I think that's over.
+Go up one level, focus on the 'what,' not the 'how.'
+You cannot do this without taking into account what I call the triad of agent,
+codebase, and process. That's really important.
+You need to make sure that your agent is well integrated into the codebase.
+You need to make sure that your agent is well integrated in how you as a team,
+or maybe as a single developer, develop software.
+Alex, my colleague, he said that's why the GDP doesn't grow,
+because people try to box the agent into this little thing that was once the text
+editor, and now they say, 'Well, I now have an agent that writes code for me,
+and then I push, and I review, and everything else is the same.'
+That's no longer valuable. You need to unleash the agent.
+It needs to go horizontal. We get to this in a second.
+You need to really let it see a lot more things than just the files that you
+would see in a text editor. These models are so good now.
+Yes, if you do everything as you did it in 2013 or '16 and just replace you
+typing in a text editor with an agent,
+you won't see the gains that others are seeing.
+You need to think about agent, codebase, process.
+Going horizontal, right?
+So the agent started, they took over the complete stack, right?
+Vertically: frontend, backend, database, infrastructure, really good at this.
+And I think now with the latest generation of models, maybe for last, say,
+two or three months, it's time to let them loose horizontally.
+So that means they should help you build and prototype,
+then they should help you ship features, so they should be able to deploy things,
+or at least cut a release or know about a release,
+they should be able to figure out whether it went well, whether it didn't go well,
+they should see CI, you should give them the ability to see production logs,
+debug in production. We have plugins to turn feature flags on, we let it see
+monitoring data, it can see metrics. This is truly, truly, truly a big game changer.
+So going horizontal, really important.
+That's how I see the world. Now let's talk about how we as a team are building
+Amp, Amp building Amp.
+This is quotes from last week, two weeks ago.
+People are saying, this is Adam Wathan,
+like maybe one of the most tasteful people in software,
+saying it's the future of what building with agents is like.
+He has a bunch of other tweets where he kind of said, 'Oh, UX is great.'
+And I swear I didn't pay him to say this stuff.
+Others are saying we have the most tasteful design language in the game.
+There's more tweets. People love Amp, and it's 99% made with AI, okay?
+So if people say, 'If AI is so good, where's all the good software?'
+Here it is. Amp is made fully with AI, and it wouldn't be as delightful as it
+is without AI.
+It's one repo. From the ground up, we had agents in it.
+It's a TypeScript repo, monorepo, it's all in there.
+It's a surprising amount of code, over 2 million lines of code, a lot of commits.
+We had a big rewrite at the start of the year,
+which was kind of—we ran into problems with Cloudflare and Durable Objects.
+It wasn't as great as people said it was going to be,
+and then we switched to a different platform and then relaunched.
+And then we had our fully distributed agents everywhere that you can control
+from the phone, from the web, from the CLI, anywhere.
+Then we launched Orbs, which,
+I guess everybody who's watching this talk should know by now,
+if you don't know what Orbs are,
+ampcode.com/what-are-orbs with dashes in between. Our velocity went up like crazy.
+The features we shipped, like it's not that we shipped slop,
+we shipped great features, mind-blowing. So this is this in graphs.
+You can see the rewrite, we slowed down,
+and then afterwards commit velocity went up. You could sense it on the team.
+As soon as we had Orbs and cloud agents where everybody could spawn off threads
+all the time, velocity increased like crazy.
+So let's talk about how I personally use Amp and agents,
+and then we talk about the team.
+So the models: I always use the latest and greatest. Right now that's Opus 5.5.
+I think it's really, really, really good.
+I used the GPT models before Opus 5.5 came out.
+I'm not convinced that using cheaper models or open models is valuable if we
+want to get stuff done. If you want to try things out, or if you want
+to use models as part of, say,
+an application where you have a predefined workload,
+classification and routing and whatnot, then yeah,
+you can use the cheapest model that matches your evals.
+But otherwise, I think it's possibly waste of time,
+because you don't know where it goes wrong,
+and then it has to do multiple turns, and it has to recheck things,
+and then you have to recheck. Yeah, Opus 5.5, it doesn't make a lot of mistakes.
+And I did this recently. I started testing something, and I used a GLM model, and I
+said, 'Start the dev server,' and you could see it, 'Oh, yeah, oh,
+this is not the command. Oh, yeah, it's actually this script.
+Wait a second, this script needs this parameter, blah blah,'
+and did a bunch of turns.
+And at the end, you spent more tokens, cheaper tokens, than, you know,
+the more expensive ones. So, not convinced.
+Dictation: I'm warming up to that idea.
+I actually use this mic a little bit at home. It still feels weird.
+I still feel ashamed when my wife walks in and I talk to computer.
+But I do think it works. I do think the rambling removes a bottleneck, and it can
+help because you just talk more about how to build something,
+and that more context helps the agent.
+Talking about context: no more context management.
+We removed a lot of context management features over the last six months in Amp.
+This time last year we were really proud of handoff and the thread map,
+where you could see the context used and whatnot. I think that's over.
+You shouldn't concern yourselves with this. Get a plan, use the plan.
+If you're really trying to shave off like 10k of tokens,
+I think the future is going to wash this away.
+All the problems that you have with compaction,
+I think they're minuscule compared to the effort of manually managing or thinking
+about context. You shouldn't do it. It's a waste of time.
+I never use the agents to write text for other humans to read. I hate it.
+My eyes glaze over everything an agent wrote.
+So I don't want to do this to anybody else.
+But they're really good at writing mechanical stuff,
+where it's not important that it's another person on the other end.
+So if I send you a Slack message, or you send me one,
+I expect you to have thought about this and that it's another person's thoughts
+coming my way. But if I, for example, get a bug report and somebody says, 'I don't
+know how to set an environment variable on Windows,' then I can ask Amp, 'Hey,
+what would be a good reply here to walk them through how this works?'
+And they're really good at this.
+And the user doesn't care whether I wrote those three bullet points or Amp did it.
+So, reports about incidents, again, mechanical stuff.
+Documentation, explaining how different parameters work,
+like mechanical stuff where you don't care that another person's on the other end.
+Automations, so it's also called schedules if you haven't used it in Amp,
+can basically say to Amp, 'Hey, in two hours, check again.'
+And then, it's kind of like a timer,
+so Amp will then wake itself up and check again in two hours and run.
+Problem with these agents is they don't do anything unless they're kicked or prompted
+or you send a message.
+So, with automations, you can send messages to the agent at a fixed interval
+or they can set messages. And I thought, well, that's a neat feature, but I never
+thought that's an amazing feature.
+And then, two weeks ago, it was broken for me for a day,
+and I realized I can't live without this. Like, I use this all the time.
+I do have some daily checks, you know, like every day,
+there's some maintenance stuff that runs.
+But I also do stuff like, 'Hey, let's push this, ship it live,
+and then in two hours check whether the error rate went down or something.'
+It turns out I use this all the time. It's a killer feature, like I put here.
+I use the snooze until next message a lot, so for these daily checks, for example,
+I say, 'Snooze until next message.'
+That means it doesn't show up in my sidebar until there's a next message,
+and that makes the sidebar clean.
+I don't have to think about stuff unless the agent runs again.
+Here's a good example of what I just told you.
+This is an inline rendering of an actual, real Amp thread.
+So, I say, 'Hey, let's ship this, and then monitor the rollout.
+We don't want any inference errors.' Just like I said.
+And then it has this scheduled wake-up where it says, 'Your commit is live.
+Inference errors did not increase. But the user has user-visible regression.'
+Then I say, 'Let's revert it.' It does it again.
+I guess not a happy end to this story,
+but just to give you a taste of what we'll see in a second,
+like how the agent can do everything.
+So, this is my mantra: I don't think you should wait for your agents.
+If you do, you're doing something wrong.
+You should work on your own thing, you should work in your own time,
+you shouldn't have eight panes open where you constantly monitor agents.
+The agents now run for 20, 30, 45 minutes and do their own thing.
+They have schedules, they monitor long things.
+Just like, you know, managing humans,
+you don't want to stand beside them all day long and monitor what they're doing.
+Like, you're doing it wrong.
+You should say, 'Go on, do your tasks,' and then, when I have the time,
+when it's my turn, then I'll check on you.
+So, I think you should lean into async. That's what I do.
+This is a typical sidebar for me: bunch of unread messages,
+bunch of threads started from Slack.
+One of those here is this talk that I'm giving right now, built in an Orb.
+Three are running, others I need to go back to. That's how I work.
+And then sometimes I—you know, this is what the sidebar looks like,
+and I'm doing something else, like recording this talk.
+I don't let the agents pummel me around. I pummel the agents.
+And then the question is, when I say this,
+that async and you shouldn't care about time to first byte, they say, 'Yeah,
+but how do you iterate?' Because sometimes you ask it, 'Show me this.'
+And then it's like, 'Ah, that's not what I want.' And then you ask it for variation.
+Yeah, lean into the async. Like, these agents aren't human.
+You can do things that would seem pretty rude when working with another human.
+You can say, 'Give me 20 variations of this,
+and then give me a little page where I can click around.'
+And instead of this back-and-forth, you should lean into async,
+you should batch stuff. Okay?
+Like, sometimes you do need the back-and-forth, there are exceptions,
+like when you do infrastructure stuff, but in general,
+lean into the fact that these are not humans.
+You can ask them unreasonable things, and then take your time and do it on your own
+time.
+So, this is an example here. So, this was on the plane while flying to New York.
+I noticed—it doesn't show the screenshot here,
+but I noticed that there was a misaligned dial icon, and I had a screenshot.
+And I knew, you know, based on experience, like this stuff, alignment, is hard,
+and I didn't know exactly what the issue was, and I thought a little bit about it.
+So, I knew that there's some dimensions in the problem space,
+and I knew that also there's some dimensions in the solution space.
+So, I said, 'Hey, can you fix this?
+It's round, so its center should be center in the outer pill.
+Show me multiple variations of the possible fixes.'
+And look at this: it did create multiple variations in screenshots,
+and it showed me how I can choose between them.
+And while looking at this, I couldn't have told you ahead of time that I think some
+of them look slightly off, and I think I went with B. Yeah, there you go, B.
+And then, FYI, the screenshots, it annotated it with Python,
+and then it used a skill to take a screenshot of the Buildkite Mac build.
+So, yeah, lean into variations.
+I only review load-bearing code. Imagine somebody asked you to review 500 lines.
+Without anything else, you have to review the code, right?
+But imagine if the person or the thing that opened the PR, asked you to review,
+has a demo video of how it works end-to-end,
+it has a test matrix of all the things it tested, it has proof and logs,
+and it tested it across different stacks. How would you go into the code review?
+You would go into it completely differently.
+So, that's what I try to lean into, or everybody here in the team,
+that we ask the agent to do a lot of work to prove that what they did
+works well. And then, you go into the review completely differently.
+And then I ask, 'Does it work? Do I understand how it works?
+Like, is the approach right? Does it have bugs? And can I change it?
+Like, do I know what I would even ask in a month, right, to change it?'
+And obviously, there's load-bearing files, central files, that if they go bust,
+then everything goes bust. But the more you go to the edges of the system,
+the more there's tolerance for errors.
+Like, a CSS error is not the same as a broken database migration.
+This is one of the biggest game changers we've discovered the last half year,
+this prompt: 'Give me irrefutable proof that this works now.' It's incredible.
+So, we use Orbs, which are ephemeral machines.
+They don't take up any resources.
+So, I just ask the agent, 'Give me irrefutable proof that this works now.'
+They can install whatever they need, they can, you know, take screenshots,
+they can run builds, they can do videos and whatnot.
+They're really good at producing proof.
+And once you've built up the trust and instinct, it's incredible.
+I mean, the variation thing with the screenshot, that's exactly what I mean.
+So, this is biggest change.
+Look at this: I said,
+'You should test this fully end-to-end here and provide irrefutable proof
+that you haven't broken anything.'
+And here, it actually touched one of the most load-bearing files that we have
+in our repository. And then you can see like it boots up the dev server, it
+creates a little script, spawns a runner, it tests, sends messages back and forth.
+It exercises the whole thing, and then says,
+'I found no behavior difference between the main and the refactor,
+and here's what I ran, that's the test matrix.'
+If you read this, you go into the code review completely differently, don't you?
+Here's another example. I said, 'Let's implement reordering of queued messages.
+I want you to build this and then give me irrefutable proof that you made it work.
+Show me demo video or other proof.' Didn't end up shipping this, but look at this.
+Like, it even recorded a video of this, and then it says,
+'This recorder uses the real local thread queue, not mock preview.'
+Again, like, if you see this, and you didn't wait for it,
+you just come back later once this is done,
+you look at the code completely differently.
+You don't look at it like, 'Where's the bug? Where's the bug?'
+because you know that it kind of works, so it's amazing. A big game changer.
+Then here, runs the simulator builds, I said, 'Go for it,
+native iOS verification.' There you go. Even a video of the native thing.
+Like, what—that's good.
+Here's another example: We built the runner thing in macOS app, and I said,
+'Doesn't this trigger these macOS permission dialogs?'
+I think I dictated this, that's why there's these filler words in here.
+'Sounds good. Let's build this, then give me an end-to-end walk-through.'
+Didn't say 'irrefutable proof', but 'give me an end-to-end walk-through.'
+And then, look, produces these screenshots. Like, that's crazy.
+That's amazing. Like, imagine if every human in the last 20 years would have done
+this when opening a PR. There would be no more wars.
+'So, test this end-to-end, give me irrefutable proof that this works.
+It also shouldn't feel slow when creating this.'
+So, this was how to refresh worktrees, or how to create them, or something.
+And there you go.
+Look: 'Verified end-to-end through real composer server, actor server,
+no mock requests.' Boom. There's screenshots, demo video.
+This is from the dev server where it exercised the whole thing.
+It's game changer.
+Another one: 'Let's implement this.
+In-thread search should debounce and have good performance.
+I want you to profile this end-to-end on a big thread and reproduce the issue,
+and then implement the most common performance improvement for textures.
+Give me irrefutable proof that you fixed the performance issue.'
+So, what I said here is like kind of the thing that I showed earlier
+with the variations and the irrefutable proof where I say,
+'Give me the most common performance improvements,'
+because I don't know what the big thing is, and then, you know,
+it tried out a bunch of stuff.
+The diagnosis was wrong, and then it changed this instead,
+and then it gives you the table of all of the improvements and how it, you know,
+made stuff faster. That's incredible.
+All right, the codebase, let's talk about this.
+I said you have to consider the triad: the agent, the process, and the codebase.
+We'll get into the processes a little bit more, but let's talk about the codebase.
+So, one big thing is that you have to make your codebase legible for the agent.
+The agent has to be able to see what you see in the codebase,
+because what stopped hallucinations, it was tool calls,
+because they could now feel their way around reality.
+If the agent cannot check whether a file exists or not, then it hallucinates,
+right? It assumes this is the file, and then it assumes this is the folder.
+If it can see it, it doesn't hallucinate.
+So, this is what you need to do with your codebase:
+you need to make everything visible to the agent.
+Can be read-only depending on your risk profile,
+but you need to let them see everything.
+They need to be able to exercise everything: start the dev server,
+stop the dev server, inject seed data, you know, run a REPL, blah, blah, blah,
+all of this stuff. Incredibly important. Make it legible to the agent.
+In our repo, we have 15 AGENTS.md file that give different instructions of how
+to exercise different parts of the codebase. We have a bunch of skills.
+We do have a separate skill for our dev server.
+We do have a GCloud skill, which, you know,
+tells the agent how to monitor production, which is, again, seeing like an agent;
+deployments, so it can check what's live, what's not live; BigQuery, same thing;
+RivetKit, same thing. Makes the stuff legible to the agent so it knows how it
+can deal with the codebase.
+Sometimes it looks like people only encode workflows,
+which is kind of the same thing,
+but I think it's also important to give the agent tools and explain how they work
+versus only fixed workflows.
+The other thing in our codebase is we use Amp, all of us use Amp, obviously,
+and that is huge. Our threads, the Amp Threads, they capture context, right?
+So, the agent can search through the threads and it answers a lot of questions,
+and it kind of—the threads and the codebase,
+they build up context of how we do things. It's really powerful.
+Here's an example where I'm quoting the agent here in my message.
+Will added something. I asked, 'Why does it need to be flagged?
+Can we do this, make the default?'
+It uses read_thread, so it knows which thread Will used to commit that thing
+on September 25th, and it reads that thread to get more context.
+And there's a lot of this.
+It's not that you constantly notice it,
+but the agent fetches all of the information, and then someone says like,
+'Oh, you shouldn't remove it because Quinn added it especially for this case.'
+Really good. The codebase and the threads accumulate value.
+Now, obviously I should have said this from the start, I guess, but yeah,
+we're all in on Orbs. No more local dev.
+I think Nico, he just bought a MacBook Neo because he says he doesn't need a MacBook
+Pro anymore. It's wild. Complete game-changer. We're all in on Orbs.
+Nobody of us can imagine going back to local dev.
+It feels a little bit dirty when you do have a local checkout.
+It feels a little bit dirty when you have a local dev server running now,
+and there's another agent also trying one, and cloud agent—it's the future.
+The only thing I still do in the terminal is to give the agent production access,
+where it says, 'Hey, please run this command to grant me production access.'
+So this is an often underdiscussed aspect of Orbs.
+They are machines, you know, ephemeral remote machines, one per thread,
+scale to zero. They don't cost you anything when the agent is idle.
+But the beautiful thing is the agent can install whatever it needs to get the job
+done, and it does.
+Obviously, you shouldn't do this on your MacBooks,
+otherwise it fills up with trash. But in a machine, it can do it.
+So in this case here, it built this whole slideshow in an Orb.
+I'm running this from an Orb right now in a portal.
+I just have it open in the browser. It's a game-changer.
+It installed—I don't know how it did these animations.
+It built its own layout engine. I don't know how it did this, but I do think
+sometimes for certain things, it installs Python libraries, it installs FFmpeg,
+it installs a different server and whatnot. Really, really powerful.
+If you ask the agent, 'Hey, can you benchmark this against five other things?'
+you don't have to worry about it filling up your disk or something because it's
+just in an Orb. It installs all the tools it needs. It's impressive, honestly.
+So we do use Runners, too. So Runners is—you spawn up Orbs, you get one Orb, one
+agent, one thread URL, and Runner is something that you can run on your own
+machine or a single machine,
+and then you can spawn agents and multiple threads on it.
+So that's kind of the opposite,
+where you have a stateful machine that's shared between different agents,
+and an Orb is a machine per agent.
+We do use this, so with the macOS app you always have a Runner with you;
+as long as you have the macOS app running, it's a Runner.
+And then what happens is that the Orbs start running threads in your local
+machine if they want to debug the iOS app or something,
+and then they send messages and files back and forth,
+which is incredibly crazy to see. It's really impressive. You should try it out.
+So this is an example. I was working on the Runners themselves, and I wanted
+to test something that was only macOS-specific with file system events,
+like how to watch a directory.
+And I knew that, you know, macOS is different from Linux.
+So I said, 'You can start a thread on my MacBook Pro and ask to test it
+there.' And then you can see here, it calls create thread,
+then it calls wait for threads, it reads the other thread, it sends a message,
+it edits files, it downloads the files, like the proof from the other thing,
+and they talked to each other. And here's the other side.
+This is a message from that first thread, and this was running on my MacBook,
+and it says, 'Hey,
+I want you to test the event-driven discover dirs implementation on this
+MacBook.' And they write in this very strange English.
+And then, you know, it downloads the files it needs to test stuff,
+which is often not a lot, right?
+And then it just tests a bunch of stuff, it creates a report,
+they talk to each other. It's mind-blowing.
+The beautiful thing about Orbs is that it's a shared environment and a shared
+codebase. So I showed this to you earlier,
+like sometimes the agent creates iOS videos or demos or screenshots
+or something, and honestly I have no clue how it does it.
+I don't know who added it. I have some clue, I guess, but somebody on the team
+then sits down and figures out how to make this work in Orbs, which is standardized,
+right? It's for everybody. And they document it.
+They add a skill, they change the AGENTS.md file,
+they add a script or whatever, and now it's just in there.
+We have the codebase, how to run it in an Orb,
+how to do stuff in an Orb, AGENTS.md files, threads—it all accumulates.
+It's really good. Like you wake up two days later, and suddenly the agent can do
+more stuff because your colleague dropped it into this.
+And you don't have to install anything. It just works. It's incredibly powerful.
+And then obviously, the other thing that's part of this is production knowledge.
+So it's not just the local dev stuff, but we also, like I said, going horizontal,
+we let the agent see production. So we do have a bunch of stuff like canaries, which
+is real production data. We have logs.
+All of this stuff is documented in our codebase,
+so that if the agent ships something,
+it knows what that will look like in production or should look like
+in production. So it can access stuff there. It's all documented.
+Here's an example. So canaries is—like, I found like the biggest threads that ran
+into problems in prod, and I anonymized them and then put them as canaries
+in there only for the agents.
+So there's production data that's only for the agents.
+And if that sounds insane, remember ten years ago people were saying, 'Oh,
+you change your code only for the tests?'
+Yeah, of course, because I wanted it to be tested.
+So now, guys, we have production data or code in the production path that's only
+for the agent, because I want the agent to look in production. It's powerful.
+Here, this is where it used it.
+So this is another thread that started in another thread, and said like,
+'I need you to benchmark this.' And look at that prompt.
+Like, you know, it loaded then two skills, the gcloud and RivetKit stuff.
+It looks at the AGENTS.md files, it then gets production access,
+and then it runs benchmarks in production. Crazy.
+The process, how do we develop stuff? Process is maybe too strong a word.
+Maybe these are—you can call them techniques or something.
+So this is—I said this earlier. We built Amp.
+Started building it in February last year, and from the start,
+it was senior engineers on it that used AI. Everything else follows from this.
+It's not retrofitted. We don't stick to processes from 2016.
+We all push to main because bugs are faster to fix, because we dogfood,
+because we have feature flags, because the agent can see stuff.
+We don't have PRs because it's insane to ask people to stamp stuff.
+That means your PR system is broken.
+It's weird to have the agent run CI in an Orb for 20 minutes,
+and then it pushes it up, and then it has to run it again for 20 minutes.
+That's insane.
+We kind of kick off a lot of the old processes.
+And I guess I should make a different video about this, but yeah,
+that's what it is. We're AI-native.
+We push to main, no PRs, and we question everything.
+We have designers on the team, but they contribute to the code.
+We don't use Figma anymore.
+They build prototypes, they iterate in Orbs, they ship stuff, they fix stuff.
+It's all about the agents.
+So here's a good example of like another AI-native thing.
+We do have bug reports in Amp.
+What happens is if a user clicks this,
+we collect the diagnostic bundle from the client, from the server, all of the data.
+We post a message in Slack, and then people can take that bug.
+They can start an agent right from Slack.
+They can take that bug report ID and give it to the agent and ask it fix
+the bug. And it can just get all of the data. It's all legible to the agent.
+Increases the rate with which you can fix bugs enormously,
+by making it all visible to the agent.
+This is an example. I don't know why I was this specific, but I basically said,
+'Investigate and fix this. You know, here's the ID. Call this.
+Load the report diagnostics.' Actually, I don't think I wrote this.
+I think Puck wrote this for me. But that's how it works.
+It has a bug report ID.
+It has function, which is an Amp plugin,
+which everybody can write for their own bugs.
+And then it loads all of this, diagnoses it, and then, yeah, fixed and verified.
+Boom, root cause. And then I say, 'Let's ship it. Mark the bug as resolved.
+Send the user a short email saying thanks for reporting.
+We fixed it, new error message, etc.'
+And then here, says, 'Hey Alex, thanks for this.' You can do this also with a plugin.
+You can have little forms in Amp, and then I edited that email,
+and then it sends it out to the user, gives them credits.
+This is all Amp plugins, fully integrated.
+From bug report to agent debugging it to fixing it to communicating to the customer
+to giving them credits if something was bad, it's all in Amp.
+It's all legible to the agent.
+The agent can watch the rollouts, it can cut releases.
+Here, I link it to a Slack message where I was talking with a partner of ours.
+They reported a bug. I made the change, and then I said, 'Look, let me know once
+this is live so I can let them know in this thread.'
+It says like, 'No, it's not live yet.' Then I ask, 'Is it live now?'
+It says, 'Yes.' And then down there, I say, 'Cut a CLI release.'
+It can see it all.
+Incident response, incredibly good. We had a bunch of incidents in August.
+We talked about this on the podcast a little bit.
+After we had like a really hard time in August,
+we went all in on let's throw agents at this problem.
+So now we have these plugins in Amp.
+One is called get system health,
+which basically talks to all of the APIs that we have for monitoring and logging
+and whatnot, and it can answer the question of is our system healthy.
+You can say, 'Is it healthy?' And then it says, 'Well, looks like this.
+I can see the logs.' Incredibly helpful.
+So every time there's an incident or something goes wrong and an alert fires,
+this is what everybody does. It's the system health.
+We have, like I said, Amp plugins, that's what this is. Again, it's TypeScript.
+Everybody can write these.
+Plugins to fetch the bug reports, create bug reports, to email the users,
+system health, feature flags, giving users credits. There's more.
+Really powerful to create plugins to integrate the agent more.
+This should be a separate thing, but this is what I do often:
+eval agent friendliness.
+One problem is, if you change the AGENTS.md file, right, you wonder,
+do the agents actually respect this?
+So what we started doing is, we ask the agent itself to run a little eval
+on it. So we say, 'Look, you added this to the AGENTS.md file to tell the agent,
+say when you want to give the user credit, it should always use this plugin.'
+And then, you can ask it spawn five Orbs and make sure that for different requests,
+it always uses this to grant credits.
+And these models are, I'm telling you, incredible at running these evals.
+I guess it's because they're born in these model houses where they run evals all day
+long. They're really good.
+They will spawn up other agents, they write really good prompts,
+they do a control group even. And I do this for a bunch of stuff.
+I started doing this where I say, 'Well,
+why didn't the agent use this script to debug this sandbox or something?'
+And then I iterate on the AGENTS.md file and I say, 'Now spawn a bunch of Orbs.'
+Let's iterate on this prompt, and then it says like, 'Yep,
+all five Orbs used that script for these and these prompts,
+so I think this is good to ship.'
+So evaling the agent friendliness is incredible.
+Ask yourself, 'Does the agent do the right thing?
+If not, should I add something to AGENTS.md and then iterate and eval what
+it actually did?'
+Start by saying, for example, 'Start the dev server and log me in.'
+If the agent cannot do it, then you need different instructions, different tools,
+and then you can ask it to spawn different agents and test this.
+And then over time you harden your instructions,
+and then at some point you won't even think about spelling stuff out
+for the agent anymore because it's all in the codebase.
+So here's some tests, right?
+The agent said it doesn't have access to E2B, which we use for sandboxes,
+but then it figures out that it has.
+'I guess you're missing something in the AGENTS.md file.
+I want you to figure out where that information is,
+what a better place would be, and then I want you to eval this change by starting
+fresh Orbs.' And then look at this: creates so many Orbs, ten,
+and then they report back and say like, 'Yep, I got it,'
+and then it started control group Orbs and other probes.
+Yeah, here: 'Let's ship this and archive the eval threads.'
+It's honestly impressive.
+To end this, one case study where all of this comes together.
+So here I got a bug report, somebody saying, 'Hey,
+Orbs are running out of memory.' So then it was in Slack, and I said like, 'I'll
+take this.' I clicked on the button, and then I said, 'Hey Amp,
+start Claude Opus 5.5 thread to figure out how we can report the top five processes
+that consume memory and show them in a warning.' I was just riffing there a bit.
+So this goes to Puck, and then Puck starts a thread, right?
+And then Puck reports back here.
+This was just a start. Puck spawns the thread, it sends a message in there, says,
+'Investigate and implement an improvement on this, report this.'
+This is shortened here, there's more in this.
+And obviously it fetches the bug report stuff,
+it sees what happened for the user sandbox, it can investigate it,
+it can look in the logs, it can look at BigQuery, all of this stuff.
+It can read threads, it reads similar bug reports if you see this here.
+It has a lot of context. And then it builds a bunch of stuff.
+It figures out like what the problems are, it connects to production,
+it connects to the canaries,
+it can inspect itself because it knows it's running in an Orb, and then I go,
+'Well, is this the right fix?' Go back and forth, but I don't know if we see
+the numbers here, but this is, you know, an hour later,
+like I wasn't waiting for this. And then it comes up with a different thing.
+I say, 'What's the recommendation?'
+It says, 'Ship what's built, and then do the automatic part.'
+So then I quote it and I say, 'Well, wrap it behind a feature flag,
+and then it should work for all providers and whatnot.'
+So here, it knows about the feature flags, it knows about everything,
+and it wraps it in a feature flag and says, 'Yep, it's in a feature flag.'
+And then I say, 'Now, let's deploy this in production.' It knows already.
+It says like, 'We need to do this to test it in production.'
+I say, 'Let's deploy it, cut the release, give me the feature flag,
+and then you can spawn Orbs that run into memory issues, right?'
+It then does this. It waits for the deploy, and then it gives me like—this is
+again an Amp plugin, you can build this little thing for yourself,
+too—where I just say, 'Yep, grant me the feature flag,'
+like the human has to approve it.
+And then I have it, and then it spawns other Orbs to run into this issue,
+sends them instructions to kind of use up a bunch of memory so I can test this
+in prod, and then I can stop the processes.
+So at this point, there's so much stuff that I would have never done without
+agents: the feature flag, that's a mess;
+inspecting all of the different states and how the memory management works
+and the cgroups, all of this stuff, like it would have taken so long;
+coming up with different proposals;
+and then rolling it out without testing it locally where I have to click around,
+and then how do you like—yes, I can write a script to use up a bunch
+of memory, but the agent is fucking 50 times faster than I am.
+So then I just ship it, I trust the code,
+I looked at the code at some point, like the load-bearing code.
+It's live behind a feature flag, it only affects me, it can reproduce it.
+I look at this, I say, 'Yep, this looks good. The stop button works.'
+It reports back.
+Crazy. You know, here, 'Let's test it.'
+I tested it, and then look at this: I send it a video and say,
+'Here it works.' Like the roles have been reversed, I guess.
+I send it a video and say, 'Yep, it works.'
+So I don't always do this,
+but testing in production removes a lot of risk because the code is already out
+there, it's behind a feature flag, there won't be any big surprises,
+it's not a big release. With agents, it's a lot less painful and a lot less work
+to deploy small things to prod behind feature flags than it previously was,
+and this is all of this in action.
+And that is it: how I use Amp. I hope that was helpful.
+If you have any questions, if you want to see more of certain things here,
+let me know. Happy to record more videos.
+And with that, bye-bye and, yeah, it's Orbin' time.

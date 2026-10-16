@@ -1,0 +1,20 @@
+{
+  "input_count": null,
+  "output_count": null,
+  "errors": [],
+  "invocation_id": "43d2a374-40f4-4737-bb19-c53186323bfd",
+  "parent_invocation_id": "56eade64-912b-4300-a00e-4aca67c4e0c5",
+  "stage": "extract_content",
+  "status": "running",
+  "exit_code": null,
+  "started_at": "2026-10-15T04:12:34Z",
+  "finished_at": null,
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

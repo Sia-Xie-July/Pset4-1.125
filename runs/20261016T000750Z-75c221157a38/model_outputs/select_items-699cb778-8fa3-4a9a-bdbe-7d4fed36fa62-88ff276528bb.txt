@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses changes in coding-agent workflows, including reduced development time, faster debugging, and increased iteration speed. It also highlights the integration of agents into production environments with canaries and standardized documentation, which informs decisions about expanding autonomy. The content is relevant to the central question about workflow changes and evidence required for autonomy expansion.",
+  "piece_ids": ["01", "02", "03"]
+}

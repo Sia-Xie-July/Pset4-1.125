@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The candidate's content discusses personal experiences with automation and flow, but it does not provide evidence relevant to AI coding agents, task specification, testing, delivery outcomes, or team workflows. The excerpts lack specific claims or measurements about coding agents that would inform a small team's delivery practices. A passage about coding-agent workflows or measurable outcomes is needed to resolve this deferment.",
+  "piece_ids": []
+}

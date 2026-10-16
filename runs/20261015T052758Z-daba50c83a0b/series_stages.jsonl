@@ -1,0 +1,4 @@
+{"stage":"editorial/create_briefs","exit_code":0,"output_path":"runs/20261015T052758Z-daba50c83a0b/briefs.jsonl"}
+{"stage":"content/write_articles","exit_code":0,"output_path":"runs/20261015T052758Z-daba50c83a0b/articles.jsonl"}
+{"stage":"content/write_video_scripts","exit_code":0,"output_path":"runs/20261015T052758Z-daba50c83a0b/video_scripts.jsonl"}
+{"stage":"review/check_content","exit_code":0,"output_path":"review.json"}

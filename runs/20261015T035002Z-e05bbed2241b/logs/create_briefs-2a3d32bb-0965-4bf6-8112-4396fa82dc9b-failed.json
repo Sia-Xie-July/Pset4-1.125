@@ -1,0 +1,25 @@
+{
+  "cost_is_estimate": false,
+  "cost_usd": null,
+  "duration_seconds": 2.8874695830745623,
+  "errors": [
+    "Accepted evidence does not cover all three required input types"
+  ],
+  "input_count": 25,
+  "model_calls": [],
+  "model_duration_seconds": 0,
+  "models": [],
+  "output_count": 0,
+  "invocation_id": "2a3d32bb-0965-4bf6-8112-4396fa82dc9b",
+  "parent_invocation_id": "a59c2448-da34-4c4f-999b-774f815ade49",
+  "stage": "create_briefs",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T03:58:13Z",
+  "finished_at": "2026-10-15T03:58:16Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Before You Expand Autonomy: A Small-Team Evaluation Plan",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "The recent release of Gemini 4 Argon in GitHub Copilot, which solves more tasks than previous models and thoroughly checks its work, suggests a potential shift in agent capabilities that could justify workflow changes, but teams must verify these claims through measurable outcomes before expanding autonomy.",
+  "synthesis": "Cloudflare's announcement of a CLI and pipeline for agent support (s1p2) and METR's emphasis on independent evidence for AI risk assessment (s2p1) highlight the growing ecosystem around agent tools and the need for rigorous evaluation. Gemini 4 Argon's performance improvements (s3p1) provide a concrete example of enhanced capabilities, but without direct evidence of delivery speed, quality, or cost benefits, teams should proceed cautiously.",
+  "limitations": "The evidence is primarily promotional (s3p1) and lacks direct measurements of delivery outcomes, review effort, or cost savings. METR's focus on risk assessment (s2p1) underscores the need for independent verification, which is not yet provided.",
+  "source_1_claim": {
+    "statement": "Gemini 4 Argon solves more tasks than previous models on every coding benchmark and thoroughly checks its work.",
+    "type": "source_claim",
+    "passage_id": "s1p1"
+  },
+  "source_2_claim": {
+    "statement": "Cloudflare is building tools to support agents and developers, including a CLI and pipeline for agent integration.",
+    "type": "source_claim",
+    "passage_id": "s2p2"
+  },
+  "source_3_claim": {
+    "statement": "METR emphasizes the need for independent, high-quality evidence to assess AI risk and control, rather than internal decisions.",
+    "type": "source_claim",
+    "passage_id": "s3p3"
+  },
+  "cross_source_inference": {
+    "statement": "The combination of improved agent capabilities (Gemini 4 Argon) and the call for independent verification (METR) suggests that small teams should evaluate these tools through measurable outcomes before expanding autonomy.",
+    "passage_ids": ["s1p1", "s2p2", "s3p3"]
+  }
+}

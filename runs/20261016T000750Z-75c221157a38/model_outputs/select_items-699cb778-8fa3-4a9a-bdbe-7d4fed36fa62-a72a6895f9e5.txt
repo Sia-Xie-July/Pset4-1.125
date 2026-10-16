@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The passage discusses Cloudflare and OpenAI's collaboration on improving AI discovery, but it does not directly address AI coding agents or their impact on small software teams' delivery workflows. The content is relevant to AI search capabilities but lacks specific information about coding agents, task scoping, testing, review, permissions, rollback, or cost. To resolve this, we need evidence that connects these developments to coding-agent workflows and delivery practices for small teams.",
+  "piece_ids": []
+}

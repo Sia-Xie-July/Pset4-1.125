@@ -1,0 +1,52 @@
+{
+  "errors": [
+    "Source simon-willison-original-entries: Feed retrieval/parsing failed",
+    "Source github-copilot-changelog: Feed retrieval/parsing failed",
+    "Source cloudflare-ai-blog: Feed retrieval/parsing failed",
+    "Source metr-original-research: Feed retrieval/parsing failed"
+  ],
+  "input_count": 4,
+  "limited": true,
+  "output_count": 0,
+  "sources": [
+    {
+      "discovery_limit": 6,
+      "output_count": 0,
+      "source_id": "simon-willison-original-entries",
+      "status": "failed"
+    },
+    {
+      "discovery_limit": 3,
+      "output_count": 0,
+      "source_id": "github-copilot-changelog",
+      "status": "failed"
+    },
+    {
+      "discovery_limit": 3,
+      "output_count": 0,
+      "source_id": "cloudflare-ai-blog",
+      "status": "failed"
+    },
+    {
+      "discovery_limit": 6,
+      "output_count": 0,
+      "source_id": "metr-original-research",
+      "status": "failed"
+    }
+  ],
+  "invocation_id": "8bf7ec4f-d72f-4e47-934f-a3b5fea1c613",
+  "parent_invocation_id": "66b7bbc6-df95-4a49-b57d-4a584d84c387",
+  "stage": "fetch_feeds",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T03:34:10Z",
+  "finished_at": "2026-10-15T03:34:10Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

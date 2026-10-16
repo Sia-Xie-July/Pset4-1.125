@@ -1,0 +1,45 @@
+{
+  "cost_is_estimate": true,
+  "cost_usd": 0.163587,
+  "duration_seconds": 29.203855250030756,
+  "errors": [
+    "Claim references an unselected/unknown exact evidence version"
+  ],
+  "input_count": 25,
+  "model_calls": [
+    {
+      "duration_seconds": 26.368668999988586,
+      "estimated_cost_usd": 0.163587,
+      "input_tokens": 175222,
+      "input_usd_per_million": 0.75,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "output_tokens": 7149,
+      "output_usd_per_million": 4.5,
+      "provider": "openai_compatible",
+      "request_attempted": true,
+      "requested_model": "gpt-5.4-mini",
+      "status": "completed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 26.368668999988586,
+  "models": [
+    {
+      "name": "gpt-5.4-mini-2026-03-17",
+      "provider": "openai_compatible"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "c854c44e-e8d1-40f7-9050-669f612875c4",
+  "parent_invocation_id": "c6fd19ab-86ed-46a6-8ebf-785f0d34b305",
+  "stage": "create_briefs",
+  "status": "failed",
+  "exit_code": 2,
+  "started_at": "2026-10-15T03:52:38Z",
+  "finished_at": "2026-10-15T03:53:08Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

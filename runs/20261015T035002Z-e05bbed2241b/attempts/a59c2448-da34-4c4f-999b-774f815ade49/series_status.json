@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "exit_code": 2,
+  "failed_stage": "editorial/create_briefs.sh",
+  "human_review_required": true
+}

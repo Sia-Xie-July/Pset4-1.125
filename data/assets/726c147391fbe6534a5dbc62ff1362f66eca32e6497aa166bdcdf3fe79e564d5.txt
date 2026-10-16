@@ -1,0 +1,633 @@
+AI coding tools are getting faster, better, and just coming out every single day.
+They just keep coming out. Mike, you just mentioned there's a new model that just dropped as
+a record in this crazy. But cut through all that noise if you're a developer. Just getting started,
+the hard part is not figuring out which model is the smartest or specifically which one you should use
+or all that nonsense. The hard part is learning how to actually work with these tools without
+giving up control of your code base. So in this episode, we're breaking down the tools,
+the terminology, and the step-by-step workflow that we'd use to go from basic AI assistance
+to letting agents plan, build, review, and verify real development work. Oh, spicy. So if this
+sounds interesting to you and you want to support the show, you can go and check us out on that
+Patreon, leave a review or rating in your podcast app, join us in our Discord server, or share
+this with your friends. And if you want to learn how to code, I want to take some courses to do
+that, you can do so on scrimbo. They got some great courses on there, front end and back end support.
+They even have a fancy media player code editor, whether you can actually pause the lesson and
+play with the code that the instructor was writing right on the screen. And they have a scrimbo pro plan
+that you can pay for and we have 20% off. If you use our link, that link will be in the RSS description
+as well as in the show notes with details on how the link works in the show notes on HTML, all the
+things.com. So Mike, I wrote the first, we have kind of a trio of these AI basics episodes and I'll
+include links to the other two inside of the show notes as well. But we have kind of just AI basics,
+which is sort of like, hey, if you're completely new to AI and you don't want to frame it or
+silo it to like developers or small businesses. And that's your episode. And then we have AI
+basics for small businesses. There might be slight slight differences in the title. But basically AI
+basics for small businesses, which is sort of more toward my side of the business, which is ideal
+with a lot of small businesses. And so I see a lot of their needs and we run a small business
+ourselves. And so a lot of small business experience. And then of course, AI basics surrounding that.
+And then now Mike, you do a lot more of the sort of web app development side of things. And
+this is your episode AI basics for developers. So why don't you take it away? Yeah, there's going to be
+a lot here. One thing I want to mention right away is that the show notes to this are going to be quite
+heavy. So when if you're confused about something, if you want to learn more, I highly recommend you
+to go to HTML, all the things.com and search for this episode on there because the show notes are
+going to be quite packed. I'm not going to cover everything in the show notes. That's to be clear.
+I'm going to try to give you a good idea of kind of the tooling, the terminology, the tooling
+around where AI is today. Right? So we're in September of 2026. So this could be a slightly
+in flux, depending on when you're listening to this. Because as Matt mentioned right before,
+models are coming out literally every single day that are eclipsing each other or being worse than
+each other, whatever. So do your own research when you're when you're checking this out. But I want
+this to be a very foundational episode in the sense of we should you should get the terminology
+that terminology should stick. There should be there might be other stuff you need to learn, but at
+least this based terminology should stick the tooling, the ideas of the tooling should be sticky.
+And then especially if you're a traditional developer, if you're a junior developer, if you're just
+getting into development by coding, the process that I would use to start trusting AI to actually
+develop good work at the end, that's going to be very sticky as well, right? Regardless of where AI
+gets to, at least in the next couple of years. So having said that, I think the first thing that we
+kind of need to get out of the way here is the some of the terminology. I did quite a bit of like
+research for this stuff. I'm only going to be talking about really three things models agents and
+harnesses. But even then, even just those three kind of core term terms for developers,
+there's some real haziness like this is early early early times in this space right now. So
+there's stuff that overlaps, there's stuff that doesn't make any sense. But if you have a general
+idea of these things, I hope that it'll make it easier for you to pick the right tool to be able
+to interact with that tool better, right? To understand what's going on. So that's why I want it to
+talk about these three things. The first one here being model. So the model is the underlying LLM
+essentially. So we're talking about your you know, cloud, cloud models. There's the opus model.
+There's the fabled model. We're talking about your chat GPT models, right? There's the GPT
+6.1 sole that just got released yesterday, which replaces 6.0 sole, which got released the week ago.
+A million models, but it's the underlying intelligence of the system that we're going to be
+talking about, right? So this is the intelligence, okay? Without with just the model,
+you're talking about just essentially a chat back and forth chat. So when when chat GPT 3.5 release
+or three three release to the world, that was essentially us talking almost directly to the model.
+It couldn't you know, look at our documents. It couldn't look at a picture. It couldn't do anything
+really. It was basic. Hey, here's here is some text. Give me some text back that you know,
+would make sense around the question that I'm asking. That's what a model does.
+The next thing here that builds on top of a model is an agent. So this is the thing that actually
+gives the model the ability to perform work. And it does this by making like kind of like a
+decision making loop with tooling, right? So the model is able to go in and think to a certain
+degree through an aid through a gentics structure and also have a certain ability to go through and
+decide if what it's done is enough, right? So if you ask a model, if you ask, you know, something to
+parse a picture and figure out what are the details in that picture. And in that picture,
+there's a website with a with a phone number on it and a map, whatever, right? The model itself,
+if it's not multimodal, especially, doesn't have the ability to parse that picture.
+But if you give it if it's an agent, then what it would do is, okay, I need to parse that picture
+then it has a decision making point where it's like, okay, what do I need to do to parse that
+picture? It goes in, checks the tools that it has access to and then it uses the tool that it
+has access to to parse that picture and goes down through that tool, uses it, parses it, figures out
+if it does another, you know, essentially auto complete, you know, LLM structure, then if it decides,
+hey, is this enough? Is this what the it asks again? Is this what the user is asking for? If yes,
+output. If no, do another loop. Okay, what other decision needs to be made? What other decision
+needs to be made? So an agent is able to, you know, read files, edit files, run commands,
+search a code based run tests. That's kind of the basic functionality of an agent. It's able to do
+much more than that, but that's what an agent is. The next thing is a harness and this is where it
+gets starts to get fuzzy. A harness is the infrastructure and rules around that decision loop that
+the agent is using. So for example, right, if an agent needs to make a decision, oftentimes it will
+ask the harness that's being built around the agent, what tools are available? It will also ask,
+if the decision is to write a script and run a script on the machine, the harness is the thing
+that's telling it, if it has permission to do that or not. So the harness is the permissions,
+the tool context that it has, and a verification process because at the end of the day, once something
+is done, the agent can determine that itself or the harness can tell it, hey, when you're finished,
+this is what you have to run. These are the tests you have to run. So the harness is kind of the
+infrastructure, the thing that binds the agent together with the model to make it be more useful.
+I was going to say, could you give us an example, maybe you have just a run through and then just
+talk about the different, what the different parts are using those three kind of key terminology
+pieces. Yes. So the first thing I'm going to talk about is a tool here in this example. Read
+file. So a read file function is a tool, a model, a model can't really read a tool without this
+read file tool. Claude, the model is deciding to call read file, edit file, and then run tests.
+That's an agent behavior. So it's deciding to call three tools. It's because it's behaving as an
+agent in this case. The system deciding that Claude is only allowed to edit a specific folder
+and must run tests before finishing, that's a harness. It's again, it's not super, super clear
+because we're still in the in the flux of this being defined. I think that's the problem here.
+But that's the best way I could kind of lay it out for you. So a model running tools and calling tools
+makes it become an agent and a harness is the thing that kind of gives it the rules on what tools it
+should call for what instance. So can I, can I take a stab at this to like take it out of the AI
+sphere and then connect it to the AI sphere in this head the same time. So I would say is a model would
+equate to the human brain. So in real life, again, kind of separating it but still connecting it
+to the AI, you would say what's the model of a human? It's the human brain, you know, the intelligent
+center, whatever. So there's that. The agent would be the person's skill set. So you would go to a
+plumber to get a leak fixed. Okay, fantastic. So there are human brain, right? And they have the
+agency to fix that leak because they've been trained as a plumber. So there's your agent, right? They
+make decisions. I'm going to use this tool. I'm going to use this and that. The harness would be
+society or their workplace or the laws. Let's just to simplify it. Let's say the construction
+code. So the plumber may look at the leak and say, I could solder that with lead solder. That is
+illegal. So they have the agency to know I could use lead solder here. The code here, the construction
+code, the laws state that I cannot do that. So I will use this other method of fixing the leak.
+The harnesses those laws, the construction code, the agency is them going through their own skill set
+that they've made. And the baseline of everything is the human brain powering it. Would that be a good
+sort of like for someone who's very new to this, a good sort of like out of experience. Yes.
+I think I think that's perfect. Yeah. I think like the construction code or even a contract that
+you agree with with a contractor could be a harness, right? Like the contractor can be like the
+contract can say like, Hey, you're allowed to go into this room into this room into this room. You're
+not allowed to go into this room. So that's, you know, a harness telling telling the person that it
+has the capability is obviously can go into those rooms, but don't go in those rooms. And we're
+actually putting boundaries up to exactly the actual first idea had was a tech worker. Like if
+you want to your competitors is solving a problem you can't, I mean, you could go in technically,
+you could, you know, with if society didn't have rules and companies didn't have security, I could
+just walk into that competitor go take their prototype, bring it to my company and then start,
+fix in my issues. But the harness is, Hey, that's a competitor. We can't be doing that. That's
+trespassing. You can't be, you know, you can't be doing that. You're going to be breaking through
+their security. You can't be doing that. So there's your harness. But like if it was loud, I mean,
+that would be, Oh, there are already 70% of the way through. Let me just go over there and take it from
+them. I agree. That's exactly it. So now let's equate these to the tools that are available right now.
+Right. So there's a bunch of AI coding tools. I'm not going to cover every single one of them because
+that would take literally this entire episode and I would still not be able to cover them all.
+We're in a bubble in terms of there's too much of this crap around. Not from a capability
+perspective, the bubble, I believe is something very similar to, you know, the dot com bubble where
+like we just have too much crap. But there's core, the core ideas of agents and and and LLM's is very,
+very, very, very foundational. It's not going to go away. These are the tools that I deem good
+right now that you should look into without overwhelming you. The first one here is cursor. So
+if you're more used to VS code, cursor is a good transition because it's a VS code fork or was a
+VS code for I should say I believe they've rolled out their own version without any sort of dependencies
+on VS codes since then, but it's essentially a IDE like a a simple, not a simple IDE, but it's a
+code ID so you can have your code there and you can have an agent pane there. You can do the same
+things that you would do in VS code traditionally. The it is starting to transition its way. So it has
+a separate like agent view, which I think is good because when you're starting to get into
+development, when you're starting to get in, you can kind of stick to the VS code style editor
+and then as you start to get more comfortable with agents, you can switch the agent view in the same
+tool kind of nice. They have a subscription model where you can use a bunch of agent, a bunch of
+different models. Plus you can use the the GROC models now like the I think there's a GROC 4.7 that
+just came out, which is a decent model, 4.6 was a decent model and you can use like log models in
+there too under a certain amount of usage. So it has a, it has a subscribe, all of these tools will
+have subscriptions. They'll have, they'll, most of them, some of them will have free tiers.
+If you're a developer, you're going to lean towards having to pay for it and you're going to lean
+towards paying a higher amount as well than you're used to. If you're used, you know, it's going to
+be probably closer to $100 a month, at least range, but in a lot of these, there's like a $200
+a month plan as you get more serious. So cursor cursor has a gentick. So it has agents inside it
+and it has the ability for you to work inside their harness. This is this is the confusing part.
+The agent is again, a lot of times a combination of a model with a bunch of tools and the ability
+for that model to run those tools. And the harness is something that's provided by cursor. So it
+provides this like set of rules out of the box that you can then edit yourself. Right. Like you can
+go in and give it more strict rules, less strict rules. You can go in and give it more tools,
+less tools. So you control the harness a lot more. The agent you don't really control.
+The harness is something that you can sort of control, but you get a baseline in all of these tools.
+Cloud code is very similar to that. Cloud code is less than a traditional ID and more of just a
+chat box where the first thing that you see really is just being able to input some text.
+There's an app version. There's a terminal version. Right. It's up to you what you're more comfortable
+with. And your idea is is that you have just a plain text box. You input information into
+that text box of what you want the agent to do and it does it. And here is the same thing. It gives
+you a it's an agent and it gives you a default harness that you're able to then control. So I
+hope hopefully that start is starting to click here. Right. Codex is the same thing, but on the chat
+GPT slash open a side. So they both Cloud code and codex are interchangeable. Cursor is a little
+bit different in the sense that it has a little bit more of the IDE functionality, but it's also
+sort of interchangeable with the three of them. At this moment in time, I'm using all three.
+Because of the fact that models are moving so quickly that I need to test the models out. And I
+can't rely on one subscription or one agent provider to always have the best experience.
+Hopefully if you're listening to this a little bit further out in the future, you have it's
+solidified now. And it's a little bit easier for you to lock into like a codex subscription and
+just use that for a year and be and know that you're at least getting close to the top performance.
+Let me actually just like question or question or stop you there because like a lot of these
+a lot of these tools like you said, like the cloud code and the codex are interchangeable in terms
+of terminology, but they are competitors in the marketplace. And so my question there is there's
+going to be someone out there listening to this who's trying to try to start their
+their web development AI coding journey and or just development in general really journey and
+they're going to they're going to do a Google search and they're going to find a whole bunch of
+different options. And that includes things like there's Gemini inside of if the person listening
+is an Android app developer using Android Studio, there's Gemini in there. There's a bunch of AI
+capabilities in their agent or otherwise right inside of inside of Android Studio. And so
+they're going to start getting kind of confused. And so my take and I mentioned this in the in one
+of the other AI basic episodes is my take is you should do a little research, you should choose ones
+and complete something with the one and stop researching because if you start going in and being
+like, let's do this, let's do that. Let's let's automate this. Let's automate that. This one's
+actually better. Oh, this one just dropped a model and this one's 60% better and this and that
+this and that what you start getting is on in most cases, unless some model has come out and
+completely just destroyed everything and just made, you know, made everything super everything
+else that came before it is just nonsense. Well, like, like we were saying, like, that is the
+problem right now, but I'm going to say this though. In the hands of a beginner, I think you're
+still going to have diminishing returns. So I'll give an example outside of AI. Sure. This is an
+argument I've had with people, potentially even you as well, not a serious argument, but this is
+like a debate that we've had where going from a hard drive to an SSD of any type of SSD is like a
+miracle drug for computers. It's radically, it's radically faster. It helps from performance a lot,
+especially with windows startup because I'm a Windows guy. So I don't know anything. What Mac?
+But regardless, it's it's like a miracle drug that actually works for computers. Okay. Then you start
+getting M.2 drives, which are faster than I'm going to call it a traditional SSD in like a two and a
+half inch laptop hard drive form factor more or less, right? Where it plugs into where the hard drive
+would. I give you had a hard drive in your laptop. It's usually a two and a half inch hard drive.
+You would take that out. You could take a two and a half inch SSD, which is very similar sized
+and you'll basically plug it in. Usually it'll screw right into the same drive sled and you're good
+to go, right? Now the argument there is the M.2 drive so much faster than its revolutionary and it's
+all this stuff, but you start getting diminishing returns in my opinion. Like going from a regular SSD to
+an M.2 is not a miracle drug anymore. It is it's great. It's cool and I upgraded when I upgraded my
+computer to M.2 drives, but if it was like M.2 drives are sold out across the planet and SSDs are
+available in two and a half inch, I would be fine. It'd be fine. Games that still run computers are
+still run like you'd still be fast boot up. You'd be fine. So my point there to bring it back down to
+Earth is if you choose something that's good today, like AI has been going for a few years now.
+If you choose something that's good today, let's say you are trying to make a website, just a small
+like just a small business website, just to take it into context. You want to develop it though.
+I develop it. So you want to have you want to have your own code base and do all these things.
+And so you decide, okay, I'm doing my research on whatever day you're listening to this and codex
+is the best one or close to the top. I want to use codex. Okay, great. You choose codex.
+You're a beginner. And then all of a sudden, quad comes out with the new model, whatever it is at
+the time that you're listening to this ad and it blows codex out of the water. How much though?
+Is it 10x? Is it 2x? Because you're a beginner. So your prompts and everything else are still not
+at the point. And I'm not saying for you to stick to codex for a year, 10 years, 10 months. What I'm
+saying is stick with codex to learn prompting to learn skills and choose a task. Maybe your task is,
+I want my MVP codex is good enough to make your MVP of your of your small business. If you've
+done the research and you've decided that even if the other one's going to do it a little faster,
+my opinion is you stick with codex and you learn make learns learn valuable decisions. And then you
+move on because if you keep going, I'll do a little here, a little there, a little here, you're not
+going to learn nothing. You're going to learn how to switch AI tools. You're not you're not spending
+time learning the tools. I don't know if you disagree with that. I want to agree with you because it
+makes so much sense. The problem right now, specifically, this is this might be a very specific moment
+in time right now is I'll give you the example codex and and cloud code exactly what you said happened,
+just happened. Okay. The problem is that codex and cloud code both release new models. So if you're
+on codex, you're using a new model, you're on cloud code, you're using a new model. The codex new model
+is actually worse than the one that was being used before. And so now you're using and then and then
+the cloud code model is 10x better than the one that was there before. So now you're using a worse
+model than you were using yesterday. And the latest competition to release the model that's 10x
+better than the model you were using yesterday, but now you're using even even worse model than that.
+And so like it's because they have a they have problems evaluating and keeping costs
+in a relative in a reasonable place. They're trying so many different things that they're
+fucking around. Like I'm sorry to swear, but they are screwing around like crazy right now internally.
+And and they're releasing garbage sometimes. They're releasing absolute gems sometimes and they
+were moving those gems for whatever reason. Now I will say that even the diminished codex model
+is probably fine for what you're learning. So maybe this doesn't matter for the first little while.
+I think you're probably right in terms of like do your research now and for the next three months
+use the same model like use the same app. That's probably good advice honestly because then you're
+not constantly looking around. But after you get comfortable with it, you really need to start
+experimenting with the models that are out there. The thing is is that it's not that hard to go from
+cloud code to codex because at the end of the night, like I said, they're interchangeable. They are
+very interchangeable. You can use them on the same project at the same time and nothing really changes.
+Now that they've actually aligned their like skills files, which we have a whole episode on
+skills, we can link that in the description. I don't want to go through it right now, right? But
+now that they've aligned how skills work or a lot, especially aligned how they're like a context
+file, cloud agents.md, cloud.md work, that even becomes not an issue. So if you set up for one,
+you're set up for the other essentially right now. I agree with you, Matt. I think using it for
+three months is not going to change. I'm not even saying three months. There's not some
+things. I'm saying you choose a goal. So if you decide I want to make a first, a five page small
+business website, and you like what you're doing, whatever. The allure is always there. What I'm
+saying is is to complete a goal. Don't set it to be a five year goal. That's set it to be a
+manageable goal because my point is is like, you're right. They're the minute returns. But if you have
+to take a look at the output, like if we're looking at something that's like relatively,
+a relatively well-sized goal. So something that is reasonable, you say, I want to start, I want
+to spend up a small business website or I want to improve my personal website. It would be something
+that a lot of developers do. I want to improve my personal website. Even if codex, you know, today
+is running at let's say 1x, no buff to talk in game returns. And then cloud code comes out with a
+new model. And he has a 10x buff. Fantastic. But how much better is the end game? How much better is
+the is my personal website, my portfolio website or whatever it is I'm generating for myself?
+How much better is my personal website going to be generated at the end of the day, the actual
+website itself on codex with no buff and cloud code with a 10x buff. Now the grass is always
+greener. So after you do your task, you may want to do a little research and then be like,
+ah, cloud code came out with something cool. Maybe I'll try that over there. That I think is
+more organic. But the point is is I want people who are learning to be in the prompting to be in
+the file management to be in the agents to mess around with the harnesses aren't stuff more than
+researching a eyes all the freaking time and worrying about my god. I could have had 5% more efficiency.
+Yeah, but you wasted 7% looking around all the time on AI blogs and read it, right?
+You're not you're not wrong. I think that that's good advice. I honestly think that that's
+really good advice for right now. Yeah, it's just it's always tough because like the because
+the models are moving at such a rate that you could be losing not, you know, 1.5 extra 2x.
+You could be losing a whole breadth of capability. But having said that, it's more like I'm going to
+be talking about right now like the process of how you become better at develop at AI development
+doesn't really apply to this like even a 10x better model is not going to change this process
+of these right now until you get to the very end until you understand top to bottom how to
+verify how to make sure that you trust the agent. The process is really about trust and building
+building the tools and the systems around trust. So going to a 10x better model even right now
+is not going to change that process. So I think Matt, I think your your advice of just sticking to
+the tool after you've done your research finishing the entire project of what you're working on and
+then doing a little bit more research is a good for beginners especially solid. Absolutely.
+Absolutely. You're not a beginner. So when you said I'm using all three, you're not a beginner at
+using the thing or researching the thing. But we don't want to overwhelm people because we also
+got to remember that there's got to be some coding knowledge before all of this. So now we're
+starting to like oh, that's too many layers. Like I think we need to start for getting
+cut down these layers as much as we can here. It's especially for beginners.
+Absolutely. So the next couple of things that I want to talk about are going to be the other tools.
+So I've talked about cursor, clot code code x. These are the three let's say agents with harnesses.
+Now there's like our agent harness control plane tools because like I said, I'm using all three.
+It would be a nightmare for me to manage all three if I was just opening up three different apps.
+That's a pain in the ass. There's tools called orcaid which is actually like it combines a
+similar like VS code ID into it as a tertiary thing. It's very much not primary. But it also has
+the ability to open up any of your agents inside there. Control your agents across like so you can
+actually have one agent control the other agent while we want to do it. And then be able to
+actually see your code. So it's kind of like a thing that combines agents and makes it easier to run
+multiple agents and run longer term processes and stuff like that. It also gives the ability to
+use like all these agents from your phone, right? Because before like if you were just using
+just the regular apps, you would have essentially have three different apps on your phone.
+And then remote control them from your computer like to your computer. And that's kind of a pain.
+This unifies all that. So it just makes managing multiple agents easier and T3 code by the way does
+the exact same thing. It's slightly differently. It actually has a better user interface for that.
+Whereas orca just runs the CLIs, which I'm okay with like I like the CLIs. They're fine. T3
+code has its own UI layer on top of the CLIs and it does like a better job, especially for beginners
+in my opinion of making it easier to control these agents. So I wouldn't again, as Matt was saying,
+I wouldn't jump to these tools right away. I would stick to a cloud code or codex or cursor,
+depending on which one you pick. And use that for a little while until you get grad,
+you grasp the whole end-to-end of how an agent works and how you can verify it. And then I would
+jump into okay, now I have to use multiple agents. I'll pick one of these orca or T3 code tools.
+Do you think that if you take the obligation of or the like the the FOMO out, do you think that you
+that you naturally outgrow tools? So for example, I was using chat GPT for a long time and I was just
+using that for everything. I used my chat GPT. I'd sometimes use my cold pilot because they
+they gave me cold pilot premium for a while. So using that, I had to upgrade my Gemini for a bit.
+This was like maybe a year ago because why so have it because I took about 14,725 pictures.
+And that's probably not an exaggeration. And so I literally needed more Google Photo Space. And
+so they're like, here's Gemini and I was like, cool. So I'm playing with that. My point is,
+it's not to tell a story. My point is, is that I'd slowly started naturally outgrowing the stuff.
+And then that slowly led me to Codex. Now obviously I'm not advancing in the AI coding stuff
+as fast as you because you do this more. I deal with a lot of like the marketing and like the
+small business guys are talking a lot to them. Converting their needs to like technical
+requirements and then going out, you know, going away and doing that. So it's a bit different.
+But the point is, is that I'm naturally, I don't feel obligated to go check out cloud
+codeness in that. I didn't also feel obligated to go check out Codex. It was a gentle nudge from you
+because I was kind of like hitting, I was talking to you, but what I was doing. And I was starting to
+hit the limitations of what Chatchee PT could do for me. And then you were like, hey, like maybe
+you should try this. And then I started also getting, you know, bad results on, or results that weren't
+as good as what Chatchee PT was getting on Gemini at the time. This is like a year or so ago.
+And so I was like, okay, like I'm kind of doing this Gemini game. Let me go back to Chatchee PT,
+blah, blah, blah, blah. The point is, is I naturally outgrew just prompting, then I started going
+to agent stuff. Then I started messing around with, well, what if my agent could do stuff without
+me sitting there watching it? So then I start messing with permissions like, and it's natural. It's not,
+I could have done this 10 years ago. It's, whoa, whoa, like let's become more efficient, but like
+in an efficient way. So always smooth, smooth as fast kind of.
+And, and that's actually a perfect transition to how I would start using AI as a developer,
+because what you've described is essentially the process that I would recommend to people. I think
+there, there should be this natural progression because it builds trust. The process really is about
+you figuring out what system works for you to build the most trust to get the most out the best
+quality output that you can get now. I'm going to say this right at the top. The output might not be
+as good as you doing it yourself manually. You have to learn to be okay with that to benefit from
+these tools. As long as it reaches the end goal of the results that you need at a quality level that
+you're okay with, that should be your initial goal. And then you can tweak it to become better and
+better and better and better in better quality, right? You want to, you want to output as good quality
+code as you possibly can. It might not be as good as you would write yourself. I push back on
+that a little bit because I think most people value themselves a little bit too high. I think models
+right now are writing code at better than 95% of developers out there. A year ago that was probably
+closer to 80%. So it's slowly like taking up, be good and better and better and better. Obviously,
+there's still people better at writing certain things than others than the models, but it's starting
+to get to the point where it's going to be at 99% probably by, you know, end of next year or something
+like that. Regardless, I said, it doesn't matter because you could, you could, you could think that
+your code is better and therefore that would limit you from using the models. You need to start to
+learn how to dial that back to be able to build that trust and to do that is exactly what you're
+saying that it needs to be a more natural progression. You can't just jump into, well, you have a
+generate the entire code base of the ploy and get it out there and, you know, wish, wish for the
+best. That's not how it would work. You're going to run into issues in that in that sense and
+you're going to be burnt out like you're going to bump out of AI coding. That's what I've seen happen.
+Be like, oh, it screwed up this. So I can't use it now for any. Yeah. Yeah. That's not what we want.
+That is not what we want. You need to slowly build that trust in a more progressive
+merit. I will say that like before when you were starting out, I think your process was the exact
+process of like chat GPT prompting, Gemini prompting and then go into this today for a developer,
+I would go straight to codex. Don't skip chat GPT. Right. Like you just use codex or use
+a cloud code. So there's a little bit more of a streamline there to get you up to speed a little
+bit faster. But you know, that's changing. Would you want exposure to chat GPT be on their personal
+side? So for example, I will use chat GPT on my personal side. The reason why I mentioned that
+it sounds like it's outside the realm of developers. But what when it's happening is I actually use
+chat GPT a lot for like a sanity check on something where I'll go and be like, I don't even know,
+this is freaking possible because I just have an idea. Right. Then I'm kind of running it. I'm kind
+of chatting with it. It's like, oh, all right. And then I then I ended what ended up happening is I
+end up having it generate me or it allows me because I've had the conversation to have a better prompt
+to codex later. So I think the ideal situation is a user has listened to our AI for beginners.
+Both the episodes before. So they have used these things. They understand the concept of a chat
+like the chat GPT before they jump into codex. Right. That's the ideal. That's the ideal user
+that I'm talking to right now. If you're if you're that person, you're in a good spot. Okay.
+I get I guess it makes sense like people generally aren't going to jump to AI with develop
+or right away developing right away. That makes a lot of sense. Yeah. That's what I'm thinking. Yeah.
+That's exactly it. So stage one, what do you want to do? Your developer, you've developed before,
+you've done like a bunch of junior, like maybe even senior developer work. Right. You've done,
+you know, you've created features, you've made bugs, you've written code yourself.
+The first thing I would do is jump into a codex or a cloud code on that project. Learn how to do
+that. I'm not going to talk about how to do that on the podcast. That's ridiculous. There's
+plenty of guides online about how to install and spin it up and start with a small piece of work.
+There's a bug that was raised by someone, you know, look at your backlog. Something that's not
+super, super important. Right. Something that you you would trust a junior to do. If you're a senior
+developer or if you're a junior or something that's been, you know, something that's a low hanging
+fruit and give it as much information as you possibly can about that bug or that or that feature that
+you need to build. Make sure that it's, you know, pointed out the right code base and just let it do
+its thing at press enter. Once it does its thing, what you want to do is you'll want to read what
+it changed because you're used to that. This is again, assuming someone that's new to a development.
+You want to read what has changed. You'll want to verify similar to how you would verify a, you
+know, a junior developer's pull request or, you know, someone else's pull request if you're just a
+junior starting out and make sure that it's right. And if it's not, then you want to reprompt.
+You don't want to abandon. This is really, really key right now. It might not get everything
+right on the first try. You don't have skills set up. You don't have anything set up properly.
+It doesn't have the context of your code base. There could be many things that are wrong. Do not bounce
+out at this point. Reprompt, ask it to fix those things. Look at the fix, look at how it fixes them.
+Is that is a good, good move on. Next thing you want to do is run it run the app. Make sure that it
+didn't break anything else. Test it and to and test it. Run your test suite. Run it, test it yourself.
+Log in. Do the thing that is supposed to fix like actually verify the behavior that it that it fixed.
+Once you have that process down and to end, you'll start to build a little bit of trust. You'll be like,
+oh, it was able to do this feature. It was able to fix this book. Right? And to end. Now I had to fix it
+here and there. I had to rerun. I had to re verify it. That's fine. That's part of the process.
+You've built a little bit of trust here. The next thing here to building trust is make sure to teach
+the AI how to verify it. Because what was missing in this in this first step? You were doing the
+verification alone. You were reading the code. You were spinning up the app. You were looking at the
+app. What happens if you ask the app, ask the agent to run the tests, ask the agent to run a
+linting, ask the agent to run the application and test the code, test the actual feature that it's
+building. If you ask that in the prompt, that's your creating kind of a loop situation here,
+where it's going to do its best first guess at how to fix it. It's going to then run all the tests
+itself, verify that, and then check if they fixed it. If it didn't, it's going to do those steps
+that I talked about before where it's going to reprompt itself to fix those issues that it found.
+It might do that two times, it might do that three times, and then it'll output you an already
+tested piece of code and an already tested fix. Now, at this point, you're still want to verify this,
+because this is where you're, again, you're building trust in the verification.
+Once you understand how that verification loop works and what works and what doesn't, like maybe
+running the tests is enough for your application because it's just a backend API. Great,
+but maybe you need a more extensive test suite that you need it to run. So maybe you need to develop
+an N10, an N10 suite of actually running the UI or having a fake API call, ask it. Figuring out
+what parts of the process need what need tests and don't need tests is the thing that's going to make
+you trust the process more. You're going to read the code at the stage, you're going to make sure
+that everything's verified. And once you're happy with this, you're going to move on. But if you're
+not happy with it, this is when you go back and reprompt. It's okay to reprompt at the stage,
+obviously. It's okay to reprompt at every stage. That's the important thing. You're not going to go
+back in and try to redo the code yourself. That's another thing. Don't do that. Try to reprompt and
+see if you can prompt it to fix the things that you would have fixed yourself in the process and
+then do it again. This isn't something you do like in a day, by the way. This isn't something
+like you go from one stage to another stage to another stage. This is something like where you
+spend a little bit of time on each stage. You might build multiple features first and verify everything.
+And then you might build multiple features with it running the tests and you verifying after the tests.
+And then as you start to learn that process and as they start to trust it, you get to stage three,
+which is starting to trust the review process more. So here, you stop doing manual line-by-line reviews.
+You're reading less of the code. You're not stopping reading the code, but you're reading less of
+the code. You're only reading the important parts. Has it implemented this architecture correctly?
+You're checking for security boundaries. Hey, we added an admin section. Did it actually make
+sure that the admin section was gated properly? I don't care about this random UI crap. It verified
+it itself. Who cares? You're starting to discard things from your review process.
+This is very much a gut thing and a trust thing. You're building that trust.
+Step by step. You start to learn more about how testing frameworks work. You start to experiment with
+test driven development. Maybe you have the model write the test first before it actually builds the
+feature so it can run that test over and over again as it's building the feature. That's what test driven
+development is. It was kind of useless. Not useless, I shouldn't say useless. It was kind of
+obtuse when you were doing it manually. A lot of times this was used in very robust system development
+stuff where you're really, really critical systems needed test driven development to make sure that
+everything runs exactly correctly. But in like a web development perspective, we hardly ever use
+test driven development. Now it's kind of free. Yes, it costs a little bit of tokens. But in some
+cases, you might want to have test driven development to start and then you can rip out those tests
+later if you want. So again, experimenting with different tests, experimenting with static analysis,
+experimenting with all the different types of testing that you could figure out to see what tests
+raise your level of trust enough. This is not a science. This is a you thing, a developer thing.
+Is your level of trust raised enough that you've now done this 15 times and you've caught two things.
+You've wasted eight hours to catch those two things. Well, maybe at this point, you can start
+to read less and read less. At this point, what you want to do in stage four is let the AI plan
+a bigger feature. We were talking about smaller features before. Now it might be planning a whole
+section of your application and using this verification process to plan it, test it deploy,
+and not deploy it, sorry, to plan it and test it and submit it for review.
+Right. So you're giving AI more scope and more scope at this point. And the next stage would be,
+you know, do this exact exact same thing plan build review and fix all in one loop.
+So the AI will plan a big feature. If you're happy with the planning from the stage before,
+you can let it plan, you can let it implement, you can let it verify, and then you can do the final
+verification pass here. Make sure that it understood your intention as a business user from the
+initial prompt. Here, you might want to still review the plan here and there, especially depending
+on the future, I do, I do end up going back and forth on a plan quite often. We had a skills
+episode where I talked about girl girl me with docs or girl of docs where it kind of generates the
+plan after asking you like 15, 20 questions. I haven't given that up yet. So this is, this is even like
+maybe past my stage of where I'm at right now. But if you start to figure out a way to prompt it
+to the point where you're happy with the plan that it generates initially, you could start experimenting
+with the full loop end to end as long as you're okay with the verification process.
+Right, you're still verifying at the end by just using the application here. And again, at the end
+of this, at the end of this, you're really only verifying, only defining the verification process.
+That's your most important goal. Now, again, I'm still not quite there yet. This is something that
+I'm working towards. But I want to have it so that my for whatever feature app I'm building,
+I have a solid verification process that I can trust almost wholeheartedly. Right, it does everything
+from doing all the unit testing properly to verifying the app running in a staging environment.
+Right, before it does any sort of production builds and then verifying it in production as well,
+while also maintaining like a log infrastructure where it actually checks the logs to make sure that
+nothing has regressed, that's what I that's what I mean by full verification here because that's
+what you would do. Right, like if you're releasing a feature, you can review it all you want, but you
+still need to verify that it works at the end of the day. And sometimes you're going to release bad
+code into production. And you would probably have to have triggers in your in your code that will
+send errors and alerts. Those triggers can now go to AI to verify that situation. And it can have,
+you can have the loop go not just from development, but all the way to deployment and fixing in
+deployment, right? This requires trust and a lot of it. And I don't again, I'm not really there at
+this point. I'm not doing this in production production. I'm doing this in the pseudo production for
+like new applications before they're released. Right. So this takes time. And it's okay for you to
+be hesitant to get to this stage. But this is where it's going. I want to be clear. This is where your
+trust level will start to go as you start to believe it. And I think it's really hard for you if
+you're just starting out to picture the situation because you're like, all these things make mistakes
+all the time. You're right. They do. But so do you. How do you verify your mistakes? Build that in,
+build the verification processes in, learn how to verify. I was going to say it's very similar.
+So it's only you said in the beginning where the thing makes one mistake and then you're unhappy with
+it or you're unhappy with its output, you think you could do better. I feel like that's also the case
+for people who delegate to another person. If you take AI to the situation entirely, the person
+that you delegate to is going to solve the problem different than you. They're going to code
+different than you. And even if you give them a whole bunch of guidelines and a harness, let's say,
+I want you rules to follow, they're still going to do things that they different than you. It's
+just the way that way it is. It's two different, two different brains working on it. So it's
+different different ways of approaching the problem, different ways of problem solving,
+different ways of messing things like messing up things or doing things well. It's all different.
+It's all different there. I would like to say also as a question, I'm sure that there's going
+to be people listening to this who are mostly manually coding right now and who are going to start
+getting into this. The question I think that they're going to have is there, I guess, an observation
+really is this process that you mentioned has six stages. It's outlined in the show notes by
+the way HTML all the things.com go check that out if you want to read through it. But the real
+question I think is this seems to be replacing somebody writing any syntax at all. It is. That's
+weird, right? It's kind of a more in deep, like in-depth conversation. And I'm sure we've had
+it several times and in piecemeal. I don't know if we've had an exact episode on it. But there's
+definitely come up in the past. But someone who's specifically listening to this six stage process
+that you've come up here come up with here. It's like, okay, well, where do I start opening the
+IDE and start writing the functions and writing the variables and stuff. And you're shaking your
+head. For the audio listener, you're shaking your head now right now. You don't. I guess the very
+first follow up question I have is how sustainable is that? Because we have a bunch of coding
+knowledge in our head and we're like, yeah, verify. Just go into verify this and I verify that and
+then verify this. It's very strange to say to someone who's new at coding. Someone listening to this
+right now is going to be new, new at coding. Maybe they just have the context on what coding is.
+And they're likely going to be new at AI as well. And it's a heck of a thing to say to them. We'll go
+learn how to code for three years and then not don't use any of that other than verification and then
+do this. So then some people would say, well, let's not let's skip that. Let's just get right to the AI
+which many people are absolutely doing, which is why we're seeing such an influx of get hub usage,
+which is why GitHub is having literally a like a throughput issue. And it goes down all the time and
+has these issues because it's their growth plan is unsustainable in the face of how many people are
+actually pushing code down writing code. How many code bases are being created? Maybe these are
+questions that are going to be outside the context of this episode because this is like kind of
+an evergreen episode. Maybe some of these issues would be would be solved because when I do a lot of
+the time is I code or work alongside the AI. I get the AI to do something and then I do a task even
+if the AI could do it. I think, okay, I'll let this thing run for 15 minutes or however long the
+task is going to take and then I'll do this for 15 or 20. And then once the 15 or 20 minutes is up,
+now I have two tasks complete. I've done one. It's done one. Now let's move on. Maybe the task I did
+could have been done by an AI in five minutes, but I mean, I was waiting on my AI anyway. Yeah, I
+could have spun up another AI. I see like you can kind of go down this rabbit hole of automation,
+FOMO and kind of go nuts with it, but I've been kind of working organically beside it. I don't
+know if that's necessarily the right way to do it. I don't know if this is again the episode to
+ask that question, but this is, you know, this all like the whole, the whole, all the stages and
+everything sound great, but I feel like many people, I don't know if you're, you know, correct me from
+wrong here, Mike are going to be like, okay, now what do I do? I've been verified things.
+No, no, I think that it's a very good thing to bring up in this episode because I'm battling with
+the same thing that everyone else is battling. I'm giving you the direction to put yourself in a
+situation where you're using the tool to it's the best of its advantage, but I struggle with
+the same thing that you're saying, like where do we fit into this cycle to this loop? And right now
+I can say that, yes, we still fit into it by, you know, being able to run it and knowing where to
+run it and knowing what to do in terms of like the code smells. So when something is wrong, you have
+the ability to steer it in the right direction. That's what it's called is steering, right? But I
+all like I always think back on like, okay, as they get better, will they be able to steer themselves
+with all the up is like I'm giving it the ability to see where the issues are by creating these
+verification loops, right? Like I'm essentially putting myself out of the loop. As we as we go to
+stage six, really that what that means is you're out of the loop for this specific feature and you're
+moving on to the next feature to create the another loop to get out of that loop. So yeah, I struggle
+with the same thing and I don't the problem is I don't have a good answer for this and I don't know
+if anyone does like I heard Elon recently say about like, oh, like it'll you'll get more jobs.
+There'll be more jobs because people will still need to run these loops and stuff like that and maybe
+that's the case and hopefully it is. But I don't know, I don't think any of us can predict the future
+in this specific scenario. I think that we have to start thinking differently. I don't think we can
+continue down the path of just being blind to AI like and not, you know, going at it from this
+perspective. I think if you perfect the workflow of all six stages, it's going to make you
+more useful for your company and therefore less likely to lose a job at least in the intern.
+That's where I'm coming at this from is making you a better developer in the current stages.
+And that's all I can really think about. I don't have a good, I don't have a crystal ball.
+I can't predict if this is going to end it. And if you think that we're you're doing this to like,
+you know, you're not going to do this. So you're going to protect your job. In my opinion, that's
+folly. I think if you don't use these tools to the best area of advantage, the person beside you
+will and they're going to push you out. Because right now the space is competitive as hell. CEOs are
+very much AI-pilled and AI psychosis, whatever. And the people that are not going to be adapting are
+the people that will be left behind. And this is my again, my opinion, take it with a grain of salt.
+That's what I'm seeing in the industry. And I'm not doing this from a perspective of I love this.
+I'm doing a perspective of I think this is the right steps for you to be able to
+become AI developer at this stage. Like this is this is where AI development is going.
+Yeah. Yeah, not not not to make you know the near end of the episode to kind of solve them.
+But it is it is weird when you hit the end of it. It's not like stage seven. Now you code up a
+function and have the you know have the AI do it. It is it is strange. I think I think to kind of
+almost double back or to I don't know, make things more cheery. Like you were mentioning that you're
+kind of working on like this last step, the stage six kind of part, right? Yeah, stage five six as
+well as five six. That's roughly where you're roughly where you're finding yourself. I'm
+like to just to kind of talk to personal experience a bit. Like I'm definitely at like probably stage three
+ish, I would estimate. Okay. I don't really I stage two ish as well. Like I don't really have it,
+you know, run tests and do all kinds of things. Like I still do a fair bit of that.
+However, I do do it in a little bit because sometimes I'll think of criteria and be like, hey,
+we should test this. We should test that. We should verify this. We should verify that. What parts,
+you know, don't allow this bad thing to happen, etc. And so it is kind of like self check self checking,
+self testing, reflecting. And so stage two is kind of where I'm at. The reason why I even want to
+bring this up is, you know, not only to kind of get out of that solemn, you know, sort of like question at
+the end, but also to bring up the point that everyone's going to reach these stages differently. And
+these stages are not hard cut. Like, hey, I'm on stage two, man. You know, it's not that, you know,
+these stages, these stages are kind of like in in flux, you're going to your own work processes,
+your own work needs are going to define these things and it's going to be different for everybody.
+And that's kind of the point. Yeah. And it's okay that it takes longer in certain situations. And
+we might not even be, you know, for your specific, you know, domain, like let's say you're in medical
+equipment and you're doing firmware for medical equipment, you might not be able to ever get to stage
+five or four. You know what I mean? Like, you might have to always stay in stage one, two,
+three, or like not always, but like at this point in time with the models that we have right now.
+So it's not going to be it's the stage one to six is not going to work across the board. I want
+to make that very clear for today. It's just where everything is going right now. And for for certain
+things like for, you know, low risk application, the web applications, certainly you can do up to stage
+six today. Certainly. No problem for a larger code basis that are, you know, massive domains,
+like an AWS, for example, yeah, you're not, you're probably not going to get to a full stage six for
+that. Like it's just not going to happen at times. Yeah. Because it's just so much like the
+ages don't have enough context to be able to deal with that shit. Right. So you still need people
+that have massive domain expertise to be able to steer these agents and probably stick to like stage
+three for the most part for a lot for a little while. Well, also, I was going to say that stage six
+isn't necessarily a finish line either. Yeah. There's going to be so many domains out there where,
+you know, there may be like a for lack of a better way to say it almost a fork of these stages where
+they have to go in a different direction. And their end game is somewhere else, right. Some places
+extremely security conscious. You mentioned already the like mission critical stuff like firmware
+and medical equipment, which is literally life and death, like they may have their own,
+their own thing. This is sort of just like a framework for beginners to roughly follow and
+is, you know, following the trends of today in general. But there's going to be so many niches
+and so many different places to take code. Like embedded, you know, embedded programmers are going to
+have a much different experience than somebody like a web developer to somebody who is, you know,
+just doing a bit of front end code to someone who is just doing dev ops primarily and just doing
+a bit of code here and there. There's so many different places. Some people might start on,
+you know, stage two or something where they only want the thing to run the test because they're not
+allowed to generate the code or what have you, right. There's so many different things out there.
+Absolutely. But but I was going to say, I think I think that is that's largely it. Do you have
+anything else to add Mike before we run the old conclusion? Yeah, only that again, like in the
+show notes, there's a lot more here. There's a section on why this changes software development.
+There's a section on advice for developers starting today. There's some takeaways. Like there's
+going to be quite a bit of information in the show notes that I did not cover that specifically to
+help you out as you're going through the journey. So just check our site HTML of things.com
+for that info. Hopefully it helps you out. And yeah, don't get discouraged. This is some of the
+stuff is very exciting and very cool to see in real time. Like seeing a agent's loop check
+production and verify that there's a bug and then fix that bug and then deploy it. When I saw
+that for the first time, I was like, Oh, damn, like maybe we don't have to do on call in the future,
+which is scary to a certain degree, but also like that's a shitty part of the job. I don't want to
+do that. Yeah. Yeah. No, I don't think unless you're just like you're just after the bag,
+I guess literally the money. I don't think you'd want to ever be on on call rotation.
+But I think that is it. Remember that we are going to have those other links to the other
+episodes. We're going to have our AI skills episode. There were two other AI basics episodes
+that will also link there. If you want to go and check out those as well.
+And if you want to support episodes like this, we are on Patreon via patreon.com slash HTML
+all the things just like these three dollar tier patrons and you could be one of them.
+Tim from the web hacker on the web hacker.com Jason from geek life radio via geek life reader.com
+Garrett's the goal. Level up financial planning via www.levelupfinancialplanning.com
+Magnus from yes, we have the yes, web.se syntaxify from the HTML all the things to scored server and
+stc.mustler from the website. Soon were the designs.com. And remember that we have a contributing
+author on the HTML all the things website. His name is Michael oraka and he is the author of self-taught
+the ex generation blog at self-taughttxt.com. If you'll feel free to leave a comment or review
+in the platform you were listening to this on and we are signing off.

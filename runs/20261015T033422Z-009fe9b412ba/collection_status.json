@@ -1,0 +1,63 @@
+{
+  "invocation_id": "405dcb60-e856-462c-88ec-592181d78699",
+  "exit_code": 1,
+  "status": "incomplete",
+  "coverage_incomplete": true,
+  "stages": [
+    {
+      "stage": "fetch_feeds",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/candidates/feeds.jsonl"
+    },
+    {
+      "stage": "fetch_youtube",
+      "exit_code": 1,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/candidates/youtube.jsonl"
+    },
+    {
+      "stage": "fetch_podcasts",
+      "exit_code": 1,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/candidates/podcasts.jsonl"
+    },
+    {
+      "stage": "merge_reader",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/candidates.jsonl"
+    },
+    {
+      "stage": "merge_validate",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/candidates.jsonl"
+    },
+    {
+      "stage": "extract_content",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/items.jsonl"
+    },
+    {
+      "stage": "store.upsert",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/changes.jsonl"
+    },
+    {
+      "stage": "store.list",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/corpus.jsonl"
+    },
+    {
+      "stage": "corpus_writer",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/corpus.jsonl"
+    },
+    {
+      "stage": "filter_items",
+      "exit_code": 0,
+      "output_path": "runs/20261015T033422Z-009fe9b412ba/eligible.jsonl"
+    }
+  ],
+  "collector_exit_codes": {
+    "fetch_feeds": 0,
+    "fetch_youtube": 1,
+    "fetch_podcasts": 1
+  }
+}

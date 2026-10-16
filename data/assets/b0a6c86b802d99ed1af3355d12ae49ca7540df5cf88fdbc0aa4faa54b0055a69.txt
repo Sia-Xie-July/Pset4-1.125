@@ -1,0 +1,316 @@
+I asked our model how much Priya owes
+for a late book.
+With thinking switched off, it answered
+in a second, 5 rupees. Wrong. With
+thinking on, it thought for 8,000
+tokens, almost 9 minutes, and never
+answered at all.
+You'll see why and how to choose a model
+for an agent.
+In lecture one, we pinned down what an
+agent is, a model that runs tools in a
+loop until the job's done.
+Today, the kinds of agents people build
+with it, the model inside, and what
+changes when an agent keeps working
+after you've gone home.
+The book borrows seven practical agent
+types from a tech news site and adds
+voice and video.
+I'd rather group them by what they do.
+Assistants talk with one person, look
+things up, and act for them. Analytics
+bots and expert agents for law or
+medicine are mostly assistants pointed
+at special data.
+Coding agents read a repository, edit
+files, and run the tests. Research
+agents search, read dozens of sources,
+and write a report with citations.
+Computer use agents operate a browser or
+a desktop the way you would, which makes
+every page they read untrusted input.
+And background agents start on a
+trigger, work in a sandbox, and hand
+back a result like a pull request.
+Voice and video aren't separate kinds.
+They're ways to talk to any of these,
+covered in part three.
+Classic business automations are mostly
+fixed workflows, and lecture three
+decides when that's all you need.
+Like the book, we'll focus on agents
+built around language models working in
+text and code.
+Of these five, coding agents took off
+first, and the reasons tell you what
+makes any agent work.
+Code is text, which is what models
+handle best.
+More important, code has a verifier.
+Tests and compilers say right or wrong
+in seconds for free.
+That's also why models could be trained
+on coding with reinforcement learning.
+The reward is checkable.
+A repository is a sandbox. If the agent
+breaks something, you throw the copy
+away.
+And the result arrives as a diff, the
+format developers already review every
+day.
+The adoption is real.
+In Stack Overflow's 2026 developer
+survey published on the 6th of October,
+66% of developers who use AI said they
+would work with coding agents.
+Measuring the benefit is harder.
+In 2025, a controlled study by Meta
+found experienced open-source developers
+were 19% slower with AI tools.
+Its 2026 follow-up calls its own new
+estimate unreliable because many
+developers refuse to work without AI at
+all.
+So, when someone quotes you a speed up,
+ask how it was measured.
+Let's build a tiny one. The library's
+fine calculator has a bug filed as issue
+241.
+A book due on a closed day should be due
+on the next open day, but students are
+fined from the closed day.
+Our agent gets three tools: read a file,
+write a file, and run the tests.
+Then it's the loop from lecture one. The
+model calls tools until it's done.
+When it stops, our code runs the tests
+again itself.
+It doesn't take the agent's word for it.
+And it builds the diff a reviewer will
+read in the morning.
+Here's the real run.
+The issue goes in.
+The model's first move is to read both
+files, the code and the tests, in one
+turn.
+Then, before changing anything, it runs
+the tests and sees two failures, both
+closed day cases.
+That's what a good engineer does first,
+reproduce the bug.
+Next, it rewrites the fines file, moving
+the due date to the next open day before
+counting.
+It runs the tests again, four passed,
+and it writes the pull request.
+As a loop, that's five turns of the
+model and five tool calls.
+Nobody told it to read the tests first
+or to run them before the fix. It chose
+those steps.
+Here's the change the reviewer gets, one
+line out, three lines in. The due date
+goes through next open day before the
+subtraction.
+Now, worth catching, in its explanation,
+the model called the 18th of October a
+Saturday.
+It's a Sunday. The code's right anyway,
+because the tests check the code, not
+the story. A verifier checks behavior. A
+person still reads the words.
+The run summary, four tests passed.
+Five model turns, about 5 and 1/2
+thousand tokens in, 500 out, and 2
+minutes of model time on this laptop.
+Notice how little of that was the model.
+It read, decided, and wrote.
+Everything around it is what people now
+call the harness, the loop, the tools,
+the context, what the model sees on each
+turn.
+A sandbox, a copy of the code it's
+allowed to break.
+Permissions,
+our write file tool refuses to touch the
+tests, so the agent can't make them pass
+by editing them.
+And a verifier that decides when the
+work's really done.
+This matters when you choose a model.
+Coding leaderboards now list the agent
+and the model separately, because one
+model scores very differently in
+different harnesses.
+Lecture four maps the vendors' own
+harnesses.
+That agent didn't need anyone watching,
+and that's the bigger shift.
+Ordinary software is synchronous. You
+ask, and you wait.
+An agent can work asynchronously on many
+tasks at once while you're away.
+A trigger starts it, like an issue
+assigned at night.
+It works in a sandbox with tools and no
+secrets. Before morning, there's an
+artifact, a pull request with passing
+tests.
+At 9:00, a person reviews it. GitHub's
+Copilot Cloud Agent, OpenAI's Codex, and
+Cursor's Cloud Agents all work this way
+today.
+Picture it at our library. The librarian
+arrives to find last night's emails with
+replies drafted and renewals proposed,
+each waiting for a click.
+You stop doing every step and start
+reviewing finished work, planning ahead
+instead of reacting.
+Lecture 14 builds this.
+The book grounds itself in seven example
+agents with evaluation sets, from
+customer support and finance to legal
+review and supply chains.
+The most established areas today are
+coding, support, and research.
+In regulated work like health, law, and
+finance, the agent drafts and a person
+signs off with an audit trail.
+This course uses one fictional college
+instead, from the library help desk to
+claim pilot, an expense claims agent.
+Every one of them gets tested.
+So, which model goes inside?
+As listed on the 10th of October 2026,
+the small fast tier, GPT-6 Luna and
+Anthropic's Haiku 5.5, costs 10 cents
+per million input tokens and 50 cents
+per million output.
+The middle tier, GPT-6.1 Saul and Sonnet
+5.5, is $2 in and 10 out. Opus 5.5 is 4
+and 20. The most capable GPT-6 Astra and
+Fable 5.1 cost 10 and 50. For output,
+that's 100 times the cheapest tier.
+Then there are open weights. Qwen 3.5, 9
+billion parameters, Apache licensed,
+released early this year, runs every
+demo in this course on a 16 GB laptop.
+You pay for hardware instead of tokens.
+Small models got this good through
+distillation from bigger ones,
+quantization, and synthetic training
+data.
+Most of the hosted models on this slide
+are less than 6 weeks old. So, don't
+memorize the list. Learn how to choose.
+The book's advice still holds. Start
+with a strong general model from a
+leading provider and get the agent
+working first. The book's leaderboard
+from August 2025, topped by a mini
+model, already looks old and that proves
+the point. Rankings move every month.
+So, write a few tests from real
+requests.
+Then try cheaper and smaller models
+against your own tests, maybe with
+retrieval or fine-tuning, and keep the
+cheapest one that passes. And wrote,
+"Easy requests to a small fast model,
+hard ones to a big one."
+The future is many models, so keep yours
+behind one small interface you can swap.
+Lecture 7 does this properly.
+One more dial and people get it wrong.
+Many models can think before they
+answer. They write out reasoning first.
+Given 3.5 does it by default. Here I
+send the same question with think set to
+false, then to true.
+I record the tokens it generates and the
+time the model measured.
+Three questions about the library's
+rules.
+Is it open on Sundays? What does Priya
+owe 4 days late? And what does Arjun owe
+when his due date falls on a Sunday and
+the next day is closed, too?
+The right answers are no, 20 rupees, and
+15.
+The easy one, both modes say no. Without
+thinking, two tokens. With thinking, 268
+tokens first. Same answer, many times
+the cost.
+Priya's fine without thinking, five.
+That isn't her fine. It's the rate per
+day.
+With thinking, no answer at all, 8,077
+tokens and our 8,000 token window ran
+out.
+Here's why, in its own words.
+It worked out 20 early on. Then it
+noticed the library's closed on Sunday
+and couldn't decide whether a closed day
+counts. If I answer 20 and the intended
+answer is 15, I fail.
+It went round that loop until the room
+ran out.
+Arjun's harder fine, thinking off says
+five again. Thinking on gets 15, right?
+After about 2 and 1/2 thousand tokens,
+then I fix the rule, not the model.
+Every calendar day counts, closed days
+included. Now thinking gets 20. Thinking
+off still says five.
+Look at the tokens thinking bought the
+right answers at hundreds or thousands
+of times the cost.
+The seconds include loading the model on
+a shared laptop, so tokens are the
+honest measure.
+That makes a good interview question.
+When would you turn a model's thinking
+off?
+For easy, frequent steps, like picking a
+tool or labeling an email off, because
+you pay for every token on every call.
+For hard, rare decisions, on with room
+to finish and with rules written so they
+can't be read two ways.
+Hosted models give you finer dials, like
+OpenAI's reasoning effort or Gemini's
+thinking level. And some flagships can't
+switch thinking off at all.
+Lecture 16 shows how thinking travels
+with tool calls.
+Let's recap. Five kinds of agents,
+assistants, coding, research, computer
+use, and background.
+Coding went first because it has a
+verifier, a sandbox, and diffs a person
+can review.
+The harness around a model matters as
+much as the model. And you choose a
+model with your own tests, date stamped,
+treating thinking as a dial that costs
+real tokens.
+Your turn.
+An agent makes about 200 quick tool
+choice calls and one hard planning call
+for every task.
+Where should thinking be on?
+Every call? Only the planning call? Only
+the tool choice calls? Or nowhere?
+>> Only on the planning call, thinking on
+the quick calls means paying for it 200
+times on choices the model already gets
+right.
+On the one hard decision, it can pay for
+itself as long as it has room to finish.
+Next time,
+do you even need an agent?
+One library problem solved four ways
+with plain code, a workflow, rag, and an
+agent, each one measured. See you there.

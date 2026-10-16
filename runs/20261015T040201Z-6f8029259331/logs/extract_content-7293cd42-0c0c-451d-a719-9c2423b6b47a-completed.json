@@ -1,0 +1,285 @@
+{
+  "errors": [],
+  "input_count": 24,
+  "items": [
+    {
+      "item_id": "feed:https://simonwillison.net/2026/Oct/12/python-3-15/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://blog.cloudflare.com/introducing-web-search-api/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://metr.org/blog/2026-10-14-control-assessment-proposal/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://metr.org/blog/2026-10-14-alignment-assessment-proposal/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "feed:https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/",
+      "reused": true,
+      "status": "completed",
+      "transcription": null,
+      "warnings": []
+    },
+    {
+      "item_id": "youtube:Z7l1EHfCMU8",
+      "reused": true,
+      "status": "completed",
+      "transcription": {
+        "language": "en-US",
+        "method": "native_captions",
+        "model": null,
+        "origin": "manual"
+      },
+      "warnings": []
+    },
+    {
+      "item_id": "youtube:QobBTNIIX04",
+      "reused": true,
+      "status": "completed",
+      "transcription": {
+        "language": "en",
+        "method": "native_captions",
+        "model": null,
+        "origin": "automatic"
+      },
+      "warnings": []
+    },
+    {
+      "item_id": "youtube:9h-Way-APlM",
+      "reused": true,
+      "status": "completed",
+      "transcription": {
+        "language": "en",
+        "method": "native_captions",
+        "model": null,
+        "origin": "automatic"
+      },
+      "warnings": []
+    },
+    {
+      "item_id": "youtube:zEl-wKCBrmQ",
+      "reused": true,
+      "status": "completed",
+      "transcription": {
+        "language": "en",
+        "method": "native_captions",
+        "model": null,
+        "origin": "automatic"
+      },
+      "warnings": []
+    },
+    {
+      "item_id": "podcast:17a58ff2c42603c2484346c0996b11f2a075f6da96eb19192f071b5cb9a3ea8c",
+      "reused": true,
+      "status": "completed",
+      "transcription": {
+        "compute_type": "int8",
+        "device": "cpu",
+        "executed": false,
+        "language": "en",
+        "method": "faster_whisper",
+        "model": "base",
+        "timestamp_bounds": {
+          "clipped_end_count": 1,
+          "discarded_after_end_count": 0,
+          "measured_duration_seconds": 3581.523016
+        }
+      },
+      "warnings": []
+    },
+    {
+      "item_id": "podcast:296a4fc512e745c487971869604441e7777399fa8b6a74b47f978b15bdfadea9",
+      "reused": true,
+      "status": "completed",
+      "transcription": {
+        "compute_type": "int8",
+        "device": "cpu",
+        "executed": false,
+        "language": "en",
+        "method": "faster_whisper",
+        "model": "base"
+      },
+      "warnings": []
+    }
+  ],
+  "limited_count": 0,
+  "models": [
+    {
+      "compute_type": "int8",
+      "device": "cpu",
+      "executed": false,
+      "language": "en",
+      "method": "faster_whisper",
+      "model": "base",
+      "timestamp_bounds": {
+        "clipped_end_count": 1,
+        "discarded_after_end_count": 0,
+        "measured_duration_seconds": 3581.523016
+      }
+    },
+    {
+      "compute_type": "int8",
+      "device": "cpu",
+      "executed": false,
+      "language": "en",
+      "method": "faster_whisper",
+      "model": "base"
+    }
+  ],
+  "output_count": 24,
+  "reconciliations": [],
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2",
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "yt-dlp",
+      "version": "2026.8.19"
+    },
+    {
+      "name": "trafilatura",
+      "version": "2.3.1"
+    },
+    {
+      "name": "ffprobe",
+      "version": "ffprobe version 9.0.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    {
+      "name": "faster-whisper",
+      "version": "1.2.1"
+    },
+    {
+      "name": "av",
+      "version": "16.1.0"
+    },
+    {
+      "name": "faster-whisper",
+      "version": "1.2.1"
+    },
+    {
+      "name": "av",
+      "version": "16.1.0"
+    }
+  ],
+  "invocation_id": "7293cd42-0c0c-451d-a719-9c2423b6b47a",
+  "parent_invocation_id": "66ec42ac-f052-4100-bf48-3ef1d0428784",
+  "stage": "extract_content",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T04:15:58Z",
+  "finished_at": "2026-10-15T04:16:15Z",
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

@@ -1,0 +1,26 @@
+{
+  "title": "More Agent Output, Better Delivery? What Changed This Month",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "Recent advancements in AI coding agents have introduced more structured workflows that integrate testing and verification directly into the development process. This shift is evident in the use of agents that not only generate code but also test it against specifications, reducing the need for manual intervention. For instance, Jake Cukjati describes a workflow where agents take a specification, plan the implementation, and then test everything, which significantly streamlines the delivery process. Additionally, the use of plugins like Rigor for test harnesses further enhances the reliability of the generated code. These changes suggest that the increased output from agents is not just about generating more code but about improving the overall delivery quality and reducing the burden on human reviewers.",
+  "synthesis": "The synthesis of these developments shows that the integration of testing and verification within the agent's workflow is a key factor in improving delivery outcomes. This is supported by Jake Cukjati's description of a 'coding factory' where agents handle the entire process from specification to testing, and by the use of Rigor for test harnesses. These changes indicate a shift from merely generating code to ensuring its correctness and reliability, which is crucial for small teams looking to adopt AI agents without compromising on quality.",
+  "limitations": "The evidence is primarily based on anecdotal reports and specific examples from Jake Cukjati's workflow, which may not be universally applicable. Additionally, the integration of testing and verification within the agent's workflow is still a relatively new concept, and its long-term effectiveness in different team environments remains to be seen.",
+  "source_1_claim": {
+    "statement": "Agents can take a specification and plan the implementation, then test everything.",
+    "type": "source_claim",
+    "passage_id": "s1p2"
+  },
+  "source_2_claim": {
+    "statement": "The use of plugins like Rigor for test harnesses enhances the reliability of the generated code.",
+    "type": "source_claim",
+    "passage_id": "s2p3"
+  },
+  "source_3_claim": {
+    "statement": "The integration of testing and verification within the agent's workflow is a key factor in improving delivery outcomes.",
+    "type": "inference",
+    "passage_id": "s3p2"
+  },
+  "cross_source_inference": {
+    "statement": "The combination of structured workflows that include testing and verification, along with the use of plugins for enhanced reliability, indicates a significant shift in how AI agents are being utilized to improve delivery outcomes.",
+    "passage_ids": ["s1p2", "s2p3", "s3p2"]
+  }
+}

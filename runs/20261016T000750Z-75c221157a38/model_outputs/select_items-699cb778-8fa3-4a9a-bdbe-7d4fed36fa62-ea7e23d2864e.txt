@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The podcast discusses the impact of AI coding on technical debt, specifically highlighting concerns about unvetted code and maintainability. It provides relevant insights for small teams about the need for strategic use of AI tools, auditing generated code, and maintaining test coverage. This directly supports piece 01 (what changed in coding-agent workflows) and piece 02 (which efficiency, quality, or autonomy claims survive scrutiny). The material is limited to excerpts and does not cover the full podcast content.",
+  "piece_ids": ["01", "02"]
+}

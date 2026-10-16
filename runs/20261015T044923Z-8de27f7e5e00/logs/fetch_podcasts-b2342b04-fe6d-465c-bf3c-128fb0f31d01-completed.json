@@ -1,0 +1,42 @@
+{
+  "errors": [],
+  "input_count": 2,
+  "limited": true,
+  "output_count": 3,
+  "sources": [
+    {
+      "discovery_limit": 1,
+      "episode_ids": [
+        "htmlallthethings.podbean.com/e93be725-65ed-3105-b527-e3a0b3828407"
+      ],
+      "output_count": 1,
+      "source_id": "html-all-the-things-coding-workflows",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 2,
+      "episode_ids": [
+        "Buzzsprout-19897974",
+        "Buzzsprout-19857951"
+      ],
+      "output_count": 2,
+      "source_id": "superlinear-verification-and-test-selection",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "b2342b04-fe6d-465c-bf3c-128fb0f31d01",
+  "parent_invocation_id": null,
+  "stage": "fetch_podcasts",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T04:51:43Z",
+  "finished_at": "2026-10-15T04:51:44Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

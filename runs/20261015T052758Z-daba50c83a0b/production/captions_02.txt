@@ -1,0 +1,19 @@
+Welcome to Before the Merge. This is episode two: The Review Bottleneck. For small software teams, which claims about coding-agent productivity survive scrutiny? Our evidence is current as of October fifteenth, twenty twenty-six. This presentation uses an AI-generated presenter and voice.
+
+In episode one, we examined structured workflows. Now we turn to a different question: what kind of evidence would justify believing that those workflows save effort? Our argument is that three things must stay separate: a description of what a tool does, a commercial performance claim, and a measured outcome for a team. Treating them as interchangeable makes adoption decisions harder to defend.
+
+Start with the podcast HTML All The Things, in its episode AI Basics For Developers. In the opening forty-seven seconds, the hosts describe a rapidly changing tool landscape, then turn to working with those tools without giving up control of the codebase. This is useful practitioner framing. It identifies the integration problem facing developers. It is not a controlled productivity study, and we should not cite it as one.
+
+The second source is The AI Daily Brief episode, How to Go from AI Power User to AI Leader. Around twenty-two minutes and two seconds through twenty-two minutes and forty seconds, the retained transcript contains promotional language about Blitzy. The passage describes codebase understanding and claims that the product delivers more than eighty percent of software epics autonomously. That number is a claim in the source, not a result verified by this project.
+
+Before using that percentage in a decision, ask what the denominator includes. How were epics selected? What counted as completion? How much human planning, review, and correction remained? Were failed attempts included? The retained passage does not answer these questions. That does not prove the product cannot help. It means this excerpt cannot establish the size of the benefit for our audience.
+
+The third source is Jake Cukjati's AIMUG presentation, The Coding Factory. Around six minutes and seventeen seconds through six minutes and fifty-four seconds, he describes working with one agent at a time and using a test harness, including integration and end-to-end checks. This is more concrete about process than a broad promise of autonomy. But a description of testing still does not measure review burden or defects after deployment.
+
+The sources are not three independent confirmations of one productivity result. They contribute different evidence: a practitioner concern about control, a promotional performance claim, and a workflow description. Our synthesis is that a team should ask where verification work goes, not just whether an agent performs a verification step. Work can move from writing code to specifying tasks, interpreting tests, or correcting plausible mistakes.
+
+A practical scorecard would therefore include human time across the whole task, accepted changes, rework, and defects found later. Keep the task boundary clear and compare with a reasonable baseline. These are evaluation suggestions, not measurements made in this series.
+
+The limitation is equally important. We reviewed selected passages, not a complete empirical survey. Missing measurements here do not show that all coding agents are ineffective, and a small team's pilot will not settle the question for every organization. The defensible conclusion is narrower: these excerpts explain practices and promises, but do not independently quantify a delivery improvement.
+
+Before expanding autonomy, ask who checks the result and what counts as success. In episode three, we turn those questions into a small, reversible evaluation plan.

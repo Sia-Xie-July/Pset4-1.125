@@ -1,0 +1,26 @@
+{
+  "title": "The Review Bottleneck: Which Productivity Claims Survive Scrutiny?",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "The claim that AI coding agents can autonomously verify code quality and execute tests is supported by multiple sources, but the lack of measurable outcomes and the reliance on vendor announcements rather than independent verification weaken its credibility.",
+  "synthesis": "The podcast 'AI Basics For Developers' highlights the need for developers to understand how to work with AI tools without losing control of their codebase, while 'How to Go from AI Power User to AI Leader' emphasizes the importance of building a dynamic knowledge graph to understand software context. Meanwhile, the YouTube video 'The coding factory: canonical specs and sequential agents' describes a workflow where agents test and implement code, using a test harness to verify specs. These sources collectively suggest that while agents can perform verification tasks, the evidence lacks concrete, measurable outcomes.",
+  "limitations": "The evidence is primarily based on vendor claims and self-reported experiences rather than independent verification. Additionally, the sources do not provide specific metrics or case studies demonstrating improved productivity or reduced review burden.",
+  "source_1_claim": {
+    "statement": "AI coding tools are getting faster, better, and just coming out every single day.",
+    "type": "source_claim",
+    "passage_id": "s1p1"
+  },
+  "source_2_claim": {
+    "statement": "Other tools guess it context with grip searches and markdown files, Blitzy never guesses. It builds true understanding first, then delivers over 80% of entire software epics autonomously, validated, and-to-end-tested.",
+    "type": "source_claim",
+    "passage_id": "s2p3"
+  },
+  "source_3_claim": {
+    "statement": "Testing is only, like, concerning. With, unit testing here. The key part is like one agent at a time. And then, after we implement, I use Rigor, which is a skill plugin for. Test harnesses. So, the agents will verify that the specs are done, they'll have a checklist of what they want to implement for integration testing, and, integrate… yeah, do end-to-end testing that way.",
+    "type": "source_claim",
+    "passage_id": "s3p3"
+  },
+  "cross_source_inference": {
+    "statement": "While multiple sources suggest that AI agents can perform verification tasks and test code, the lack of independent verification and measurable outcomes means that the productivity claims remain uncertain.",
+    "passage_ids": ["s1p1", "s2p3", "s3p3"]
+  }
+}

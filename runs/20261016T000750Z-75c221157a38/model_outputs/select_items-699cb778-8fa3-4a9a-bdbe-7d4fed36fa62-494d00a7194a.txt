@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage provides specific cost and time metrics for Claude Haiku 5.5, which directly informs the central question about task-level time and token costs. It supports piece 01 by showing changes in coding-agent workflows and piece 02 by offering measurable efficiency claims. The material is relevant to small teams evaluating cost-effective AI tools.",
+  "piece_ids": ["01", "02"]
+}

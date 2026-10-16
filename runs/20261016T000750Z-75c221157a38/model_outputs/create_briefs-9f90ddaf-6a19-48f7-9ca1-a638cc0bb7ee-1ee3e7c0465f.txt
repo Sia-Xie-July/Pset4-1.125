@@ -1,0 +1,26 @@
+{
+  "title": "The Review Bottleneck: Which Productivity Claims Survive Scrutiny?",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "The evidence suggests that while AI coding agents can improve workflow by automating testing and implementation, the review process remains a critical bottleneck that requires human oversight.",
+  "synthesis": "Jake Cukjati's YouTube video highlights how agents can automate testing and implementation, reducing manual effort (source_claim: s1p2), while Thorsten Ball's video describes how agents can create code and documentation, but still require human intervention to ensure correctness (source_claim: s2p2). Salvatore Sanfilippo's video emphasizes the need for a structured process involving agents and human verification, indicating that while agents can assist, they do not replace the need for human review (source_claim: s3p1).",
+  "limitations": "The evidence is limited to excerpted content and does not provide comprehensive data on the effectiveness of agents in real-world scenarios. Additionally, the commercial and translation limitations of the sources may affect the reliability of the claims.",
+  "source_1_claim": {
+    "statement": "Agents can automate testing and implementation, reducing manual effort.",
+    "type": "source_claim",
+    "passage_id": "s1p2"
+  },
+  "source_2_claim": {
+    "statement": "Agents can create code and documentation but require human intervention to ensure correctness.",
+    "type": "source_claim",
+    "passage_id": "s2p2"
+  },
+  "source_3_claim": {
+    "statement": "A structured process involving agents and human verification is necessary for effective workflow.",
+    "type": "source_claim",
+    "passage_id": "s3p1"
+  },
+  "cross_source_inference": {
+    "statement": "While agents can automate parts of the workflow, human review remains essential to ensure correctness and maintain quality.",
+    "passage_ids": ["s1p2", "s2p2", "s3p1"]
+  }
+}

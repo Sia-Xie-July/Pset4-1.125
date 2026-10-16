@@ -1,0 +1,22 @@
+{
+  "input_count": null,
+  "output_count": null,
+  "errors": [
+    "editorial/select_items.sh failed; later stages were not run"
+  ],
+  "invocation_id": "06701f91-6692-4092-b7f1-e804d69bb937",
+  "parent_invocation_id": "ea529399-e978-4be6-9f38-41abb8ae5567",
+  "stage": "create_series",
+  "status": "failed",
+  "exit_code": 2,
+  "started_at": "2026-10-15T04:06:51Z",
+  "finished_at": "2026-10-15T04:07:20Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

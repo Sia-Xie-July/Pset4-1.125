@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses the practical use of coding agents in a design and verification process, highlighting the need for a process of design, code writing, verification, and micro-changes. This is relevant to the central question about whether recent changes in coding agents justify changing a small team's delivery workflow. The passage provides a first-person account of how a coding agent is used in a specific task, which can inform decisions about task scoping, agent context, and verification effort. The most material limitation is that the passage is an excerpt and does not provide a complete account of the process.",
+  "piece_ids": ["01", "02", "03"]
+}

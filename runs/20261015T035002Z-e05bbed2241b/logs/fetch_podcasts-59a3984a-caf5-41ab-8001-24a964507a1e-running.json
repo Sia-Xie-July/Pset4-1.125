@@ -1,0 +1,20 @@
+{
+  "input_count": null,
+  "output_count": null,
+  "errors": [],
+  "invocation_id": "59a3984a-caf5-41ab-8001-24a964507a1e",
+  "parent_invocation_id": "e0f2b883-ebcf-4eb2-b2cb-6931372a88ae",
+  "stage": "fetch_podcasts",
+  "status": "running",
+  "exit_code": null,
+  "started_at": "2026-10-15T03:50:10Z",
+  "finished_at": null,
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

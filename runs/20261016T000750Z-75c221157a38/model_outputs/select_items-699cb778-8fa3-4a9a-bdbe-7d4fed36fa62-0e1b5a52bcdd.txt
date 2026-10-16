@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The passage lacks sufficient detail to determine relevance to the editorial question. It discusses AI champions and their roles but does not provide specific evidence about changes in coding-agent workflows, efficiency claims, or evaluation criteria for small teams. A more detailed examination of the topic or time range is needed.",
+  "piece_ids": []
+}

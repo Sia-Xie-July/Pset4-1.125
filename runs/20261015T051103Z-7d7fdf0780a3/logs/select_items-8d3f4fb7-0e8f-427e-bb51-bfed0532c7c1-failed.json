@@ -1,0 +1,45 @@
+{
+  "cost_is_estimate": true,
+  "cost_usd": 0.230286,
+  "duration_seconds": 113.0365250420291,
+  "errors": [
+    "Model output is incomplete"
+  ],
+  "input_count": 28,
+  "model_calls": [
+    {
+      "duration_seconds": 109.4627165410202,
+      "estimated_cost_usd": 0.230286,
+      "input_tokens": 223048,
+      "input_usd_per_million": 0.75,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "output_tokens": 14000,
+      "output_usd_per_million": 4.5,
+      "provider": "openai_compatible",
+      "request_attempted": true,
+      "requested_model": "gpt-5.4-mini",
+      "status": "failed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 109.4627165410202,
+  "models": [
+    {
+      "name": "gpt-5.4-mini-2026-03-17",
+      "provider": "openai_compatible"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "8d3f4fb7-0e8f-427e-bb51-bfed0532c7c1",
+  "parent_invocation_id": "336ff80c-a20e-4198-b4fd-efe8bdc9e336",
+  "stage": "select_items",
+  "status": "failed",
+  "exit_code": 2,
+  "started_at": "2026-10-15T05:11:30Z",
+  "finished_at": "2026-10-15T05:13:24Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

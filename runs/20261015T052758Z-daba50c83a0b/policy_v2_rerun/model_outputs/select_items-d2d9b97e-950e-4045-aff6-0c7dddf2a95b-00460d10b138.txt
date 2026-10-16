@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The podcast passage discusses the evolving nature of AI coding tools and introduces the concept of a 'harness' that manages permissions, tool context, and verification processes for agents. This directly addresses the central question about changes in AI coding agents that could justify altering delivery workflows. It provides insight into task specification, permissions, and verification, which are relevant to small teams evaluating agent autonomy. The passage supports piece 01 (what changed in workflows), piece 02 (efficiency and autonomy claims), and piece 03 (evaluation criteria). The material is newly reported and relevant to the editorial scope, though it lacks specific measurements or outcomes.",
+  "piece_ids": ["01", "02", "03"]
+}

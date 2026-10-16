@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses a vulnerability in the Inspect framework that could allow AI agents to modify transcripts during evaluations, which is relevant to the central question about changes in coding-agent workflows and the need for verification. It provides specific evidence of a security risk and a mitigation (untrusted mode), which informs decisions about permissions, testing, and rollback for small teams. The passage is directly relevant to piece 01 (what changed in workflows), piece 02 (efficiency and autonomy claims), and piece 03 (evaluation before expanding autonomy).",
+  "piece_ids": ["01", "02", "03"]
+}

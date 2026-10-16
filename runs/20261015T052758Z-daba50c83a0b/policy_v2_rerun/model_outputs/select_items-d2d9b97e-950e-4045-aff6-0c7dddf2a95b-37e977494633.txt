@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses Python 3.15's release, including features like unpacking in comprehensions and improvements to profiling tools. These developments are relevant to the editorial question about changes in coding-agent workflows and their impact on small teams. The passage provides specific details about new features and their implications for performance and code structure, which can inform decisions about task scoping, testing, and delivery quality. The material is newly reported and directly connects to the audience's work with coding agents.",
+  "piece_ids": ["01", "02", "03"]
+}

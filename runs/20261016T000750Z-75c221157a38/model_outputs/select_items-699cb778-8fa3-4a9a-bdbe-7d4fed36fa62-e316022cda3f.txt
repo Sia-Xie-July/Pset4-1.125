@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage provides concrete information about the deprecation of specific GitHub Copilot models, which directly impacts task scoping, model selection, and workflow adjustments for small teams. It informs the decision on what changed in coding-agent workflows (piece 01) and what a team should evaluate before expanding autonomy (piece 03). The most material limitation is the need for teams to update their workflows and integrations before the deprecation date.",
+  "piece_ids": ["01", "03"]
+}

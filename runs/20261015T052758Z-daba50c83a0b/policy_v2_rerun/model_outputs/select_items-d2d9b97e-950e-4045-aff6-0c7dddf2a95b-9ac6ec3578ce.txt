@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The candidate provides a proposal for improving public evidence about loss-of-control risks from frontier AI development, but it does not directly address AI coding agents or their impact on small software teams' delivery workflows. The passage lacks specific information about coding-agent workflows, efficiency, quality, or autonomy claims that are relevant to the editorial question. To resolve this, we need a passage that connects these risks to coding-agent practices or delivery outcomes.",
+  "piece_ids": []
+}

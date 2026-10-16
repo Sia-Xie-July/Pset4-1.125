@@ -1,0 +1,5 @@
+{
+  "decision": "reject",
+  "reason": "The content discusses GitHub Copilot client settings and enforcement updates, which are not directly related to AI coding agents' capabilities, workflows, or delivery practices for small software teams. It lacks evidence of new capabilities, measured outcomes, or task-level impacts relevant to the editorial scope.",
+  "piece_ids": []
+}

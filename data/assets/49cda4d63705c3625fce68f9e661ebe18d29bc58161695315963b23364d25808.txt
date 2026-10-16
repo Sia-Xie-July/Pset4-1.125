@@ -1,0 +1,217 @@
+already everybody. This is yet another edition of the web news and this web news is inspired by a
+Reddit post titled is vibe coding, creating a hidden technical debt crisis. I will link to the
+Reddit post so you can go check out the comments and all the rest of the good stuff you can do on
+Reddit, give some upvotes and what have you. Go and check that out. It's on our slash web dev.
+I'm just going to read the post to you. It's a three very brief paragraph. So it says, I love building
+tools inside projects, but lately I've been thinking about how heavy reliance on AI coding
+assistance is going to impact long term code quality. Building fast with AI tools is great for
+getting a prototype of the door, but letting AI generate massive chunks of unvetted code is
+quickly piling up technical debt. When you push code out without thoroughly checking how it fits
+into your overall architecture, you end up with messy, un maintainable code bases. If you ever plan
+to sell a project or hand it off to another developer, that unvetted code can completely ruin a deal
+during due diligence. I still use AI to speed up my workflow, but I treat it strictly as an
+assistant rather than letting it write unchecked logic, auditing generated code, keeping modules
+clean and maintaining test coverage seem like the only way is to use these tools strategically
+without destroying the project. Are you noticing a drop in maintainability on projects? Heavy on AI
+code. There's a bunch of different opinions in the comments. The top ones that I saw were generally
+like, yeah, obviously, it'll tech debt is kind of going up and things like that. But I have a
+couple of topics that I'd like to kind of roughly discuss just to kind of kick things off here.
+It is AI coding adding technical debt, just kind of tackling that question because I think it's a
+little, it sounds like it's something that we could just say yes or no, but it's a bit, there's a
+bit of nuance there. What type of projects and things? And also AI is quote unquote coding fast.
+And when humans code fast, technical debt isn't inevitability. Is this the same situation for AI?
+So Mike, I've been yapping for quite a while. Why don't you kind of kick this off?
+So there's two, there's two things that I want to say. One thing is
+it's yes, it is adding technical debt for most projects because of how managers are
+twisting AI. Like how AI is to a product manager is an accelerator. So we'll, you know,
+what used to take us three months, we'll do in three weeks. That's kind of how they're seeing it.
+So because of that mentality, yes, most projects are going to launch with a bunch of technical debt,
+a bunch of refactors that need to happen and stuff like that. Having said that, if treated
+properly, if you use properly, let's say that, hey, instead of saying that it increases your
+throughput by 10x increase AI is getting a little bit better at figuring that stuff out. So
+it's getting better and better. But features are not the technical debt. The technical debt is
+becoming again, more and more like the bad code smells too much code, like especially in the thing
+like refactors needed. If you have the time, you can have glutes cycles of technical debt that
+happen also accelerated by AI. So lead out like build, build, build, have technical debt windows
+where similar to how we used to have it in traditional development, where we would have weeks of
+battling technical debt. Well, now you can send AI to actually hit your technical debt. Hey,
+refactor this to be more like this, do this to be more like this. As long as product is aligned
+and this is a big if because right now we're not seeing that. But if product is aligned and they're
+willing to not increase your speed by 10x, go down to 1.5x, you can actually create pretty robust
+co-bases with less technical debt than before. I've done that before. I've also had very much
+where a lot of co-bases have increased technical debt by considerable amount because of the deadlines
+that are being proposed nowadays. I want to pick apart one thing and that is technical debt was
+the feature list that you had. I always kind of associated technical debt with like you know how
+companies will sometimes like push, push, push new features, new features and they'd actually
+code them and put them in the platform. But then the platform or whatever app it is gets really,
+really buggy and then they kind of come back and they go all right, we got to refactor, we got to
+clean this up and what they're cleaning up at the end of the day is technical debt. I think you're right.
+I think I mixed that up. I think I was thinking technical debt is like backlog.
+The technical debt isn't backlog. Technical debt is a separate column. You're right. So
+technical debt would be the stuff that after adding a feature it would have like some sort of a
+code smell like you added a feature but you left in the environments from dev and staging in
+the wrong places and stuff like that and you banded it in there. You taped it in instead of
+like adding it properly into the code base. Exactly. So it's actually like something that would happen
+during a feature creation depending on the scope that you have and depending on how it goes. So
+right. Yeah, you're you're light about that. I was conflicting it with a with a backlog which is
+something that should be much less much more doable nowadays in terms of speed. But technical
+debt. Yeah. It's it's more on the lines of fixing code smells, refactors, you know adding adding more
+security around things, stuff like that. Yeah. And and I think I think like with the code smells
+in that, I mean, you're naturally going to have code smells and issues and and things that just
+like even as you put them in you're like, man, this is bandated in here due to speed and
+like there's that one part that I wanted to talk about where it's like AI is coding fast. It's all
+about, you know, speeding the human up. And then if back in the day, if humans were to code fast,
+in technical debt, rising is basically an inevitability unless you have, you know, some amazing
+perfectly running, you know, 10 x engineers all on your team type of thing. I think that
+even with AI, like especially with those deadlines that you mentioned, you will naturally have more
+technical debt because once again, the the human brain is the bottleneck. There's still a human
+there that's prompting this thing that's checking the code hopefully or maybe not due to the
+due to the the deadline, which is probably going to add to more technical debt as well. And you're
+prompting it and just taping things together and trying to get things working so fast that you're not,
+you know, doing all the checks and balances and things. I mean, we can see this with products. Like
+we could see this with things like a normal way to answer an email form as you pull up the email
+form on the contact page you fill it in and then that's it. But if I backspace my name, I should
+be able to retype in my name a piece of technical debt might be that they never check that and once
+I backspace my name, I can never reenter my name again into that field. And that's a that's a very,
+very rudimentary example, but that is an example of like technical debt potentially, you know,
+getting in the way there where it's like, oh, we didn't have the time. We were going as fast as we
+could and we only checked the most basic use case, which is pull up the page, fill in the form and then
+press submit type of thing. So that like that that's like a, you know, a basic example of that. And
+that's and that's absolutely something that you can imagine with an AI or without an AI,
+you would skip you wouldn't you wouldn't check going into each field to filling it in that
+backspacing it and and doing all these things. You would just be like, oh, well, you know, I filled
+it in. I submitted it. It worked. You know, onto the next thing like naturally. I think the thing
+that I'll push back on in terms of like the original statements is the idea that unmentable code
+bases are super important now. Whereas like it could, you know, hurt you if you're trying to sell
+a project or it could make it difficult for another developer to onboard. I think that stuff has
+become less and less important as long as the code base is robust in the in the sense of like not
+leaking data and is being secure enough, right? Like as long as it's feasible, like it's it works
+the way it's intended to even if it's not maintainable. Like if there's, you know, interfaces all
+over the place and there's comments, no comments and variables names stupidly, the advantage of AI is
+it's the thing that's going to have to spin up in it and it's very good at interpreting code based
+on code. Yes, it helps to have comments, but recently it's gotten better and better at just
+understanding what code is doing. And so when you're spinning up, the thing that has probably become
+the best, the easiest is spinning up in a code base. Now code base of a massive size still takes time,
+but a lot less time than it did before because you can ask AI very direct questions about,
+think what does this do or how does this work in this? How does the deployment infrastructure work? How
+does changing this impact that all of that can be kind of handled? Well, you can skill up in it
+with AI. And then once you have that knowledge, you can start to implement fixes and implement changes
+and implement features with that knowledge a lot faster than before, even if the code base is
+somewhat un maintainable. So maintainable code is becoming in my opinion less and less important.
+Now this might be a controversial opinion, but over time, it's going to become to the point where
+again, comments are not going to be necessary. And stuff like, you know,
+human readable languages we talked about that before isn't going to be a thing because it's going
+to be abstracted away because the machines are going to know how to write this machine code a lot
+more efficiently than we can. Right. And it runs more efficiently. So the more compilers we have
+that make it more human readable and more maintainable, the less efficient the code is at the end of
+the day. And we're going to start removing those compilers as we as we start to trust AI more and more.
+Well, if you start like I mean, I think that's almost two things, though, like you're starting to
+code closer to the metal, there's going to be there's going to be examples for example,
+within the web development space where react and these other frameworks and libraries and
+tools that we've made spelled the rest of them. These tools are made as more or less human
+interfaces, a lot of the time to help people create maintainable readable code across a team.
+But at the end of the day, the browser really only understands script the three pillars that we've
+talked about, you know, repeatedly in the past. And so a code, a AI that is doing some coding for you
+could realistically just code in those in the pillars and forget about the maintainability
+in terms of a team perspective. Like I suppose like that's like that, that parts true. However,
+I will have some pushback on the maintainable like the maintainable code base because the what I
+if your code is like a mess, it is not maintainable, it is the equivalent to me as having a messy
+workshop. Yeah, if you're in there all the time and you like know how to step around the saw and
+know how to like avoid stepping on the rakes and know how to not slip on the hammer that's laying on
+the floor. Fantastic. But and I understand that if another human showed up, they'd you know,
+they'd slip on the hammer, they'd bump into the saw and be a mess because they don't know your
+area. And AI comes in and it analyzes things and it has a better chance of avoiding that thing on the
+floor, not bumping into this thing, not knocking over the rake or stepping on the rake, right?
+It has a better chance of it not not making mistakes like that. However, I would still say that
+those things are still hazards and they're still that they're still at a place in my opinion for no
+reason, no good reason. The reason in the technical debt world is oftentimes due to inexperience a mistake
+or due to a project deadline or due to complexity. Some code bases are so legacy so old so crazy that yeah,
+I get it. I do agree that an AI could help you navigate these navigate these sort of hazardous work,
+work, I'll call them hazardous workshops. The AI could help you navigate that hazardous workshop,
+but it's still a hazardous workshop. And I do I would I would push back and say maybe we should just
+tell the AI to pick up that hammer and to realign that saw so that people won't bump into it and
+to not have the rake lean around so we don't step on it because at some point even in AI is there
+still hazards that the AI is is is is avoiding. We talk about AI context and losing context all the time.
+I mean, we get you know, we get 10 15 20 50 100 prompts in to talk into this thing and it's going to
+forget the rake is there and then wham it's going to step on the rake. What what could have avoided it?
+The rake not being there in the first place, the rake being in the shelf or on the hook where it's
+supposed to be that like I would I would push back on that. But I like I do concede that yeah,
+in a hazardous in this figurative hazardous like workshop situation that I'm equating to a code
+base. And AI is likely that it's definitely based on what code base and other things. But likely
+going to navigate a little better than a human, especially a new human someone that's new to the
+code base. It's probably going to pick up on it quicker, but it's still hazardous. And I think
+hazardous for no good reason in in many cases. What this what this what this what you could potentially
+argue then is is that you could kind of have these emergency tickets that show up. Hey, we really need
+a contact form here to go back to the basic example. We really need a contact form here. All right,
+let's fire that up. So we spin it up. Whatever we kind of tape it together. Maybe the AI vibe codes
+that we look at it. It looks good in context. It looks great. But it doesn't really interface with the
+CRM too well. Let's come this in fields. It's a little messy. Maybe the number is actually a string
+or something. It's not pulling into the CRM nicely or something in emergency. No, the emergency was
+getting that form out because we needed people to be able to contact us in this particular context
+for some reason. That was the emergency. So okay, now there's a bit of a hazard in the work in the
+code base now in the workshop. There's a bit of a hazard because we've taped this thing in. Okay,
+so now we need on my opinion, we still need someone to go in there. Human or AI preferably maybe both
+to go in there. And I think to still clean it up because I don't want to go emergency ticket. We
+need this this contact form. Okay, great. Emergency ticket. We need this other page. Okay, great.
+I emergency emergency. And then now it's like we have this like whoa, like this big like bundle of
+BS. Maybe I'm worse at juggling it or holding it up and then balancing it than an AI would be.
+But it's the AI is still using some of its power to like juggle this nonsense.
+If that I don't know if you agree, you disagree with me. I know you're not your head a little bit, but like
+I yeah, I think you're definitely correct. I think that you have to kind of make a point of where
+you draw that line of what is maintainable and what isn't maintainable by AI. And again,
+I think as we progress and as AI progresses, that line will start to become further and further out.
+So right now you're 100% right honestly. And I'm experiencing it right now,
+like currently in the code base that I'm in, it has a ton of technical debt.
+An AI is stepping on a bunch of rakes. It is actually like that's actually happening to me at this
+very moment. If we clean up that technical debt is going to make it a lot easier for me to work with
+it and for AI to work with it 100%. So that's the you hit the nail on the head there. What
+is inevitably going to happen is it will become better at a cleaning up that technical debt as it
+sees it. Because right now what AI doesn't do very well is it sees an error. It sees an
+un maintainable aspect of code. And it's just like, all right, that's fine. And it just works around
+it. For some reason, almost every AI that I use from the asterisk to the fables down to whatever,
+that's the way it interacts. But inevitably it will start to get better and probably start to make it
+less do these things where it, it will fix the un maintainable code as it sees it. Now,
+this could be part of its reasoning of like, hey, don't touch things that I didn't ask you to touch.
+Which isn't a bad, which isn't a bad call. But it seems to do that even when I ask it to touch it.
+Like, it's a context issue, like you said, if there's too much context with the code base is too big,
+it just becomes way too hard for it to understand what is a rake and what isn't.
+Well, it's also, I think it's a utopian issue too, where the AI is looking at it as, well,
+if nobody, if nobody's like, if you know how to do the right footwork, then the rakes are not a risk.
+The rakes are there. They're stored in the building, but they're not on the hook. They're not on
+the show. And so we're good, man. But it's like, whoa, whoa, whoa, you know, like we have to come in
+there. And like, that's how I use it to clear technical debt is I'll go in there and be like, isn't
+this a risk? And I'll have it like tell me not change. I'll even say, don't friggin change
+anything. I want you to tell me what this is. And it'll do all kinds of stuff. And I'll be like,
+isn't this like a bit of a risk and like a bit of a mess? And so on this, it'll be like, yeah,
+but like it, you know, as long as no one steps on it, it's not a hazard at all. Cool. You're still
+changing it. That's how I kind of treat the AI. Hey, that's why I mean by kind of like a person
+with an AI is kind of what who I'd want. I guess the duo that I'd want to go in and fix technical debt,
+right? Yeah. Again, like, I think the technical debt shouldn't be as big of an issue as it is right
+now with AI, but because of the time constraints that is put on everything due to AI increasing our
+productivity by X amount, whatever, whatever the, you know, CEOs and the product managers pass down
+to the engineering team, you're put in a situation where you're inevitably making more technical debt.
+That's at the end of the day, what's happening, but it doesn't have to be that way. Like we could be in
+a place where we could have the right, you know, a sprint and then an AI to fix the technical debt
+because we have that time. That's how it should be used and hopefully in good engineering teams,
+that's how it is it it is used. But in a lot of places, that's not the case. So you need to fight for
+that or you need to align and deal with the technical debt and accept it as well. Like that's another
+thing that engineers might have to accept in a situation where they can't deal with it or they can't
+push back. Yeah, technical that exists. So maybe you have to start prompting your AI differently
+to go around it, just have it step around the race, which is unfortunate. And I do want to like quickly
+just very quickly touch because I could pretty well at the end of this web news, but just quickly
+touch on like there's a lot of surrounding supporting tech that goes into into production pipelines
+and code bases like your CI CD pipeline could be, you know, a factor with technical debt,
+your your DevOps, like you're, though you have your server set, the way you have your your check set,
+your linters set, all these things can contribute to technical debt. I mean, we're just focusing on sort
+of like the general idea of it, but I do I did just think I do think it's important to mention
+that because that's even more and more and more context that you have to give this AI an AI by the
+way that all of them as far as I know, struggle with context to some degree, the in the same way that
+a human would and then one day accidentally step on the rake that they avoided for five years.
+But I think that's it. That unless you had anything else to add, Mike, I think that is the web news,
+working title right now may even be the title. What is AI doing to technical debt? Again, this is
+inspired by a Reddit thread with a ton of comments on there's 90 some odd comments in there when I
+went and checked on it. That will be in the show notes. Go check it out. You can click on that link.
+I'll also likely include it in the RSS description if I remember, but it will be in the show notes for
+sure it's already in there. In fact, in the draft version. So please go and check that out and again,
+give some upvotes or comments or whatever you do on the Reddit. And that's it. That's the web news.
+We're signing off. Goodbye.

@@ -1,0 +1,47 @@
+{
+  "errors": [],
+  "input_count": 4,
+  "limited": true,
+  "output_count": 4,
+  "sources": [
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "amp-thorsten-workflow-october-2026",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "antirez-flow-experience-october-2026",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "antirez-automated-programming-october-2026",
+      "status": "completed"
+    },
+    {
+      "discovery_limit": 1,
+      "output_count": 1,
+      "source_id": "modern-sde-agents-model-selection-october-2026",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "8ba73f6e-a3b9-4d86-b221-dff02bf89872",
+  "parent_invocation_id": "f05f5998-3399-4411-8b6e-7114e24fd9fc",
+  "stage": "fetch_youtube",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T04:02:03Z",
+  "finished_at": "2026-10-15T04:02:09Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

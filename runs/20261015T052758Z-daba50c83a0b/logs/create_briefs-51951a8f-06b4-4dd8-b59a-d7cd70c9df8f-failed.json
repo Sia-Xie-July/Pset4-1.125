@@ -1,0 +1,69 @@
+{
+  "cost_is_estimate": true,
+  "cost_usd": 0.0,
+  "duration_seconds": 86.31296574999578,
+  "errors": [
+    "Local brief 03 needs three publishers and accepted podcast evidence"
+  ],
+  "input_count": 28,
+  "model_calls": [
+    {
+      "call_id": "51951a8f-06b4-4dd8-b59a-d7cd70c9df8f-4e607ecae2fa",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 42.77820795797743,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 19461,
+      "input_tokens": 3130,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 535,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    },
+    {
+      "call_id": "51951a8f-06b4-4dd8-b59a-d7cd70c9df8f-c54758e5fda4",
+      "context_limit": 32768,
+      "cost_scope": "Local inference API charge only; electricity/hardware excluded",
+      "duration_seconds": 40.048631333047524,
+      "estimated_cost_usd": 0.0,
+      "input_token_upper_bound": 18134,
+      "input_tokens": 2867,
+      "input_usd_per_million": 0,
+      "model": "qwen3:8b",
+      "output_tokens": 551,
+      "output_usd_per_million": 0,
+      "provider": "ollama_local",
+      "request_attempted": true,
+      "status": "completed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 82.82683929102495,
+  "models": [
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    },
+    {
+      "name": "qwen3:8b",
+      "provider": "ollama_local"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "51951a8f-06b4-4dd8-b59a-d7cd70c9df8f",
+  "parent_invocation_id": "fa7a2340-2eee-4439-8ebc-a0baf4f8a732",
+  "stage": "create_briefs",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T05:35:23Z",
+  "finished_at": "2026-10-15T05:36:49Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "input_count": 0,
+  "output_count": 1,
+  "store_counts": {
+    "items": 31,
+    "observations": 279,
+    "versions": 31
+  },
+  "invocation_id": "9bd3f6ac-18bc-4c49-bd3c-604725ddd778",
+  "parent_invocation_id": "65db1d62-00c1-41ab-9847-4b5c00325b77",
+  "stage": "store.get",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-16T00:20:39Z",
+  "finished_at": "2026-10-16T00:20:39Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

@@ -1,0 +1,23 @@
+{
+  "cost_is_estimate": false,
+  "cost_usd": null,
+  "duration_seconds": 3.5168649579863995,
+  "errors": [],
+  "input_count": 78,
+  "model_calls": [],
+  "model_duration_seconds": 0,
+  "models": [],
+  "output_count": 1,
+  "invocation_id": "40e024e2-0ff2-44c0-8cfc-9ee23ec05625",
+  "parent_invocation_id": "f0840f3a-4400-4375-b606-e6c172b931e1",
+  "stage": "check_content",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T19:10:44Z",
+  "finished_at": "2026-10-15T19:10:47Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

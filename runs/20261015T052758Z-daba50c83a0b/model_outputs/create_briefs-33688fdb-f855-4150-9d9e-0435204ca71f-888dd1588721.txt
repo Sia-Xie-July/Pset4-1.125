@@ -1,0 +1,26 @@
+{
+  "title": "The Review Bottleneck: Which Productivity Claims Survive Scrutiny?",
+  "question": "Which developments in AI coding agents during the preceding 30 days justify changing a small team's delivery workflow, and what evidence should the team require before expanding agent autonomy?",
+  "argument": "The recent advancements in AI coding agents have introduced more structured workflows that integrate testing and verification directly into the development process. This shift is evident in the use of agents that not only generate code but also test it against specifications, reducing the need for manual intervention. For instance, Jake Cukjati describes a workflow where agents take a specification, plan the implementation, and then test everything, which significantly streamlines the delivery process. Additionally, the use of plugins like Rigor for test harnesses further enhances the reliability of the generated code. These changes suggest that the increased output from agents is not just about generating more code but about improving the overall delivery quality and reducing the burden on human reviewers.",
+  "synthesis": "The synthesis of these claims highlights a critical shift in the capabilities of AI coding agents, moving from mere code generation to integrated testing and verification. This is supported by Jake Cukjati's description of a workflow where agents take a specification, plan the implementation, and then test everything, which significantly streamlines the delivery process. Additionally, the use of plugins like Rigor for test harnesses further enhances the reliability of the generated code. These developments suggest that the increased output from agents is not just about generating more code but about improving the overall delivery quality and reducing the burden on human reviewers.",
+  "limitations": "The evidence provided is primarily based on descriptions of workflows and tools, which may not fully capture the actual impact on productivity or the specific challenges faced by small teams. There is also a lack of direct measurements or case studies that quantify the improvements in delivery speed or reduction in review effort.",
+  "source_1_claim": {
+    "statement": "AI coding tools are getting faster, better, and just coming out every single day.",
+    "type": "source_claim",
+    "passage_id": "s1p1"
+  },
+  "source_2_claim": {
+    "statement": "The harness is the permissions, the tool context that it has, and a verification process because at the end of the day, once something is done, the agent can determine that itself or the harness can tell it, hey, when you're finished, this is what you have to run.",
+    "type": "source_claim",
+    "passage_id": "s2p3"
+  },
+  "source_3_claim": {
+    "statement": "The great thing about this fence, like I said before, is it's all verifiable. And then I put this to Forge, which is the workflow, where the agents take it from the spec. To, planning the implementation. Where there's, implementation references, and that's a huge thing that gets built during the compounding, just before we start off with the next, spectrum. But yeah, the agents go through and test everything, implement it.",
+    "type": "source_claim",
+    "passage_id": "s3p2"
+  },
+  "cross_source_inference": {
+    "statement": "The integration of testing and verification into the development process by AI coding agents represents a significant shift in their capabilities, moving from mere code generation to structured workflows that enhance delivery quality and reduce the burden on human reviewers.",
+    "passage_ids": ["s1p1", "s2p3", "s3p2"]
+  }
+}

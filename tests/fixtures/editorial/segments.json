@@ -1,0 +1,4 @@
+[
+  {"segment_id":"s-001","start_seconds":0.0,"end_seconds":3.0,"text":"FICTIONAL statement about an imaginary setup constraint."},
+  {"segment_id":"s-002","start_seconds":3.0,"end_seconds":6.0,"text":"This invented example is not real evidence."}
+]

@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses Python 3.15's release, which includes features like unpacking in comprehensions (PEP 798) and improvements to sampling profilers. These changes are relevant to the editorial question about developments in AI coding agents that justify changes in delivery workflows. The passage provides specific, newly reported features that could impact task scoping, testing, and performance, which are directly relevant to the audience's needs. The material supports piece 01 (what changed in coding-agent workflows) and piece 02 (which efficiency, quality, or autonomy claims survive scrutiny).",
+  "piece_ids": ["01", "02"]
+}

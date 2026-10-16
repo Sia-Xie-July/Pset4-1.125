@@ -1,0 +1,22 @@
+{
+  "input_count": null,
+  "output_count": null,
+  "errors": [
+    "Collection incomplete; inspect collection_status.json and component receipts"
+  ],
+  "invocation_id": "005290c6-ceb9-4442-8a49-7f0fa65667d9",
+  "parent_invocation_id": "edda3c50-19e3-408d-b39a-a4dba0a42969",
+  "stage": "collect_sources",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T03:35:03Z",
+  "finished_at": "2026-10-15T03:42:55Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

@@ -1,0 +1,29 @@
+{
+  "errors": [],
+  "input_count": 1,
+  "limited": true,
+  "output_count": 3,
+  "sources": [
+    {
+      "discovery_limit": 3,
+      "output_count": 3,
+      "source_id": "nlw-ai-daily-brief",
+      "status": "completed"
+    }
+  ],
+  "invocation_id": "db54337b-a588-45e4-bf06-e31e243cf7ed",
+  "parent_invocation_id": "9c58cf33-e0cd-4431-b824-8d8e3a3675d9",
+  "stage": "fetch_podcasts",
+  "status": "completed",
+  "exit_code": 0,
+  "started_at": "2026-10-15T03:55:21Z",
+  "finished_at": "2026-10-15T03:55:23Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ],
+  "models": [],
+  "cost_usd": null,
+  "cost_is_estimate": false
+}

@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The passage discusses GitHub Copilot client settings and enforcement updates but does not directly address AI coding agents, their capabilities, or their impact on small team workflows. The content is focused on enterprise management and policy enforcement rather than on the practical implications for teams using AI coding agents. To resolve this, we need a passage that explicitly connects these updates to coding-agent workflows, testing, review, permissions, or delivery outcomes.",
+  "piece_ids": []
+}

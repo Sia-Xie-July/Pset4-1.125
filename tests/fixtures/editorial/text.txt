@@ -1,0 +1,2 @@
+FICTIONAL report: the imaginary lab omitted setup time.
+This invented passage is fixture data, not evidence of a real development.

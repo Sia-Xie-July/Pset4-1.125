@@ -1,0 +1,5 @@
+{
+  "decision": "defer",
+  "reason": "The candidate provides fragmented and incomplete excerpts from a YouTube video that do not establish a clear, new claim or evidence relevant to the editorial policy's scope. The text lacks context, specific findings, or actionable insights about AI coding agents, task specification, testing, or delivery outcomes. The excerpts are too vague and insufficient to support any of the piece IDs (01, 02, 03) without additional information or clarification from the source material. The item cannot be accepted or rejected without further details about the full content and its relevance to the central question about AI coding agents and small-team workflows.",
+  "piece_ids": []
+}

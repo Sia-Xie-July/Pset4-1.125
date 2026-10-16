@@ -1,0 +1,44 @@
+{
+  "cost_is_estimate": false,
+  "cost_usd": null,
+  "duration_seconds": 5.5518787080654874,
+  "errors": [
+    "Model request failed (HTTP 400): Invalid schema for response_format 'create_briefs': In context=('properties', 'briefs', 'items', 'anyOf', '0', 'properties', 'claims', 'items', 'properties', 'evidence', 'items', 'anyOf', '1', 'properties', 'locator', 'properties', 'quote'), \" is not allowed in string literals for structured outputs (strict=true)."
+  ],
+  "input_count": 27,
+  "model_calls": [
+    {
+      "duration_seconds": 2.1181290419772267,
+      "estimated_cost_usd": null,
+      "input_tokens": null,
+      "input_usd_per_million": 0.75,
+      "model": "gpt-5.4-mini",
+      "output_tokens": null,
+      "output_usd_per_million": 4.5,
+      "provider": "openai_compatible",
+      "request_attempted": true,
+      "status": "failed",
+      "tokens_are_fixture": false
+    }
+  ],
+  "model_duration_seconds": 2.1181290419772267,
+  "models": [
+    {
+      "name": "gpt-5.4-mini",
+      "provider": "openai_compatible"
+    }
+  ],
+  "output_count": 0,
+  "invocation_id": "0ed45b03-4a54-4a9f-99d0-6532f50c12e1",
+  "parent_invocation_id": null,
+  "stage": "create_briefs",
+  "status": "failed",
+  "exit_code": 1,
+  "started_at": "2026-10-15T04:24:14Z",
+  "finished_at": "2026-10-15T04:24:20Z",
+  "tools": [
+    "3.2.57(1)-release",
+    "Python 3.13.7",
+    "jq-1.8.2"
+  ]
+}

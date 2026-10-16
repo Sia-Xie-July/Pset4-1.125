@@ -1,0 +1,88 @@
+[
+  {
+    "source_id": "simon-willison-original-entries",
+    "publisher_id": "simon-willison",
+    "kind": "feed",
+    "url": "https://simonwillison.net/atom/entries/",
+    "max_entries": 6,
+    "perspective": "First-person practitioner reports and original tool experiments; distinguish personal experience from controlled team outcomes.",
+    "independence_note": "All Simon Willison endpoints share this publisher. A linked vendor announcement is not independent corroboration of that vendor's result."
+  },
+  {
+    "source_id": "github-copilot-changelog",
+    "publisher_id": "microsoft-github",
+    "kind": "feed",
+    "url": "https://github.blog/changelog/label/copilot/feed/",
+    "max_entries": 3,
+    "perspective": "Vendor capability and availability announcements; not independent productivity evidence.",
+    "independence_note": "GitHub and Microsoft endpoints count as one originating corporate group."
+  },
+  {
+    "source_id": "cloudflare-ai-blog",
+    "publisher_id": "cloudflare",
+    "kind": "feed",
+    "url": "https://blog.cloudflare.com/tag/ai/rss/",
+    "max_entries": 3,
+    "perspective": "First-party infrastructure, model-routing and agent-tool capability reports; commercial incentives disclosed.",
+    "independence_note": "Cloudflare properties are one group. Retain only material that actually affects the scoped small-team workflow question."
+  },
+  {
+    "source_id": "metr-original-research",
+    "publisher_id": "metr",
+    "kind": "feed",
+    "url": "https://metr.org/feed.xml",
+    "max_entries": 6,
+    "perspective": "Original evaluation methodology and monitoring/control proposals. A proposal is not a demonstrated safeguard or a measured small-team productivity result.",
+    "independence_note": "All METR endpoints share one organization. Inspect each study's methods, applicable task setting, funding disclosures and publication date. Reject unrelated frontier-risk discussion."
+  },
+  {
+    "source_id": "amp-thorsten-workflow-october-2026",
+    "publisher_id": "amp-inc",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/watch?v=Z7l1EHfCMU8",
+    "max_entries": 1,
+    "perspective": "Vendor-affiliated first-person workflow demonstration; does not establish a controlled productivity gain.",
+    "independence_note": "Amp staff/product demonstrations share one publisher group. Metadata probe observed a 34m31s recording; processing needs an explicit duration limit above 20 minutes."
+  },
+  {
+    "source_id": "antirez-flow-experience-october-2026",
+    "publisher_id": "salvatore-sanfilippo",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/watch?v=QobBTNIIX04",
+    "max_entries": 1,
+    "perspective": "Italian-language first-person practitioner account. Use attributed English paraphrases, preserving original timed segments.",
+    "independence_note": "All Salvatore Sanfilippo uploads are one publisher; auto-caption and translation uncertainty require human checking."
+  },
+  {
+    "source_id": "antirez-automated-programming-october-2026",
+    "publisher_id": "salvatore-sanfilippo",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/watch?v=9h-Way-APlM",
+    "max_entries": 1,
+    "perspective": "A separate practitioner recording about an automated-programming workflow, not a second independent publisher.",
+    "independence_note": "Same producer as the flow recording. Metadata probe observed 23m28s; processing needs an explicit duration limit above 20 minutes."
+  },
+  {
+    "source_id": "aimug-coding-factory-october-2026",
+    "publisher_id": "aimug-jake-cukjati-nomi-health",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/watch?v=-65TrkDP1jY",
+    "max_entries": 1,
+    "perspective": "Jake Cukjati's first-person specification, sequential-agent, integration-test and review workflow. Use as attributed practice, not proof that long runs or generated code improve delivery.",
+    "independence_note": "AIMUG recording of a Nomi Health speaker, distinct from the configured Amp and Antirez recordings. Group any copies of this talk together; unknown commercial relationships remain unknown.",
+    "verification_url": "https://aimug.org/talks/the-coding-factory-canonical-specs-and-sequential-agents/",
+    "content_review_note": "Organizer dates the recording October 5, 2026 and provides timed automatic captions. Inspect 4:16-5:18 for review and token/context checks; captions need human verification. Native metadata and actual run freshness filtering remain authoritative."
+  },
+  {
+    "source_id": "html-all-the-things-coding-workflows",
+    "publisher_id": "html-all-the-things",
+    "kind": "podcast",
+    "url": "https://podcast.htmlallthethings.com/feed.xml",
+    "max_entries": 1,
+    "episode_ids": [
+      "htmlallthethings.podbean.com/e93be725-65ed-3105-b527-e3a0b3828407"
+    ],
+    "perspective": "Original practitioner discussion of verification workflows and technical debt; advice and experience are not controlled outcome measurements.",
+    "independence_note": "Matt Lawrence and Mike Karan share one podcast producer. Retain only Is AI Coding Making Technical Debt Worse?, published September 19, 2026, duration 1226 seconds. Sponsor and affiliate disclosures require inspection. The previously rejected AI Basics episode is no longer selected; historical decisions remain preserved."
+  }
+]

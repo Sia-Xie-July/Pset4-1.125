@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage highlights a specific limitation of AI agents in fetching live web pages, which is relevant to task specification and agent context. It introduces a new method (Web Search API) that improves the efficiency and accuracy of information retrieval, directly addressing the central question about changes in delivery workflows. This evidence supports piece 01 by showing what changed in coding-agent workflows and what matters to a small team. The most material limitation is the reliance on guessed URLs, which is a concrete issue affecting delivery quality and cost.",
+  "piece_ids": ["01"]
+}

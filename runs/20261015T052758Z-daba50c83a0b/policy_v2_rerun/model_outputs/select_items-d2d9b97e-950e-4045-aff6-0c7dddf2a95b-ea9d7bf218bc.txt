@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage describes specific updates to HydraFusion and HydraFusion Max, including changes in model selection, reasoning effort allocation, and task-specific performance optimization. These details are relevant to piece 01 (what changed in coding-agent workflows) and piece 02 (which efficiency, quality, or autonomy claims survive scrutiny). The material provides concrete evidence of workflow changes and performance tuning, which can inform decisions about task scoping, reasoning effort, and cost considerations for small teams. The most material limitation is that the passage does not provide direct measurements of outcomes or team-specific impacts.",
+  "piece_ids": ["01", "02"]
+}

@@ -1,0 +1,5 @@
+{
+  "decision": "accept",
+  "reason": "The passage discusses new features and capabilities related to coding agents, such as the agentic browser (Kitesurf), support for WebMCP, faster DOM operations, and tools for sending production issues to agents. These developments are relevant to the central question about whether recent changes in coding agents justify changing delivery practices. The passage provides specific technical features and tools that could influence task specification, testing, and delivery outcomes for small teams. The content is directly tied to the editorial scope and offers actionable insights for teams evaluating agent autonomy.",
+  "piece_ids": ["01", "02", "03"]
+}
